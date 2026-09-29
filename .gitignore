@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Debug / build artifacts
+debug.log
+debug_*.html
+
+# Large archive (images already present unzipped in images/)
+images.zip
+
+# Agent / project metadata
+.workbuddy/
+
+# Scratch files
+_chk.txt
+_dirlist.txt
+_git.txt
+_run.log
+_serve.log

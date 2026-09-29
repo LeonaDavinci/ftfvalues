@@ -1,0 +1,95 @@
+# Welcome to FTF Values
+
+URL: https://ftf-values.base44.app/Home
+
+## 标题结构
+
+# Welcome toFTF Values
+## Join the Official FTF Community!
+## Quick Access
+### Bundles
+### Zarys Calculator
+### Legendaries
+### Epics
+### Rares
+### Commons
+## Staff Team
+### Rox
+### Kory
+### Shoya
+### Lzyh
+### dsdfdsdsdeg
+### Zarys
+### Sul
+### Selkis
+### Alex
+
+## 主要内容
+
+Welcome to
+FTF Values
+Your trusted source for Flee the Facility item values and trading information
+Join the Official FTF Community!
+FTF Values
+Join our community
+Official FTF Server
+Join our community
+Quick Access
+Bundles
+Zarys Calculator
+Legendaries
+Epics
+Rares
+Commons
+Staff Team
+Rox
+Value List Holder / Manager
+Kory
+Website Manager / Value List Staff
+Shoya
+Value List Staff
+Lzyh
+Value List Staff
+dsdfdsdsdeg
+Value List Staff
+Zarys
+Value List Staff
+Sul
+Value List Staff
+Selkis
+Value List Staff
+Alex
+Value List Staff
+
+## 链接
+
+- [FTF Values](/Home)
+- [Home](/Home)
+- [Use Guide](/UseGuide)
+- [Changelog](/Changelog)
+- [FAQ](/FAQ)
+- [Bundles](/Sets)
+- [Legendaries](/Legendaries)
+- [Epics](/Epics)
+- [Rares](/Rares)
+- [Commons](/Commons)
+- [FTF ValuesJoin our community](https://discord.gg/YYUwQfGcXt)
+- [Official FTF ServerJoin our community](https://discord.com/invite/awapps)
+- [Bundles](/Sets)
+- [Zarys Calculator](https://zarys-exists.github.io/FTF-Trade-Calculator/)
+- [Legendaries](/Legendaries)
+- [Epics](/Epics)
+- [Rares](/Rares)
+- [Commons](/Commons)
+
+## 图片
+
+- images/pages/home/noFilter (alt: Rox)
+- images/pages/home/noFilter (alt: Kory)
+- images/pages/home/noFilter (alt: Shoya)
+- images/pages/home/noFilter (alt: Lzyh)
+- images/pages/home/noFilter (alt: dsdfdsdsdeg)
+- images/pages/home/noFilter (alt: Zarys)
+- images/pages/home/noFilter (alt: Sul)
+- images/pages/home/noFilter (alt: Selkis )
+- images/pages/home/noFilter (alt: Alex)

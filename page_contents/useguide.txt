@@ -1,0 +1,88 @@
+# Use Guide
+
+URL: https://ftf-values.base44.app/UseGuide
+
+## 标题结构
+
+# Use Guide
+## Change in Value
+## Stability Tags
+### Rising
+### Doing Well
+### Improving
+### Stable
+### Fluctuating
+### Struggling
+### Receding
+### Dropping
+## Status Tags
+### Overpaid For
+### Underpaid For
+### Niche
+## Demand Tags
+
+## 主要内容
+
+Use Guide
+Last Updated: January 21st, 2026
+Change in Value
+Changes in Value from the previous list updates will be denoted with either:
+Green arrow = increase in value
+Red arrow = decrease in value
+*
+Corrected value — neither increased nor decreased, only for new items when values are fluctuating
+Stability Tags
+Stability Tags are useful for giving the community our insight on what direction we believe an item is heading. This does not mean that everyone follows what the stability states, it is simply to reflect what most people think.
+Rising
+Items with this stability are rapidly gaining value.
+Doing Well
+Items with this stability are slowly gaining value.
+Improving
+This means that an item is thriving as it receives good trades, which may lead to a potential rise in value.
+Stable
+This means that an item has no movement currently.
+Fluctuating
+This means that an item has a confusing value range. Its movement is unpredictable due to variations in overpays, underpays, and base value.
+Struggling
+This means that an item is struggling to receive trades due to a decrease in demand, which may lead to a potential drop in value.
+Receding
+Items with this stability are slowly losing value.
+Dropping
+Items with this stability are rapidly losing value.
+Status Tags
+Status Tags are useful for giving the community more insight on sets that go beyond the assigned stability. Status is how well the set is doing overall, considering the current value, the offers it usually gets, and the demand around the set.
+Overpaid For
+This icon means that the set is stable and could get their listed value, but may get slightly more than the base value of the set.
+Underpaid For
+This icon means that the set is stable and could get their listed value, but may get slightly less than the base value of the set.
+Niche
+This icon is used for items that are hard to get, as there are very few people actively trading these items. These items usually get their face value, but may also get overpays due to these items being hard to come by.
+Demand Tags
+Demand Tags indicate how sought-after an item or set is in the trading community. Higher demand items typically trade faster and may command better offers.
+Extremely popular, trades instantly
+Extremely popular, trades very quickly
+Very popular and frequently traded
+Good interest in trading
+Moderate interest in trading
+Below average interest
+Limited interest, may take time to trade
+Very little interest, difficult to trade
+Almost no interest, very difficult to trade
+Barely any interest
+No trading interest
+
+## 链接
+
+- [FTF Values](/Home)
+- [Home](/Home)
+- [Use Guide](/UseGuide)
+- [Changelog](/Changelog)
+- [FAQ](/FAQ)
+- [Bundles](/Sets)
+- [Legendaries](/Legendaries)
+- [Epics](/Epics)
+- [Rares](/Rares)
+- [Commons](/Commons)
+
+## 图片
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTF Trading Guide - Stability, Demand & Value Tags Explained</title>
+    <meta name="description" content="Learn how to read FTF Values like a pro. Understand stability tags, demand ratings, and value indicators to make smarter trades in Flee the Facility.">
+    <meta name="keywords" content="FTF trading guide, FTF stability tags, FTF demand ratings, how to trade FTF, FTF value guide, Roblox FTF trading tips">
+    <link rel="canonical" href="https://yourdomain.com/use-guide">
+    <style>
+        * { margin:0; padding:0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.7; }
+        header { background: #1a1a2e; padding: 1rem 2rem; border-bottom: 2px solid #e94560; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #e94560; }
+        nav a { color: #e0e0e0; text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem; }
+        nav a:hover { color: #e94560; }
+        .page-header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 3rem 2rem; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; color: #e94560; margin-bottom: 0.5rem; }
+        .page-header .updated { color: #808090; font-size: 0.9rem; }
+        .container { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
+        .intro { background: #1a1a2e; border-radius: 12px; padding: 2rem; margin-bottom: 3rem; border-left: 4px solid #e94560; }
+        .intro p { color: #a0a0b0; line-height: 1.8; }
+        .section { margin-bottom: 3rem; }
+        .section h2 { color: #e94560; font-size: 1.8rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #2a2a4e; }
+        .section h3 { color: #f0f0f0; font-size: 1.3rem; margin: 2rem 0 1rem; }
+        .section p { color: #a0a0b0; margin-bottom: 1rem; }
+        .tag-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+        .tag-card { background: #16213e; border-radius: 10px; padding: 1.5rem; border: 1px solid #2a2a4e; transition: border-color 0.2s; }
+        .tag-card:hover { border-color: #e94560; }
+        .tag-card h4 { color: #e94560; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .tag-card p { color: #a0a0b0; font-size: 0.95rem; line-height: 1.6; }
+        .note-box { background: #1a1a2e; border: 1px solid #f59e0b; border-radius: 10px; padding: 1.5rem; margin: 1.5rem 0; }
+        .note-box h4 { color: #f59e0b; margin-bottom: 0.5rem; }
+        .note-box p { color: #a0a0b0; font-size: 0.95rem; }
+        .demand-scale { display: flex; flex-direction: column; gap: 0.8rem; margin: 1.5rem 0; }
+        .demand-item { display: flex; align-items: center; gap: 1rem; background: #16213e; padding: 1rem 1.5rem; border-radius: 8px; }
+        .demand-stars { color: #f59e0b; font-size: 1.2rem; min-width: 120px; }
+        .demand-desc { color: #a0a0b0; }
+        .value-change { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.5rem 0; }
+        .change-item { display: flex; align-items: center; gap: 0.8rem; background: #16213e; padding: 1rem 1.5rem; border-radius: 8px; }
+        .arrow-up { color: #22c55e; font-size: 1.5rem; }
+        .arrow-down { color: #ef4444; font-size: 1.5rem; }
+        .asterisk { color: #a0a0b0; font-size: 0.95rem; }
+        footer { background: #0a0a15; padding: 2rem; text-align: center; color: #606070; font-size: 0.85rem; border-top: 1px solid #1a1a2e; }
+        footer a { color: #e94560; text-decoration: none; }
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 1.8rem; }
+            header { flex-direction: column; gap: 1rem; }
+            nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+            nav a { margin: 0 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">FTF Values</div>
+
+  <!-- Main Nav - 5 item categories (prominent position) -->
+  <nav class="main-nav" id="mainNav">
+    <a href="sets.html">Bundles</a>
+    <a href="legendaries.html">Legendaries</a>
+    <a href="epics.html">Epics</a>
+    <a href="rares.html">Rares</a>
+    <a href="commons.html">Commons</a>
+  </nav>
+
+  <!-- More menu (secondary pages) -->
+  <div class="nav-more">
+    <button class="nav-more-btn" onclick="toggleMoreMenu()" aria-label="More pages">&#9881; More</button>
+    <div class="nav-more-menu" id="moreMenu">
+      <a href="index.html">&#127968; Home</a>
+      <a href="use-guide.html">&#128214; Use Guide</a>
+      <a href="changelog.html">&#128221; Changelog</a>
+      <a href="faq.html">&#10067; FAQ</a>
+    </div>
+  </div>
+
+  <!-- Mobile menu button -->
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+
+<div class="page-header">
+    <h1>FTF Trading Value Guide</h1>
+    <p class="updated">Last Updated: January 21st, 2026</p>
+</div>
+
+<div class="container">
+
+    <!-- Introduction -->
+    <div class="intro">
+        <p>Welcome to the FTF Values Use Guide! This page explains everything you need to know to read our value listings effectively. Understanding stability tags, status indicators, and demand ratings will help you make smarter trades and avoid getting scammed in Flee the Facility.</p>
+    </div>
+
+    <!-- Value Change Indicators -->
+    <div class="section">
+        <h2>Understanding Value Changes</h2>
+        <p>When we update our value lists, we use visual indicators to show how an item's value has changed since the previous update:</p>
+        <div class="value-change">
+            <div class="change-item">
+                <span class="arrow-up">↑</span>
+                <div>
+                    <strong style="color:#22c55e;">Green Arrow</strong>
+                    <p style="color:#a0a0b0; font-size:0.9rem; margin:0.3rem 0 0 0;">Indicates the item's value has increased</p>
+                </div>
+            </div>
+            <div class="change-item">
+                <span class="arrow-down">↓</span>
+                <div>
+                    <strong style="color:#ef4444;">Red Arrow</strong>
+                    <p style="color:#a0a0b0; font-size:0.9rem; margin:0.3rem 0 0 0;">Indicates the item's value has decreased</p>
+                </div>
+            </div>
+        </div>
+        <div class="note-box">
+            <h4>Corrected Value (*)</h4>
+            <p>The asterisk symbol (*) means the value has been corrected — neither increased nor decreased. This is used for new items or when an item's value was inaccurate and has been adjusted to reflect the current market.</p>
+        </div>
+    </div>
+
+    <!-- Stability Tags -->
+    <div class="section">
+        <h2>Stability Tags — Market Direction Indicators</h2>
+        <p>Stability Tags give you insight into the likely future direction of an item's value. These are based on community trading patterns and expert analysis — they reflect the consensus of experienced traders, but remember that no prediction is 100% certain.</p>
+        <p>Think of stability tags as a forecast: they help you decide whether to trade an item now or hold onto it for potential future gains.</p>
+
+        <div class="tag-grid">
+            <div class="tag-card">
+                <h4>🚀 Rising</h4>
+                <p>Items with this stability tag are rapidly gaining value. Strong upward momentum — consider holding if you own one, or acquiring before values climb further.</p>
+            </div>
+            <div class="tag-card">
+                <h4>📈 Doing Well</h4>
+                <p>Items with this stability are slowly but steadily gaining value. A positive trend that suggests continued growth.</p>
+            </div>
+            <div class="tag-card">
+                <h4>🌱 Improving</h4>
+                <p>The item is showing strong trading activity and receiving good trade offers. This positive momentum may lead to a value increase in the near future.</p>
+            </div>
+            <div class="tag-card">
+                <h4>⚖️ Stable</h4>
+                <p>The item's value is not currently moving in either direction. Stable items are generally safe to trade at their listed value.</p>
+            </div>
+            <div class="tag-card">
+                <h4>🌊 Fluctuating</h4>
+                <p>The item has a confusing or unpredictable value range. Its movement varies due to inconsistent overpays, underpays, and base value trades. Trade with caution.</p>
+            </div>
+            <div class="tag-card">
+                <h4>📉 Struggling</h4>
+                <p>The item is struggling to receive trades due to decreasing demand. This may lead to a potential drop in value — consider trading it sooner rather than later.</p>
+            </div>
+            <div class="tag-card">
+                <h4>🔻 Receding</h4>
+                <p>Items with this stability are slowly losing value. A gradual downward trend — monitor closely and consider your exit strategy.</p>
+            </div>
+            <div class="tag-card">
+                <h4>💥 Dropping</h4>
+                <p>Items with this stability are rapidly losing value. Strong downward momentum — these items should generally be traded away quickly before further losses.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Tags -->
+    <div class="section">
+        <h2>Status Tags — Item Trading Status</h2>
+        <p>Status Tags provide additional context beyond the stability tag. They reflect how an item is actually performing in trades, taking into account its current value, the quality of offers it typically receives, and overall market demand.</p>
+
+        <div class="tag-grid">
+            <div class="tag-card">
+                <h4>💰 Overpaid For</h4>
+                <p>This status means the item is stable and can typically fetch its listed value in trades — but it may actually receive slightly <em>more</em> than its base value due to high desirability. A great item to hold.</p>
+            </div>
+            <div class="tag-card">
+                <h4>💸 Underpaid For</h4>
+                <p>This status means the item is stable and valued correctly, but traders may offer slightly <em>less</em> than the base value. You can still trade it successfully, but don't expect to exceed the listed value.</p>
+            </div>
+            <div class="tag-card">
+                <h4>💎 Niche</h4>
+                <p>This status is used for items that are difficult to obtain, as very few players actively trade them. These items usually get their face value, but may also receive overpays due to their rarity and scarcity. Niche items reward patient traders.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demand Tags -->
+    <div class="section">
+        <h2>Demand Ratings — How Sought-After Is This Item?</h2>
+        <p>Demand Tags indicate how actively an item or set is being sought after in the trading community. Higher demand items trade faster and typically command better offers. Demand is rated on a scale from 0 to 5 stars.</p>
+
+        <div class="demand-scale">
+            <div class="demand-item">
+                <div class="demand-stars">★★★★★</div>
+                <div class="demand-desc"><strong>Extremely High Demand</strong> — Extremely popular, trades instantly. Everyone wants this item.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">★★★★☆</div>
+                <div class="demand-desc"><strong>Very High Demand</strong> — Extremely popular, trades very quickly.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">★★★☆☆</div>
+                <div class="demand-desc"><strong>High Demand</strong> — Very popular and frequently traded.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">★★☆☆☆</div>
+                <div class="demand-desc"><strong>Good Demand</strong> — Good interest in trading. Will trade within a reasonable time.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">★★☆☆☆</div>
+                <div class="demand-desc"><strong>Moderate Demand</strong> — Moderate interest. May take some time to find the right trade.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">★☆☆☆☆</div>
+                <div class="demand-desc"><strong>Below Average Demand</strong> — Below average interest, may take time to trade.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">★☆☆☆☆</div>
+                <div class="demand-desc"><strong>Limited Demand</strong> — Limited interest, may take considerable time to trade.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">☆☆☆☆☆</div>
+                <div class="demand-desc"><strong>Very Low Demand</strong> — Very little interest, difficult to trade. Expect a long wait.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">☆☆☆☆☆</div>
+                <div class="demand-desc"><strong>Almost No Demand</strong> — Barely any interest, very difficult to trade.</div>
+            </div>
+            <div class="demand-item">
+                <div class="demand-stars">☆☆☆☆☆</div>
+                <div class="demand-desc"><strong>No Demand</strong> — No trading interest. These items are essentially un tradeable at their listed value.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pro Tips -->
+    <div class="section">
+        <h2>Pro Trading Tips</h2>
+        <div class="note-box">
+            <h4>💡 Combine Stability + Demand for Best Results</h4>
+            <p>The most valuable information comes from combining stability tags with demand ratings. An item that is "Rising" with 4+ star demand is a prime holding opportunity. An item that is "Dropping" with 0-1 star demand should be traded away immediately.</p>
+        </div>
+        <div class="note-box" style="border-color: #e94560;">
+            <h4>⚠️ Values Are Guidelines, Not Absolute Rules</h4>
+            <p>Our values reflect community consensus, but every trade is unique. Factors like the specific items being offered, the urgency of the trader, and current game events can all affect the actual trade value. Use our values as your starting point, then negotiate from there.</p>
+        </div>
+    </div>
+
+    <div style="text-align:center; margin-top:3rem;">
+        <a href="/legendaries" style="display:inline-block; background:linear-gradient(135deg,#e94560,#c23152); color:white; padding:0.8rem 2rem; border-radius:8px; text-decoration:none; font-weight:600;">Start Browsing Values →</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 FTF Values. Unofficial fan-made guide. | <a href="index.html">Home</a> | <a href="faq.html">FAQ</a> | <a href="changelog.html">Changelog</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FTF Values - Flee the Facility Trading Value Guide & Item Calculator</title>
+<meta name="description" content="The ultimate Flee the Facility value guide. Check item values, stability tags, demand ratings for Legendary, Epic, Rare and Common items. Updated daily.">
+<meta name="keywords" content="Flee the Facility, FTF, Roblox FTF, FTF values, FTF trading, FTF item values, FTF value calculator">
+<link rel="canonical" href="https://yourdomain.com/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;background:#0f0f1a;color:#e0e0e0}
+a{text-decoration:none;color:inherit}
+
+/* === TOP NAVIGATION === */
+header{background:#1a1a2e;padding:0 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #e94560;position:sticky;top:0;z-index:100;height:56px}
+.logo{font-size:1.3rem;font-weight:700;color:#e94560;white-space:nowrap}
+
+/* Main nav - item categories */
+.main-nav{display:flex;gap:2px;flex-wrap:wrap;justify-content:center;flex:1;margin:0 16px}
+.main-nav a{padding:6px 14px;border-radius:6px;font-size:0.85rem;font-weight:600;transition:all 0.2s;white-space:nowrap;color:#e0e0e0}
+.main-nav a:hover,.main-nav a.act{background:rgba(233,69,96,0.13);color:#e94560}
+
+/* More dropdown */
+.nav-more{position:relative}
+.nav-more-btn{background:none;border:1px solid #333;border-radius:6px;color:#a0a0b0;padding:6px 12px;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.nav-more-btn:hover{background:#2a2a3e;color:#e0e0e0;border-color:#555}
+.nav-more-menu{display:none;position:absolute;right:0;top:100%;margin-top:6px;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:8px;padding:6px 0;min-width:160px;box-shadow:0 8px 30px rgba(0,0,0,0.4);z-index:200}
+.nav-more-menu.show{display:block}
+.nav-more-menu a{display:block;padding:8px 16px;color:#a0a0b0;font-size:0.85rem;transition:all 0.15s}
+.nav-more-menu a:hover{background:#2a2a3e;color:#e94560}
+
+/* Mobile menu */
+.mobile-menu-btn{display:none;background:none;border:none;color:#e0e0e0;font-size:1.4rem;cursor:pointer;padding:4px 8px}
+@media(max-width:900px){
+  header{padding:0 12px;height:50px}
+  .main-nav{gap:1px}
+  .main-nav a{font-size:0.78rem;padding:5px 8px}
+  .logo{font-size:1.1rem}
+}
+@media(max-width:768px){
+  .mobile-menu-btn{display:block}
+  .main-nav{display:none;position:absolute;top:50px;left:0;right:0;background:#1a1a2e;border-bottom:2px solid #e94560;padding:8px 12px;flex-wrap:wrap;gap:4px;justify-content:flex-start}
+  .main-nav.show{display:flex}
+  .main-nav a{padding:8px 12px;font-size:0.85rem}
+}
+
+/* === HERO === */
+.hero{text-align:center;padding:64px 24px;background:radial-gradient(ellipse at center,#1a1a3e 0%,#0f0f1a 70%)}
+.hero h1{font-size:3rem;background:linear-gradient(90deg,#e94560,#0f3460);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px}
+.hero p{font-size:1.2rem;color:#a0a0b0;max-width:600px;margin:0 auto 24px}
+.cb{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:12px 28px;border-radius:8px;font-weight:600;transition:transform 0.2s,box-shadow 0.2s;cursor:pointer}
+.bp{background:linear-gradient(135deg,#e94560,#c23152);color:#fff;border:none}
+.bs{background:#16213e;color:#e94560;border:2px solid #e94560}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(233,69,96,0.3)}
+
+/* === FEATURES === */
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;padding:40px 24px;max-width:1100px;margin:0 auto}
+.fc{background:#1a1a2e;border-radius:12px;padding:24px;border:1px solid #2a2a4e;transition:transform 0.2s,border-color 0.2s}
+.fc:hover{transform:translateY(-4px);border-color:#e94560}
+.fc h3{color:#e94560;margin-bottom:10px}
+.fc p{color:#a0a0b0;line-height:1.6;font-size:0.9rem}
+
+/* === PREVIEW SECTIONS === */
+.ps{padding:40px 24px;max-width:1400px;margin:0 auto}
+.psh{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.psh h2{font-size:1.5rem}
+.psl{font-size:0.85rem;padding:6px 16px;border:1px solid #555;border-radius:20px;transition:all 0.2s;color:#a0a0b0}
+.psl:hover{background:rgba(255,255,255,0.05);color:#e0e0e0}
+.psg{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+
+/* Mini Card */
+.mc{display:block;background:#1a1a2e;border-radius:10px;overflow:hidden;border:1px solid #2a2a4e;transition:transform 0.2s,border-color 0.2s;padding-bottom:8px}
+.mc:hover{transform:translateY(-3px);border-color:#e94560}
+.mi{width:100%;aspect-ratio:1;background:#13132a;display:flex;align-items:center;justify-content:center;padding:6px}
+.mi img{width:100%;height:100%;object-fit:contain}
+.mn{font-size:0.8rem;font-weight:600;color:#f0f0f0;padding:6px 8px 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mv{font-size:0.9rem;font-weight:700;padding:0 8px 2px}
+.mt{padding:0 8px 2px}
+.ms{font-size:0.65rem;font-weight:600;padding:1px 6px;border-radius:8px}
+.md{font-size:0.75rem;padding:0 8px}
+.mds{letter-spacing:1px}
+
+/* === COMMUNITY === */
+.community{text-align:center;padding:40px 24px;background:#1a1a2e}
+.community h2{color:#e94560;margin-bottom:12px}
+.community p{color:#a0a0b0;max-width:600px;margin:0 auto 20px}
+.db{display:inline-flex;align-items:center;gap:8px;background:#5865F2;color:#fff;padding:10px 24px;border-radius:8px;font-weight:600;transition:transform 0.2s}
+.db:hover{transform:translateY(-2px)}
+
+/* === STAFF === */
+.staff{max-width:1100px;margin:0 auto;padding:40px 24px}
+.staff h2{color:#e94560;text-align:center;margin-bottom:20px}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+.sc{background:#1a1a2e;border-radius:10px;padding:16px;text-align:center;border:1px solid #2a2a4e}
+.sc .av{width:56px;height:56px;border-radius:50%;background:#e94560;margin:0 auto 10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff}
+.sc h4{color:#e0e0e0;font-size:0.9rem;margin-bottom:4px}
+.sc .ro{color:#e94560;font-size:0.75rem}
+
+/* === FOOTER === */
+footer{background:#0a0a15;padding:20px;text-align:center;color:#606070;font-size:0.85rem;border-top:1px solid #1a1a2e;margin-top:40px}
+footer a{color:#e94560}
+.footer-links{margin-top:8px}
+.footer-links a{margin:0 8px;color:#606070;font-size:0.8rem}
+.footer-links a:hover{color:#e94560}
+
+@media(max-width:768px){
+  .hero h1{font-size:2rem}
+  .hero p{font-size:1rem}
+  .psg{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header>
+  <div class="logo">FTF Values</div>
+
+  <!-- Main Nav - 5 item categories (prominent position) -->
+  <nav class="main-nav" id="mainNav">
+    <a href="sets.html">Bundles</a>
+    <a href="legendaries.html">Legendaries</a>
+    <a href="epics.html">Epics</a>
+    <a href="rares.html">Rares</a>
+    <a href="commons.html">Commons</a>
+  </nav>
+
+  <!-- More menu (secondary pages) -->
+  <div class="nav-more">
+    <button class="nav-more-btn" onclick="toggleMoreMenu()" aria-label="More pages">&#9881; More</button>
+    <div class="nav-more-menu" id="moreMenu">
+      <a href="index.html">&#127968; Home</a>
+      <a href="use-guide.html">&#128214; Use Guide</a>
+      <a href="changelog.html">&#128221; Changelog</a>
+      <a href="faq.html">&#10067; FAQ</a>
+    </div>
+  </div>
+
+  <!-- Mobile menu button -->
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <h1>Flee the Facility Value Guide</h1>
+  <p>Your trusted source for FTF item values, trading insights, and market trends. Make smarter trades with accurate, community-driven value data updated daily.</p>
+  <div class="cb">
+    <a href="legendaries.html" class="btn bp">View Legendary Values</a>
+    <a href="sets.html" class="btn bs">Browse Bundles</a>
+  </div>
+</section>
+
+<!-- ========== FEATURES ========== -->
+<section class="features">
+  <div class="fc"><h3>Real-Time Value Tracking</h3><p>Stay up-to-date with the latest FTF item values. Data reflects actual trading patterns from the community.</p></div>
+  <div class="fc"><h3>Stability & Demand Indicators</h3><p>Each item includes stability tags and demand ratings to help you predict market movements.</p></div>
+  <div class="fc"><h3>Complete Item Coverage</h3><p>From Legendary bundles to Common consumables, we track values across all rarities.</p></div>
+  <div class="fc"><h3>Active Community</h3><p>Join thousands of traders. Get trading advice and value updates from experienced players.</p></div>
+</section>
+
+<!-- ========== BUNDLES PREVIEW ========== -->
+    <section class="ps" id="sets">
+      <div class="psh">
+        <h2 style="color:#e94560">&#127873; Bundles & Sets</h2>
+        <a href="sets.html" class="psl" style="border-color:#e94560;color:#e94560">View All 162 Items &rarr;</a>
+      </div>
+      <div class="psg"><a href="sets.html#2019" class="mc" data-v="2019"><div class="mi"><img src="../images/sets/2019.webp" alt="2019" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2019</div><div class="mv" style="color:#e94560">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#2020" class="mc" data-v="2019"><div class="mi"><img src="../images/sets/2020.webp" alt="2020" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2020</div><div class="mv" style="color:#e94560">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#2021" class="mc" data-v="2019"><div class="mi"><img src="../images/sets/2021.webp" alt="2021" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2021</div><div class="mv" style="color:#e94560">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#2022" class="mc" data-v="2019"><div class="mi"><img src="../images/sets/2022.webp" alt="2022" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2022</div><div class="mv" style="color:#e94560">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#2023" class="mc" data-v="2019"><div class="mi"><img src="../images/sets/2023.webp" alt="2023" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2023</div><div class="mv" style="color:#e94560">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#2024" class="mc" data-v="2019"><div class="mi"><img src="../images/sets/2024.webp" alt="2024" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2024</div><div class="mv" style="color:#e94560">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#2025" class="mc" data-v="2019"><div class="mi"><img src="../images/sets/2025.webp" alt="2025" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2025</div><div class="mv" style="color:#e94560">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#2026" class="mc" data-v="2019"><div class="mi"><img src="../images/sets/2026.webp" alt="2026" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2026</div><div class="mv" style="color:#e94560">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#ice-cream" class="mc" data-v="120"><div class="mi"><img src="../images/sets/Ice-Cream.webp" alt="Ice-Cream" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Ice-Cream</div><div class="mv" style="color:#e94560">&#9889; 120</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#choco_dip" class="mc" data-v="120"><div class="mi"><img src="../images/sets/Choco_Dip.webp" alt="Choco Dip" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Choco Dip</div><div class="mv" style="color:#e94560">&#9889; 120</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#psycho_chainsaw" class="mc" data-v="75"><div class="mi"><img src="../images/sets/Psycho_Chainsaw.webp" alt="Psycho Chainsaw" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Psycho Chainsaw</div><div class="mv" style="color:#e94560">&#9889; 75</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="sets.html#psycho_axe" class="mc" data-v="75"><div class="mi"><img src="../images/sets/Psycho_Axe.webp" alt="Psycho Axe" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Psycho Axe</div><div class="mv" style="color:#e94560">&#9889; 75</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a></div>
+    </section>
+
+<!-- ========== LEGENDARIES PREVIEW ========== -->
+    <section class="ps" id="legendaries">
+      <div class="psh">
+        <h2 style="color:#f1c40f">&#128081; Legendaries</h2>
+        <a href="legendaries.html" class="psl" style="border-color:#f1c40f;color:#f1c40f">View All 190 Items &rarr;</a>
+      </div>
+      <div class="psg"><a href="legendaries.html#2026" class="mc" data-v="2026"><div class="mi"><img src="../images/legendary/2026.webp" alt="2026" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2026</div><div class="mv" style="color:#f1c40f">&#9889; 2026</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#2025" class="mc" data-v="2025"><div class="mi"><img src="../images/legendary/2025.webp" alt="2025" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2025</div><div class="mv" style="color:#f1c40f">&#9889; 2025</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#2024" class="mc" data-v="2024"><div class="mi"><img src="../images/legendary/2024.webp" alt="2024" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2024</div><div class="mv" style="color:#f1c40f">&#9889; 2024</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#2023" class="mc" data-v="2023"><div class="mi"><img src="../images/legendary/2023.webp" alt="2023" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2023</div><div class="mv" style="color:#f1c40f">&#9889; 2023</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#2022" class="mc" data-v="2022"><div class="mi"><img src="../images/legendary/2022.webp" alt="2022" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2022</div><div class="mv" style="color:#f1c40f">&#9889; 2022</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#2021" class="mc" data-v="2021"><div class="mi"><img src="../images/legendary/2021.webp" alt="2021" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2021</div><div class="mv" style="color:#f1c40f">&#9889; 2021</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#2020" class="mc" data-v="2020"><div class="mi"><img src="../images/legendary/2020.webp" alt="2020" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2020</div><div class="mv" style="color:#f1c40f">&#9889; 2020</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#2019" class="mc" data-v="2019"><div class="mi"><img src="../images/legendary/2019.webp" alt="2019" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">2019</div><div class="mv" style="color:#f1c40f">&#9889; 2019</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#party_balloons" class="mc" data-v="300"><div class="mi"><img src="../images/legendary/Party_Balloons.webp" alt="Party Balloons" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Party Balloons</div><div class="mv" style="color:#f1c40f">&#9889; 300</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#lovesick_bow" class="mc" data-v="270"><div class="mi"><img src="../images/legendary/Lovesick_Bow.webp" alt="Lovesick Bow" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Lovesick Bow</div><div class="mv" style="color:#f1c40f">&#9889; 270</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#gothic_bouquet" class="mc" data-v="210"><div class="mi"><img src="../images/legendary/Gothic_Bouquet.webp" alt="Gothic Bouquet" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Gothic Bouquet</div><div class="mv" style="color:#f1c40f">&#9889; 210</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="legendaries.html#devilish_candle" class="mc" data-v="180"><div class="mi"><img src="../images/legendary/Devilish_Candle.webp" alt="Devilish Candle" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Devilish Candle</div><div class="mv" style="color:#f1c40f">&#9889; 180</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a></div>
+    </section>
+
+<!-- ========== EPICS PREVIEW ========== -->
+    <section class="ps" id="epics">
+      <div class="psh">
+        <h2 style="color:#9b59b6">&#128142; Epics</h2>
+        <a href="epics.html" class="psl" style="border-color:#9b59b6;color:#9b59b6">View All 69 Items &rarr;</a>
+      </div>
+      <div class="psg"><a href="epics.html#crown" class="mc" data-v="55"><div class="mi"><img src="../images/epics/Crown.webp" alt="Crown" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Crown</div><div class="mv" style="color:#9b59b6">&#9889; 55</div><div class="mt"><span class="ms" style="background:#2ecc7122;color:#2ecc71;border:1px solid #2ecc71">Rising</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#spectral_crown" class="mc" data-v="48"><div class="mi"><img src="../images/epics/Spectral_Crown.webp" alt="Spectral Crown" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Spectral Crown</div><div class="mv" style="color:#9b59b6">&#9889; 48</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#bat_wings" class="mc" data-v="42"><div class="mi"><img src="../images/epics/Bat_Wings.webp" alt="Bat Wings" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Bat Wings</div><div class="mv" style="color:#9b59b6">&#9889; 42</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#ducky" class="mc" data-v="38"><div class="mi"><img src="../images/epics/Ducky.webp" alt="Ducky" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Ducky</div><div class="mv" style="color:#9b59b6">&#9889; 38</div><div class="mt"><span class="ms" style="background:#f39c1222;color:#f39c12;border:1px solid #f39c12">Fluctuating</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#gift_bag" class="mc" data-v="35"><div class="mi"><img src="../images/epics/Gift_Bag.webp" alt="Gift Bag" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Gift Bag</div><div class="mv" style="color:#9b59b6">&#9889; 35</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#joyful_crown" class="mc" data-v="32"><div class="mi"><img src="../images/epics/Joyful_Crown.webp" alt="Joyful Crown" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Joyful Crown</div><div class="mv" style="color:#9b59b6">&#9889; 32</div><div class="mt"><span class="ms" style="background:#2ecc7122;color:#2ecc71;border:1px solid #2ecc71">Rising</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#polished_crown" class="mc" data-v="30"><div class="mi"><img src="../images/epics/Polished_Crown.webp" alt="Polished Crown" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Polished Crown</div><div class="mv" style="color:#9b59b6">&#9889; 30</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#shadow_crown" class="mc" data-v="28"><div class="mi"><img src="../images/epics/Shadow_Crown.webp" alt="Shadow Crown" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Shadow Crown</div><div class="mv" style="color:#9b59b6">&#9889; 28</div><div class="mt"><span class="ms" style="background:#e74c3c22;color:#e74c3c;border:1px solid #e74c3c">Dropping</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#tiny_bow" class="mc" data-v="25"><div class="mi"><img src="../images/epics/Tiny_Bow.webp" alt="Tiny Bow" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Tiny Bow</div><div class="mv" style="color:#9b59b6">&#9889; 25</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#love_bow" class="mc" data-v="22"><div class="mi"><img src="../images/epics/Love_Bow.webp" alt="Love Bow" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Love Bow</div><div class="mv" style="color:#9b59b6">&#9889; 22</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#cupid_bow" class="mc" data-v="20"><div class="mi"><img src="../images/epics/Cupid_Bow.webp" alt="Cupid Bow" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Cupid Bow</div><div class="mv" style="color:#9b59b6">&#9889; 20</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="epics.html#bunny_ears" class="mc" data-v="18"><div class="mi"><img src="../images/epics/Bunny_Ears.webp" alt="Bunny Ears" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Bunny Ears</div><div class="mv" style="color:#9b59b6">&#9889; 18</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a></div>
+    </section>
+
+<!-- ========== RARES PREVIEW ========== -->
+    <section class="ps" id="rares">
+      <div class="psh">
+        <h2 style="color:#e74c3c">&#128293; Rares</h2>
+        <a href="rares.html" class="psl" style="border-color:#e74c3c;color:#e74c3c">View All 89 Items &rarr;</a>
+      </div>
+      <div class="psg"><a href="rares.html#cane" class="mc" data-v="16"><div class="mi"><img src="../images/rares/Cane.webp" alt="Cane" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Cane</div><div class="mv" style="color:#e74c3c">&#9889; 16</div><div class="mt"><span class="ms" style="background:#2ecc7122;color:#2ecc71;border:1px solid #2ecc71">Rising</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#ornament" class="mc" data-v="14"><div class="mi"><img src="../images/rares/Ornament.webp" alt="Ornament" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Ornament</div><div class="mv" style="color:#e74c3c">&#9889; 14</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#snowglobe" class="mc" data-v="12"><div class="mi"><img src="../images/rares/Snowglobe.webp" alt="Snowglobe" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Snowglobe</div><div class="mv" style="color:#e74c3c">&#9889; 12</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#present" class="mc" data-v="10"><div class="mi"><img src="../images/rares/Present.webp" alt="Present" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Present</div><div class="mv" style="color:#e74c3c">&#9889; 10</div><div class="mt"><span class="ms" style="background:#f39c1222;color:#f39c12;border:1px solid #f39c12">Fluctuating</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#stocking" class="mc" data-v="9"><div class="mi"><img src="../images/rares/Stocking.webp" alt="Stocking" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Stocking</div><div class="mv" style="color:#e74c3c">&#9889; 9</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#gift" class="mc" data-v="8"><div class="mi"><img src="../images/rares/Gift.webp" alt="Gift" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Gift</div><div class="mv" style="color:#e74c3c">&#9889; 8</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#lantern" class="mc" data-v="7"><div class="mi"><img src="../images/rares/Lantern.webp" alt="Lantern" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Lantern</div><div class="mv" style="color:#e74c3c">&#9889; 7</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#pumpkin" class="mc" data-v="6"><div class="mi"><img src="../images/rares/Pumpkin.webp" alt="Pumpkin" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Pumpkin</div><div class="mv" style="color:#e74c3c">&#9889; 6</div><div class="mt"><span class="ms" style="background:#e74c3c22;color:#e74c3c;border:1px solid #e74c3c">Dropping</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#witch_hat" class="mc" data-v="5.5"><div class="mi"><img src="../images/rares/Witch_Hat.webp" alt="Witch Hat" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Witch Hat</div><div class="mv" style="color:#e74c3c">&#9889; 5.5</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#vampire_teeth" class="mc" data-v="5"><div class="mi"><img src="../images/rares/Vampire_Teeth.webp" alt="Vampire Teeth" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Vampire Teeth</div><div class="mv" style="color:#e74c3c">&#9889; 5</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#cauldron" class="mc" data-v="4.5"><div class="mi"><img src="../images/rares/Cauldron.webp" alt="Cauldron" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Cauldron</div><div class="mv" style="color:#e74c3c">&#9889; 4.5</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="rares.html#spider" class="mc" data-v="4"><div class="mi"><img src="../images/rares/Spider.webp" alt="Spider" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Spider</div><div class="mv" style="color:#e74c3c">&#9889; 4</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a></div>
+    </section>
+
+<!-- ========== COMMONS PREVIEW ========== -->
+    <section class="ps" id="commons">
+      <div class="psh">
+        <h2 style="color:#3498db">&#10024; Commons</h2>
+        <a href="commons.html" class="psl" style="border-color:#3498db;color:#3498db">View All 115 Items &rarr;</a>
+      </div>
+      <div class="psg"><a href="commons.html#confetti" class="mc" data-v="4"><div class="mi"><img src="../images/commons/Confetti.webp" alt="Confetti" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Confetti</div><div class="mv" style="color:#3498db">&#9889; 4</div><div class="mt"><span class="ms" style="background:#2ecc7122;color:#2ecc71;border:1px solid #2ecc71">Rising</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#noisemaker" class="mc" data-v="3.5"><div class="mi"><img src="../images/commons/Noisemaker.webp" alt="Noisemaker" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Noisemaker</div><div class="mv" style="color:#3498db">&#9889; 3.5</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#balloon" class="mc" data-v="3"><div class="mi"><img src="../images/commons/Balloon.webp" alt="Balloon" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Balloon</div><div class="mv" style="color:#3498db">&#9889; 3</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#bubble_blower" class="mc" data-v="2.8"><div class="mi"><img src="../images/commons/Bubble_Blower.webp" alt="Bubble Blower" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Bubble Blower</div><div class="mv" style="color:#3498db">&#9889; 2.8</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#party_hat" class="mc" data-v="2.5"><div class="mi"><img src="../images/commons/Party_Hat.webp" alt="Party Hat" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Party Hat</div><div class="mv" style="color:#3498db">&#9889; 2.5</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#sparkler" class="mc" data-v="2.2"><div class="mi"><img src="../images/commons/Sparkler.webp" alt="Sparkler" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Sparkler</div><div class="mv" style="color:#3498db">&#9889; 2.2</div><div class="mt"><span class="ms" style="background:#f39c1222;color:#f39c12;border:1px solid #f39c12">Fluctuating</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#streamer" class="mc" data-v="2"><div class="mi"><img src="../images/commons/Streamer.webp" alt="Streamer" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Streamer</div><div class="mv" style="color:#3498db">&#9889; 2</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#whistle" class="mc" data-v="1.8"><div class="mi"><img src="../images/commons/Whistle.webp" alt="Whistle" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Whistle</div><div class="mv" style="color:#3498db">&#9889; 1.8</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#cracker" class="mc" data-v="1.5"><div class="mi"><img src="../images/commons/Cracker.webp" alt="Cracker" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Cracker</div><div class="mv" style="color:#3498db">&#9889; 1.5</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#popper" class="mc" data-v="1.2"><div class="mi"><img src="../images/commons/Popper.webp" alt="Popper" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Popper</div><div class="mv" style="color:#3498db">&#9889; 1.2</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#ribbon" class="mc" data-v="1"><div class="mi"><img src="../images/commons/Ribbon.webp" alt="Ribbon" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Ribbon</div><div class="mv" style="color:#3498db">&#9889; 1</div><div class="mt"><span class="ms" style="background:#3498db22;color:#3498db;border:1px solid #3498db">Stable</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a>
+<a href="commons.html#taffy" class="mc" data-v="0.8"><div class="mi"><img src="../images/commons/Taffy.webp" alt="Taffy" loading="lazy" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23222%22 width=%22100%22 height=%22100%22/%3E%3Ctext fill=%22%23888%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EIMG%3C/text%3E%3C/svg%3E&quot;"></div><div class="mn">Taffy</div><div class="mv" style="color:#3498db">&#9889; 0.8</div><div class="mt"><span class="ms" style="background:#e74c3c22;color:#e74c3c;border:1px solid #e74c3c">Dropping</span></div><div class="md"><span class="mds" style="color:#f1c40f">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div></a></div>
+    </section>
+
+<!-- ========== COMMUNITY ========== -->
+<section class="community">
+  <h2>Join Our Community</h2>
+  <p>Connect with thousands of FTF traders. Get real-time value updates, trading tips, and market insights from experienced players.</p>
+  <a href="https://discord.gg/yourdiscord" class="db">&#128172; Join Discord</a>
+</section>
+
+<!-- ========== STAFF ========== -->
+<section class="staff">
+  <h2>Our Team</h2>
+  <div class="sg">
+    <div class="sc"><div class="av">A</div><h4>Admin</h4><div class="ro">Founder</div></div>
+    <div class="sc"><div class="av">V</div><h4>Value Expert</h4><div class="ro">Lead Calculator</div></div>
+    <div class="sc"><div class="av">M</div><h4>Moderator</h4><div class="ro">Community Manager</div></div>
+    <div class="sc"><div class="av">D</div><h4>Data Analyst</h4><div class="ro">Value Researcher</div></div>
+    <div class="sc"><div class="av">T</div><h4>Tester</h4><div class="ro">QA Engineer</div></div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <p>&copy; 2024 FTF Values. This is a fan-made value guide for Flee the Facility.</p>
+  <p class="footer-links">
+    <a href="index.html">Home</a> |
+    <a href="use-guide.html">Use Guide</a> |
+    <a href="changelog.html">Changelog</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="sets.html">Bundles</a> |
+    <a href="legendaries.html">Legendaries</a> |
+    <a href="epics.html">Epics</a> |
+    <a href="rares.html">Rares</a> |
+    <a href="commons.html">Commons</a>
+  </p>
+</footer>
+
+<!-- Dropdown & Mobile Menu JS -->
+<script>
+function toggleMoreMenu(){
+  document.getElementById('moreMenu').classList.toggle('show');
+}
+function toggleMobileMenu(){
+  document.getElementById('mainNav').classList.toggle('show');
+}
+/* Close more menu when clicking outside */
+document.addEventListener('click',function(e){
+  var mm=document.getElementById('moreMenu');
+  if(mm && !e.target.closest('.nav-more')) mm.classList.remove('show');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1182 @@
+# Changelog
+
+URL: https://ftf-values.base44.app/Changelog
+
+## 标题结构
+
+# Changelog
+## Version 3.6
+## Version 3.5
+## Version 3.4
+## Version 3.3
+## Version 3.2
+## Version 3.1
+## Version 3.0
+## Version 2.10
+## Version 2.9
+## Version 2.8
+## Version 2.7
+## Version 2.6
+## Version 2.5
+## Version 2.4.1
+## Version 2.4
+## Version 2.3
+## Version 2.2
+## Version 2.1
+## Version 2.0.3
+## Version 2.0.2
+## Version 2.0.1
+## Version 2.0
+## Version 1.10
+## Version 1.9
+## Version 1.8
+## Version 1.7.1
+## Version 1.7
+## Version 1.6
+## Version 1.5.1
+## Version 1.5
+## Version 1.4
+## Version 1.3
+## Version 1.2.1
+## Version 1.2
+## Version 1.1
+## Version 1.0.2
+## Version 1.0.1
+## Version 1.0
+### Stay Updated
+
+## 主要内容
+
+Changelog
+Track all updates, changes, and improvements to FTF item values
+Version 3.6
+June 15th, 2026
+Value Increase
+Gothic Bouquet increased to 210
+Value Increase
+Pegasus Blade increased to 115, Range [115-125]
+Value Increase
+Ice-Cream Mix increased to 120
+Value Increase
+Soulless Theater increased to 50
+Value Increase
+Ghost increased to 30
+Value Increase
+Antique Piano increased to 20, Range [20-25]
+Value Increase
+Flesh & Galaxy Clouds increased to 10
+Value Increase
+Unicorn Starlight, Ectoplasm, Ocean Water, Pixel Xmas, Coral Reefs, Midnight Sea, Underwater Ocean, & Clown increased to 5
+Value Decrease
+Sakura Parasol decreased to 70
+Value Decrease
+Strawberry Field decreased to 65
+Value Decrease
+Marine decreased to 50
+Value Decrease
+Lunar Scepter & Blade of Thorns decreased to 35
+Value Decrease
+Star Wrap Duo decreased to 18
+Value Decrease
+Sakura decreased to 9
+Value Decrease
+Lil' Devil, Peppermint, & Blizzard decreased to 8
+Value Decrease
+Woodland Staff, Honey Cheesecake, & Lily of the Valley decreased to 3
+Demand Change
+Batwing Basher increased to 3 stars
+Demand Change
+Pegasus Blade corrected to 3 stars
+Description Change
+Gothic Bouquet labeled to Overpaid For
+Description Change
+All Spring 2026 sets set to Stable
+Version 3.5
+June 11th, 2026
+New Items
+Sakura Parasol corrected to 75, Range [70-80], Demand 2 stars
+New Items
+Strawberry Garden corrected to 70, Range [65-75], Demand 2 stars
+New Items
+Lily Of The Valley corrected to 4, Range [3-5], Demand 1 star
+New Items
+Woodland Staff corrected to 4, Range [3-5], Demand 1 star
+New Items
+Honey Cheesecake corrected to 4, Range [3-5], Demand 1 star
+New Items
+Veridian Greenhouse corrected to 3 , Range [2-4], Demand 1 star
+New Items
+Sakura corrected to 2 stars
+Value Increase
+Gothic Bouquet increased to 200
+Value Increase
+Ice-Cream Mix increased to 115
+Value Increase
+Pegasus Blade increased to 110, Range [110-120]
+Value Increase
+Antique Piano increased to 18, Range [18-20]
+Value Increase
+Butterflies Duo & Bear Duo increased to 10
+Value Increase
+Forbidden Fortress & Princess Palace increased to 5
+Value Increase
+Unicorn Starlight increased to 4
+Value Increase
+Neapolitan, Popsicle, Watermelon, & Summer Plaid increased to 2
+Value Decrease
+Jade Viper, Luxury Projector, & Mothership decreased to 18
+Value Decrease
+Scarf decreased to 10
+Value Decrease
+Red Sweater & Candy Corn decreased to 8
+Value Decrease
+Mirror Duo decreased to 6
+Demand Change
+Neapolitan, Popsicle, & Watermelon increased to 0.5 stars
+Other
+Sakura Bundle labeled as Mid Tier
+Other
+Strawberry Fields labeled as Mid Tier
+Version 3.4
+June 7th, 2026
+New Items
+Sakura Parasol corrected to 90, Range [80-100] Demand 2.5 stars
+New Items
+Strawberry Garden corrected to 85, Range [75-95], Demand 2.5 stars
+New Items
+Lily Of The Valley corrected to 5 Range [4-6]
+New Items
+Woodland Staff corrected to 5 Range [4-6]
+New Items
+Honey Cheesecake corrected to 5 Range
+[4-6]
+New Items
+Sakura corrected to 10 Range [8-12]
+New Items
+Greenhouse corrected to 2, Range [1-3]
+Value Increase
+Party Balloons increased to 300
+Value Increase
+Gothic Bouquet increased to 190
+Value Increase
+Pegasus Blade increased to 100, Range [100-105]
+Value Increase
+Antique Piano increased to 15, Range [15-18]
+Value Increase
+Snowcone Duo increased to 8
+Value Increase
+Pie Trio, Mushroom Trio, Bunny Duo increased to 5
+Value Decrease
+Lucky Top Hat & Fish Tank decreased to 10
+Value Decrease
+Blue NC, Lil' Tree, Toy Elf, Snowman, Owl Tree, Chromatic Pheonix, 2020, 3rd Anniversary, Tomato Eater, Sweet Present, & BoF decreased to 8
+Value Decrease
+Winter Breeze & Cozy Cocoa decreased to 6
+Demand Change
+Antique Piano increased to 2 stars
+Description Change
+Spooky Brew & Pumpkin Slice set to Stable
+Description Change
+Pegasus Blade & Antique Piano set to Doing Well
+Version 3.3
+June 1st 2026
+New Items
+Sakura Parasol corrected to 115, Range [105-125], Demand 3 stars
+New Items
+Strawberry Garden corrected to 105, Range [95-115], Demand 3 stars
+New Items
+Lily Of The Valley corrected to 7, Range [5-9]
+New Items
+Woodland Staff corrected to 7, Range [5-9]
+New Items
+Honey Cheesecake corrected to 7, Range [5-9]
+New Items
+Sakura corrected to 20, Range [15-25]
+New Items
+Greenhouse corrected to 3, Range [2-4]
+Value Increase
+Pegasus Blade increased to 90
+Value Increase
+Moon Staff increased to 15
+Value Increase
+Antique Piano increased to 12
+Value Increase
+Honey Hive & Watering Can increased to 8
+Value Increase
+Paint Canvas, Theatrical Spotlight, Coastal Lighthouse, Beach Boat, & Tropical Drink increased to 5
+Value Decrease
+Spooky Brew decreased to 115
+Value Decrease
+Merry Music Box decreased to 60
+Value Decrease
+Roasted Turkey & Autumn Tent decreased to 20
+Value Decrease
+Dave Pumpkins & Black Light Madness decreased to 8
+Value Decrease
+Jingle Bells, Festive Pinecone, & Stacks of Presents decreased to 6
+Demand Change
+Pegasus Blade increased to 2.5 stars
+Other
+Pegasus Blade labeled as High Tier
+Version 3.2
+May 27th, 2026
+New Items
+Sakura Parasol corrected to 135, Range [125-145], Demand 3.5 stars
+New Items
+Strawberry Garden corrected to 115, Range [105-125]
+New Items
+Lily Of The Valley corrected to 9, Range [7-11]
+New Items
+Woodland Staff corrected to 9, Range [7-11]
+New Items
+Honey Cheesecake corrected to 9, Range [7-11]
+New Items
+Viridian Cactus corrected to 4, Range [2-6]
+New Items
+Sakura corrected to 30, Range [25-35]
+Value Increase
+Party Balloons increased to 290
+Value Increase
+Lovesick Bow increased to 270
+Value Increase
+Ice-Cream Mix increased to 110
+Value Increase
+Pot O’ Gold increased to 35
+Value Decrease
+Pumpkin Slice decreased to 125
+Value Decrease
+Spooky Brew decreased to 120
+Value Decrease
+Batwing Basher decreased to 90
+Value Decrease
+DarkBone & Classic decreased to 60
+Value Decrease
+Acidic Potions decreased to 35
+Value Decrease
+Red Panda decreased to 20
+Other
+Added new spring bundles in the bundles section
+Version 3.1
+May 22nd, 2026
+New Items
+Sakura Parasol value 150 (140-160), demand 4.5
+New Items
+Strawberry Garden value 125 (115-135), demand 3.5
+New Items
+Lily Of The Valley value 10 (8-12), demand 1.5
+New Items
+Woodland Staff value 10 (8-12), demand 1.5
+New Items
+Honey Cheesecake value 10 (8-12), demand 1.5
+New Items
+Viridian Cactus value 5 (3-7), demand 1
+New Items
+Sakura value 40, demand 2.5
+New Items
+Greenhouse value 5 (3-7), demand 1
+Value Increase
+Party Balloons increased to 285
+Value Increase
+Devilish Candle increased to 180
+Value Increase
+Cherry Blossom increased to 120
+Value Increase
+Pegasus Blade increased to 85
+Value Increase
+Hunters corrected to 30
+Value Decrease
+Spooky Brew decreased to 130
+Value Decrease
+Pumpkin Slice decreased to 130
+Value Decrease
+Devilborn decreased to 60
+Value Decrease
+Bloodthirst decreased to 45
+Value Decrease
+Paranormal decreased to 45
+Value Decrease
+Spring World decreased to 45
+Value Decrease
+Sand Castle decreased to 40
+Value Decrease
+Sweethearts Store decreased to 10
+Description Change
+Spooky Brew status set to Struggling
+Description Change
+Pumpkin Slice status set to Struggling
+Description Change
+All new sets Fluctuating
+Other
+<10 fv sets have been adjusted to balance low tiers
+Version 3.0
+May 16th, 2026
+Demand Change
+Gothic Bouquet decreased to 3 stars
+Demand Change
+Pegasus Blade decreased to 2 stars
+Demand Change
+Witch Hunter corrected to 1.5 stars
+Description Change
+Sandcastle Status set to None
+Other
+All sets 10-30 fv are now divided by 1.2 and sets above 35 fv are now divided by 1.5
+Version 2.10
+April 29th, 2026
+Value Decrease
+Spooky Brew decreased to 215
+Value Decrease
+Pumpkin Slice decreased to 210
+Value Decrease
+DarkBone Crusher & Classic decreased to 95
+Value Decrease
+Twisted Passion decreased to 90
+Value Decrease
+Yuletide Gift, Roasted Turkey, Autumn Tent, Dark Mansion, & Grandfather Clock decreased to 35
+Value Decrease
+Candelabra decreased to 30
+Demand Change
+Strawberry Jelly Basket corrected to 2 stars
+Demand Change
+Sweethearts Store corrected to 1.5 stars
+Demand Change
+Gamelan Panggul decreased to 1 star
+Version 2.9
+April 23rd, 2026
+Value Increase
+Antique Piano increased to 10
+Value Decrease
+Spooky Brew decreased to 225
+Value Decrease
+Pumpkin Slice decreased to 215
+Value Decrease
+Marine Anchor decreased to 80
+Value Decrease
+Strawberry Basket, Spring World, Bloodthirst Axe, & Paranormal Balloon decreased to 75
+Value Decrease
+Soulless Theater decreased to 70
+Value Decrease
+Lower Baskets & Sandcastle decreased to 65
+Demand Change
+Pumpkin Slice & Spooky Brew corrected to 2.5 stars
+Demand Change
+Psycho’s Chainsaw corrected to 2 stars
+Description Change
+Acidic Potions status set to None
+Description Change
+Sandcastle set to Underpaid For
+Other
+Psycho's Chainsaw corrected to 110
+Version 2.8
+April 12th, 2026
+Value Decrease
+Twisted Passion & Merry Music Box decreased to 95
+Value Decrease
+Dragon Puppet decreased to 80
+Value Decrease
+Soulless Theater decreased to 75
+Value Decrease
+Sandcastle, Egg Basket, Lovely Heart, & Lion Dance decreased to 70
+Value Decrease
+Acidic Potions decreased to 60
+Value Decrease
+Ragebringer & Grim Galleon decreased to 40
+Value Decrease
+Jade Viper & Luxury Projector decreased to 25
+Demand Change
+Plaid sets increased to 1.5 stars
+Demand Change
+Strawberry Basket decreased to 2.5 stars
+Demand Change
+Lower Baskets decreased to 2 stars
+Version 2.7
+April 5th, 2026
+Value Increase
+Ice-Cream Mix increased to 160
+Value Decrease
+DarkBone Crusher & Devilborn decreased to 100
+Value Decrease
+Dragon Puppet & Marine Anchor decreased to 85
+Value Decrease
+Bloodthirst Axe & Paranormal Balloon decreased to 80
+Value Decrease
+Lovely Heart & Lion Dance decreased to 75
+Value Decrease
+Bleeding Heart & Hollow Scythe decreased to 65
+Value Decrease
+Grandfather Clock & Dark Mansion decreased to 40
+Value Decrease
+Autumn Scarecrow, Caramel Roll, & Ube Roll decreased to 35
+Demand Change
+Gothic Bouquet corrected to 3.5 stars
+Demand Change
+Pegasus Blade corrected to 2.5 stars
+Demand Change
+Dragon Puppet & Red Panda corrected to 2 stars
+Demand Change
+Gamelan Panggul corrected to 1.5 stars
+Demand Change
+Gumball Machine increased to 2 stars
+Demand Change
+Scarf, Graveyard, & Scarlet Night decreased to 1 star
+Description Change
+Cherry Blossom corrected to Stable
+Description Change
+Dragon Puppet, Lovely Heart, Lion Dance, Gamelan Panggul, & Red Panda set to Stable
+Version 2.6
+April 1st, 2026
+New Items
+Yin-yang set to 2
+Value Increase
+Ice-cream Mix increased to 155
+Value Increase
+Antique Piano increased to 8
+Value Decrease
+Spooky Brew decreased to 230
+Value Decrease
+Slice decreased to 220
+Value Decrease
+Cherry Blossom decreased to 175, Range [170-180]
+Value Decrease
+Batwing decreased to 140
+Value Decrease
+Dragon Puppet decreased to 90
+Value Decrease
+Lovely Date and Lion Dance decreased to 80
+Value Decrease
+Gamelan Panggul decreased to 25
+Value Decrease
+Soulless Theater & Spring World decreased to 80
+Value Decrease
+Acidic Potions decreased to 65
+Value Decrease
+Choco Dip and Watergun decreased to 50
+Value Decrease
+Turkey and Autumn Tent decreased to 40
+Value Decrease
+Spooky Bats and Friendly Ghosts decreased to 25
+Demand Change
+Honey Hive and Watering Can increased to 1 Star
+Description Change
+Cherry Blossom set to Fluctuating
+Version 2.5
+March 30th, 2026
+New Items
+Dragon Puppet decreased to 95, set to Underpaid For
+New Items
+Lovely Date decreased to 85, set to Underpaid For
+New Items
+Lion Dance decreased to 85, set to Underpaid For
+New Items
+Gamelan Panggul decreased to 30, set to Underpaid For
+New Items
+Red Panda corrected to 30, Range [25-35]
+Value Increase
+Psycho’s Chainsaw increased to 120
+Value Decrease
+Spooky Brew decreased to 235
+Value Decrease
+Slice decreased to 225
+Value Decrease
+Soulless Theater & Spring World decreased to 85
+Value Decrease
+Sand Castle & Egg Basket decreased to 75
+Value Decrease
+Acidic Potions decreased to 70
+Value Decrease
+Lunar Scepter decreased to 60
+Value Decrease
+Glowy Bush decreased to 30
+Demand Change
+Lemonade Jar, Choco Dip, & Watergun corrected to 2 stars
+Demand Change
+Darkbone Crusher & Devilborn corrected to 2 stars
+Demand Change
+Fiery Phoenix corrected to 1.5 stars
+Demand Change
+Santa Boot & CCJ corrected to 1 star
+Demand Change
+Strawberry Basket increased to 3 stars
+Demand Change
+Lower Baskets increased to 2.5 stars
+Demand Change
+Antique Piano increased to 1 star
+Demand Change
+Ube & Caramel Roll decreased to 1.5 stars
+Demand Change
+Spooky Bats & Friendly Ghosts decreased to 1 star
+Description Change
+Lovesick Bow set to Stable
+Description Change
+Bear Present Duo, Cookies N' Milk, Gingercookies, & Santa's letter set to Stable
+Description Change
+Acidic Potions set to Underpaid For
+Version 2.4.1
+March 28th, 2026
+Bug Fix
+Fixed Bug where images does not show in the value list
+Other
+Adjusted UI for better experience
+Version 2.4
+March 28th, 2026
+New Items
+Dragon Puppet Range corrected 100 to [95-105]
+New Items
+Lovely Date corrected to 95, Range [90-100]
+New Items
+Lion Dance corrected to 95, Range [90-100]
+New Items
+Gamelan Panggul decreased to 35, Range [30-40]
+Value Increase
+Gothic Bouquet increased to 270
+Value Increase
+Pegasus Blade increased to 120
+Value Increase
+Chainsaw increased to 115
+Value Increase
+Energetic Poison and Storm Surge increased to 20
+Value Decrease
+Classic decreased to 100
+Value Decrease
+Merry Music Box decreased to 100
+Value Decrease
+Devilborn decreased to 105
+Value Decrease
+DarkBone decreased to 105
+Value Decrease
+Bloodthirst and Paranormal decreased to 85
+Value Decrease
+Acidic Potions decreased to 75
+Value Decrease
+Mothership, Coffin and Tombstone decreased to 25
+Value Decrease
+Graveyard, Scarlet Night and Scarf decreased to 15
+Description Change
+Lovesick Range [390-420]
+Version 2.3
+March 25th, 2026
+New Items
+Dragon Puppet decreased to 105, demand 2.5 stars, Range [95-115]
+New Items
+Lovely Date decreased to 100, demand 2 stars, Range [90-110]
+New Items
+Lion Dance decreased to 100, demand 2 stars, Range [90-110]
+New Items
+Gamelan Panggul decreased to 40, Range [35-45]
+New Items
+Red Panda corrected to 35, 2.5 stars, Range [30-40]
+New Items
+Year of the Horse, Jade Statue, & Lonely Date corrected to 0.5 stars
+Value Increase
+Pegasus Blade increased to 115
+Value Increase
+Moon Staff increased to 15
+Value Decrease
+Autumn Tent & Roasted Turkey decreased to 45
+Value Decrease
+Phantom Light & Fiery Phoenix decreased to 35
+Value Decrease
+Midnight Light decreased to 30
+Value Decrease
+Broom Trio decreased to 10
+Demand Change
+Gothic Bouquet increased to 4 stars
+Demand Change
+Classic corrected to 2 stars
+Description Change
+Sweethearts Store set to Stable
+Other
+Cash corrected to 1
+Version 2.2
+March 22nd, 2026
+New Items
+Dragon Puppet corrected to 115, Range [110-120]
+New Items
+Lovely Date corrected to 110, Range [105-115]
+New Items
+Lion Dance corrected to 110, Range [105-115]
+New Items
+Lonely Date, Jade Statue and Year of the Horse corrected to 3, Fluctuating -> Stable
+New Items
+Gamelan Panggul decreased to 45, Range [35-50]
+New Items
+Bamboo corrected to 2, Fluctuating -> Stable
+Value Increase
+Chainsaw Increased to 110
+Value Increase
+Vanillaberry and Lemonade Jar Increased to 45
+Value Increase
+Flourshed Fountain Increased to 8
+Value Decrease
+Bloodthirst and Paranormal decreased to 90
+Value Decrease
+Batwing decreased to 145
+Value Decrease
+Jello, Cranberry and Reindeer decreased to 35
+Demand Change
+Pegasus increased to 3 Stars
+Demand Change
+Lovely and Lion Dance decreased to 2.5 Stars
+Demand Change
+Hollow decreased to 2 Stars
+Demand Change
+Gamelan decreased to 2 Stars
+Description Change
+Lovesick corrected to 400, Stable -> Fluctuating Range [390-410]
+Version 2.1
+March 20th, 2026
+New Items
+Dragon Puppet corrected to 120, Range [110-130]
+New Items
+Lovely Date corrected to 120, Range [110-130]
+New Items
+Lion Dance corrected to 120, Range [110-130]
+New Items
+Lonely Date, Jade Statue, and Year of the Horse corrected to 4, Range [3-5]
+New Items
+Gamelan Panggul corrected to 50, Range [40-60]
+New Items
+Red Panda corrected to 40, Range [35-45]
+New Items
+Bamboo corrected to 3 Range [2-4]
+Value Increase
+Sweethearts Store increased to 20
+Value Increase
+Gothic increased to 260
+Value Increase
+Lemon Basket and Blueberry Basket Increased to 70
+Value Increase
+Pegasus Increased to 110
+Value Decrease
+Devilish Candle decreased to 260
+Value Decrease
+Spooky decreased to 240
+Value Decrease
+CCJ and Santa Boot decreased to 15
+Value Decrease
+Easter Basket decreased to 80
+Value Decrease
+Glowy Bush decreased to 40
+Value Decrease
+Classic decreased to 105
+Value Decrease
+Darkbone decreased to 110
+Demand Change
+All New Robux Legendary Sets decreased to 3 Stars
+Demand Change
+All new credits legendary sets decreased to 1.5 stars
+Description Change
+Sweethearts set to Overpaid for
+Description Change
+Sweetheart Store Demand Increased to 2 Stars
+Version 2.0.3
+March 18th, 2026
+New Items
+Dragon Puppet Corrected to 140 Range [120-160]
+New Items
+Lovely Date Corrected to 140 Range [120-160]
+New Items
+Lion Dance Corrected to 140 Range [120-160]
+New Items
+Lonely Date, Jade Statue and Year of the Horse corrected to 6 Range [5-8]
+New Items
+Gamelan Panggul Corrected to 55 Range [45-60]
+New Items
+Bamboo Correct to 5 Range [4-8]
+Value Increase
+Sweethearts Increased to 15 Range [15-20]
+Version 2.0.2
+March 16th, 2026
+New Items
+Dragon Puppet Corrected to 170 Range [150-200]
+New Items
+Lovely Date Corrected to 170 Range [150-200]
+New Items
+Lion Dance Corrected to 170 Range [150-200]
+New Items
+Lonely Date, Jade Statue and Year of the Horse corrected to 8 Range [5-10]
+New Items
+Gamelan Panggul Corrected to 60 Range [50-70]
+New Items
+Bamboo Correct to 5 Range [4-8]
+New Items
+Red Panda Corrected to 45 Range [40-50]
+Value Increase
+Sweethearts Increased to 12
+Description Change
+Sweethearts Store: Stable -> Improving Range [12-15]
+Version 2.0.1
+March 16th, 2026
+New Items
+Dragon, Lion, and Lovely set at 200
+New Items
+Lonely, Jade Statue, and Year of the Horse set at 10
+New Items
+Gamelan Panggul set at 70
+New Items
+Bamboo set at 6
+New Items
+Red Panda set at 50
+Value Increase
+Sweethearts increased to 10
+Demand Change
+Dragon, Lion, and Lovely demand set at 3.5 stars
+Demand Change
+Lonely, Jade Statue, and Year of the Horse demand set at 2.5 stars
+Demand Change
+Gamelan Panggul demand set at 3 stars
+Demand Change
+Bamboo demand set at 1.5 stars
+Demand Change
+Red Panda demand set at 3 stars
+Description Change
+Dragon, Lion, and Lovely set to Fluctuating, Range [250-150]
+Description Change
+Lonely, Jade Statue, and Year of the Horse set to Fluctuating, Range [15-5]
+Description Change
+Sweethearts set to Overpaid For
+Description Change
+Gamelan Panggul set to Fluctuating, Range [80-60]
+Description Change
+Bamboo set to Fluctuating, Range [8-4]
+Description Change
+Red Panda set to Fluctuating, Range [60-40]
+Version 2.0
+March 16th, 2026
+New Items
+New Lunar Items Added, no value yet
+Description Change
+Doing Well Over Improving
+Other
+Added, Corrected Value (*), added N/A option
+Other
+Changed Icon for Spring Season
+Version 1.10
+March 12th, 2026
+Value Decrease
+Classic decreased to 110
+Value Decrease
+Bloodthirst Axe + Paranormal Balloon decreased to 95
+Value Decrease
+Autumn Tent and Turkey decreased to 50
+Value Decrease
+Glowy Bush decreased to 45
+Demand Change
+Cherry Blossom corrected to 3 Stars
+Demand Change
+Bloodthirst Axe decreased to 2 Stars
+Demand Change
+Paranormal Balloon decreased to 2 Stars
+Demand Change
+Ube Roll decreased to 2 Stars
+Description Change
+Caramel Roll decreased to 2 Stars
+Description Change
+Psycho Axe decreased to 2 Stars
+Version 1.9
+March 2nd, 2026
+Value Decrease
+Spooky Brew decreased to 250
+Value Decrease
+Pumpkin Slice decreased to 230
+Value Decrease
+Egg Basket decreased to 85
+Value Decrease
+Sand Castle decreased to 85
+Value Decrease
+Autumn Tent & Roasted Turkey decreased to 55
+Value Decrease
+Bleak Ink decreased to 100
+Demand Change
+Sweethearts Store & Flourished Fountain increased to 1 Star
+Description Change
+Spooky Brew Dropping -> Stable
+Description Change
+Pumpkin Slice Receding  -> Stable
+Description Change
+Bleak Ink Underpaid For -> Stable
+Version 1.8
+Febuary 24th, 2026
+Value Decrease
+Spooky Brew decreased to 280 (240-280)
+Value Decrease
+Pumpkin Slice decreased to 240 (210-240)
+Value Decrease
+Merry Music Box decreased to 105
+Value Decrease
+Bleak Ink decreased to 110
+Demand Change
+Lovesick Bow corrected to 3.5 Stars
+Demand Change
+Devilish Candle corrected to 3 Stars
+Demand Change
+Batwing Basher decreased to 2.5 Stars
+Demand Change
+Paranormal Balloon & Bloodthirst decreased to 2.5 Stars
+Description Change
+Spooky Brew stability corrected to Dropping
+Version 1.7.1
+February 22nd, 2026
+Other
+Added 3 new bundles in the bundles section that include the anniversaries, new year's, and plaid sets.
+Version 1.7
+Febuary 22nd, 2026
+Value Decrease
+Spooky Brew decreased to 325 (range 300-325)
+Value Decrease
+Pumpkin Slice decreased to 270 (range 240-270)
+Value Decrease
+Santa's Reindeer, Cranberry & Jello decreased to 40
+Value Decrease
+Bleak Ink decreased to 120
+Value Decrease
+Ghost decreased to 30
+Demand Change
+Sand Castle 2.5 Stars -> 2 Stars
+Demand Change
+Mystical Trident 1.5 Stars -> 2 Stars
+Demand Change
+Ireland Flag corrected to 1 Star
+Demand Change
+Bleak Ink 3 Stars -> 2.5 Stars
+Demand Change
+Glowy Bush 2.5 Stars -> 2 Stars
+Demand Change
+Ghost 2.5 Stars -> 2 Stars
+Description Change
+Halloween 2025 Legendary credit sets corrected to 3
+Description Change
+Autumn 2025 Legendary credit sets corrected to 3
+Description Change
+Christmas 2025 Legendary credit sets corrected to 3
+Description Change
+Spooky Brew Stable -> Receding
+Description Change
+Bleak Ink Stable -> Underpaid For
+Version 1.6
+Febuary 19th, 2026
+Value Increase
+Cherry Blossom 175 -> 180
+Value Decrease
+Spooky Brew 360 -> 350
+Value Decrease
+Pumpkin Slice 320 -> 300 (range 270-300)
+Value Decrease
+Devilborn 115 -> 110
+Value Decrease
+Yuletide 45 -> 40
+Value Decrease
+Red Man's Vengeance & Backrooms 5 -> 3
+Value Decrease
+Job Application 3 -> 2
+Value Decrease
+Bleak 140 -> 130
+Value Decrease
+Ghost 40 -> 35
+Value Decrease
+Yuletide Underpaid For ->Stable
+Demand Change
+Party Balloons 3.5 Stars -> 4 Stars
+Description Change
+Red Man's Vengeance, Backrooms & Job Application Fluctuating -> Stable
+Description Change
+Slice Struggling -> Receding
+Version 1.5.1
+Febuary 15th, 2026
+Bug Fix
+Fixed event icons for filters
+Other
+New Lunar New Year Icon
+Version 1.5
+February 14th, 2026
+Value Increase
+Lovesick Bow 390 -> 400
+Value Decrease
+Party Balloons 445 -> 420
+Value Decrease
+Pumpkin Slice 325 -> 320 (310-320)
+Value Decrease
+Devilborn 120 -> 115
+Value Decrease
+Strawberry Basket 85 -> 80
+Value Decrease
+Acidic Potions 80 -> 75
+Value Decrease
+Lemon & Blueberry Baskets 70 -> 65
+Value Decrease
+Yuletide 50 -> 45
+Value Decrease
+Red Man's Vengeance & Backrooms 10 -> 5 (range 3-8)
+Value Decrease
+J*b Application 5 -> 3 (range 2-5)
+Demand Change
+Lovesick Bow 4.5 Stars -> 4 Stars
+Demand Change
+Spooky Brew 3.5 Stars -> 3 Stars
+Demand Change
+Basket Trio 3 Stars -> 2.5 Stars
+Demand Change
+Bone Crusher Duo 3 Stars -> 2.5 Stars
+Demand Change
+Red Man's Vengeance, Backrooms & Job Application 1 Star -> 0.5 Star
+Version 1.4
+February 9th, 2026
+Value Increase
+Lovesick 375 -> 390
+Value Increase
+Cherry Blossom 170 -> 175
+Value Increase
+Hollow 65 -> 70
+Value Decrease
+Party 475 -> 445 (Range 420-445)
+Value Decrease
+Slice 330 -> 325
+Value Decrease
+Devilborn 125 -> 120
+Value Decrease
+Strawberry 90 -> 85
+Value Decrease
+Acidic 85 -> 80
+Value Decrease
+Lemon and Blueberry 75 -> 70
+Value Decrease
+Piñata 55 -> 50
+Value Decrease
+Yuletide 55 -> 50
+Value Decrease
+Drums 15 -> 12
+Demand Change
+Psycho Chainsaw and Pegasus Blade 3 -> 2.5 Stars
+Demand Change
+Watergun and Choco Dip 3 -> 2.5 Stars
+Demand Change
+Red Man, Backrooms 1.5 -> 1 Star
+Description Change
+Lovesick Doing well -> Overpaid for, No range
+Description Change
+Slice Stable -> Underpaid For
+Description Change
+Drums Struggling -> Stable
+Bug Fix
+FTF event icons not showing is now fixed
+Version 1.3
+February 5th, 2026
+New Items
+Backrooms & Red man's vengeance 20 (range 10-30), fluctuating
+New Items
+J*b Application 10 (range 5-15), fluctuating
+Value Increase
+Lovesick 360 -> 375 (range 375-390)
+Value Decrease
+Party 500 -> 475 (range 450-475)
+Value Decrease
+Pumpkin Slice 340 -> 330
+Value Decrease
+Devilborn 130 -> 125
+Value Decrease
+Merry 115 -> 110
+Value Decrease
+Acidic 90 -> 85
+Value Decrease
+Strawberry 100 -> 90
+Value Decrease
+Lemon & Blueberry Baskets 80 -> 75
+Value Decrease
+Yuletide 65 -> 55
+Value Decrease
+Pot O Gold, Ragebringer & Grim Galleon 50 -> 45
+Value Decrease
+Scarecrow 45 -> 40
+Value Decrease
+Candelabra & Jollyday 40 -> 35
+Value Decrease
+Eggnog Maker, Gingerhouse, Stack of Presents & Ice Sleigh 10 -> 8
+Value Decrease
+Trains 10 -> 8
+Version 1.2.1
+February 2nd, 2026
+New Items
+Added Total Values for all rarities!
+New Items
+Added a Valentine Icon for the website, changes on February 16th
+Version 1.2
+February 1st, 2026
+Value Increase
+Lovesick 350 -> 360 (range 360-370)
+Value Increase
+Hollow 60 -> 65
+Value Decrease
+Party Balloons 520 -> 500 (range 480-500)
+Value Decrease
+Devilborn 140 -> 130
+Value Decrease
+Merry 120 > 115
+Value Decrease
+Acidic 95 -> 90
+Value Decrease
+Lemon & Blueberry Baskets 85 > 80
+Value Decrease
+Yuletide 65 -> 60, Underpaid For
+Value Decrease
+Pot O Gold 55 -> 50
+Value Decrease
+Phantom 45 -> 40
+Value Decrease
+Midnight 40 -> 35
+Value Decrease
+Drums 20 -> 15 (range 10-15)
+Value Decrease
+Holiday Hotline, Golden Firework & Aurora Abolisher 15 -> 12
+Value Decrease
+Unchained Beast 10 -> 8
+Value Decrease
+2026 5 -> 3
+Value Decrease
+Lemonade Jar 50 -> 40
+Demand Change
+Pumpkin Slice 3.5 Stars -> 3 Stars
+Demand Change
+Merry 2.5 Stars -> 2 Stars
+Demand Change
+Twisted 2.5 Stars -> 2 Stars
+Demand Change
+Autumn Tent & Turkey 2.5 Stars -> 2 Stars
+Demand Change
+Drums 1.5 Stars -> 1 Star
+Demand Change
+Holiday Hotline, Golden Firework, Aurora Abolisher & Magical Portal 1.5 Stars -> 1 Star
+Demand Change
+Toy Box & Santa's Sleigh 1.5 Star-> 1 Star
+Demand Change
+Doomthrust & Frost Engine 1.5 Stars -> 1 Star
+Demand Change
+Cherry Blossom 3 Stars -> 3.5 Stars
+Description Change
+Lovesick Overpaid For -> Doing Well
+Description Change
+Yuletide Underpaid For
+Description Change
+Magical Portal Struggling -> Stable
+Description Change
+Holiday Hotline, Golden Firework & Aurora Abolisher Struggling -> Stable
+Description Change
+Lemonade Jar Struggling -> Stable
+Version 1.1
+January 29th, 2026
+Value Increase
+Lovesick 340 -> 350, Stable -> Overpaid For
+Value Increase
+Gothic 240 -> 250
+Value Increase
+Paranormal and Bloodthirst 95 -> 100
+Value Increase
+Hollow 55 -> 60
+Value Increase
+Gumball 25 > 30
+Value Decrease
+Party 530 -> 520, Stable -> Struggling, Demand 4 -> 3.5
+Value Decrease
+Soulless and Spring World 95 -> 90
+Value Decrease
+Lemon and Blueberry 90 -> 85
+Value Decrease
+Rage and Grim 55 -> 50
+Value Decrease
+Fiery 45 -> 40
+Value Decrease
+Yuletide 70 -> 65
+Value Decrease
+Drums 25 > 20 (Range 15-20)
+Value Decrease
+Hotline, G. Firework, Abolisher, Magical Portal 20 > 15 [10-15]
+Value Decrease
+Toy Box & Santa's Sleigh 15 > 12, stable
+Value Decrease
+Doomthrust & Frost Engine 15 > 10, stable
+Value Decrease
+Lemonade 60 > 50 range 50-40
+Value Decrease
+Tomato Eater 15 > 10 stable
+Version 1.0.2
+January 27th, 2026
+Description Change
+Fixed Frost Engine and Doomthrust Value Range
+Description Change
+Changed Many sets to the correct seasonal filter
+Description Change
+Changed Demand for Mutiple Sets to reflect actual values
+Version 1.0.1
+January 26th, 2026
+New Items
+2026 Moved to the New Items Section
+Bug Fix
+Multiple Bug Fixes to enhance the web page
+Version 1.0
+January 25th, 2026
+Value Increase
+Turkey and Autumn Tent Value 55 -> 60
+Value Increase
+Santa Boot and CCJ 12 -> 20
+Value Increase
+Lovesick 320 -> 340
+Value Increase
+Chainsaw 100 -> 105
+Value Increase
+Hollow Scythe 50 -> 55
+Value Decrease
+Party 550 -> 530
+Value Decrease
+Drums 28 -> 25, Stable -> Struggling
+Value Decrease
+Hotline, G. Firework, Abolisher and Magical Portal 24 -> 20
+Value Decrease
+Doom, Frost, Toy Box and Santa Sleigh Value 22 -> 15
+Value Decrease
+Lemonade Jar 80 -> 60
+Value Decrease
+Tomato Eater 20 -> 15
+Value Decrease
+Yuletide 75 -> 70
+Value Decrease
+Candelabra and Jollyday 45 -> 40
+Value Decrease
+Spring World, Acidic and Soulless 100 -> 95
+Value Decrease
+Phantom Light 50 -> 45
+Demand Change
+Demand for Lemon and Blueberry 2.5 Stars -> 2 Stars
+Demand Change
+Gothic 3 Star -> 3.5 Stars
+Description Change
+Witch Hunter Value corrected to 30, Demand at 2
+Description Change
+Second Anniversary corrected to 12
+Description Change
+Vanillaberry Corrected to 40
+Description Change
+Spooky Bats and Friendly Ghosts corrected to 30
+Description Change
+Gumball Machine corrected to 25
+Description Change
+Blue Star Wrap and Pink Star Wrap corrected to 25
+Description Change
+Bleak Ink Overpaid For -> Stable
+Description Change
+Luxury and Viper corrected to 30
+Stay Updated
+Values are updated regularly based on community trading patterns and market trends. Check back often to stay informed about the latest changes.
+
+## 链接
+
+- [FTF Values](/Home)
+- [Home](/Home)
+- [Use Guide](/UseGuide)
+- [Changelog](/Changelog)
+- [FAQ](/FAQ)
+- [Bundles](/Sets)
+- [Legendaries](/Legendaries)
+- [Epics](/Epics)
+- [Rares](/Rares)
+- [Commons](/Commons)
+
+## 图片
+

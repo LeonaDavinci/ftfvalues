@@ -1,0 +1,49 @@
+# Frequently Asked Questions
+
+URL: https://ftf-values.base44.app/FAQ
+
+## 标题结构
+
+# Frequently Asked Questions
+### What is FTF Values?
+### How often are values updated?
+### What do the stability tags mean?
+### How are values determined?
+### What does 'Niche' status mean?
+### Should I always trust the values exactly?
+### How can I join the FTF community?
+### What's the difference between 'Overpaid For' and 'Underpaid For'?
+## Still have questions?
+
+## 主要内容
+
+Frequently Asked Questions
+Common questions about FTF Values and trading
+What is FTF Values?
+How often are values updated?
+What do the stability tags mean?
+How are values determined?
+What does 'Niche' status mean?
+Should I always trust the values exactly?
+How can I join the FTF community?
+What's the difference between 'Overpaid For' and 'Underpaid For'?
+Still have questions?
+Join our Discord communities for help from experienced traders and staff members.
+AW Apps Discord
+
+## 链接
+
+- [FTF Values](/Home)
+- [Home](/Home)
+- [Use Guide](/UseGuide)
+- [Changelog](/Changelog)
+- [FAQ](/FAQ)
+- [Bundles](/Sets)
+- [Legendaries](/Legendaries)
+- [Epics](/Epics)
+- [Rares](/Rares)
+- [Commons](/Commons)
+- [AW Apps Discord](https://discord.gg/awapps)
+
+## 图片
+

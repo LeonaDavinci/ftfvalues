@@ -1,0 +1,843 @@
+[
+  {
+    "page_name": "home",
+    "path": "/",
+    "url": "https://ftf-values.base44.app/",
+    "title": "Welcome to FTF Values",
+    "headers": [
+      {
+        "level": 1,
+        "text": "Welcome toFTF Values"
+      },
+      {
+        "level": 2,
+        "text": "Join the Official FTF Community!"
+      },
+      {
+        "level": 2,
+        "text": "Quick Access"
+      },
+      {
+        "level": 3,
+        "text": "Bundles"
+      },
+      {
+        "level": 3,
+        "text": "Zarys Calculator"
+      },
+      {
+        "level": 3,
+        "text": "Legendaries"
+      },
+      {
+        "level": 3,
+        "text": "Epics"
+      },
+      {
+        "level": 3,
+        "text": "Rares"
+      },
+      {
+        "level": 3,
+        "text": "Commons"
+      },
+      {
+        "level": 2,
+        "text": "Staff Team"
+      },
+      {
+        "level": 3,
+        "text": "Rox"
+      },
+      {
+        "level": 3,
+        "text": "Kory"
+      },
+      {
+        "level": 3,
+        "text": "Shoya"
+      },
+      {
+        "level": 3,
+        "text": "Lzyh"
+      },
+      {
+        "level": 3,
+        "text": "dsdfdsdsdeg"
+      },
+      {
+        "level": 3,
+        "text": "Zarys"
+      },
+      {
+        "level": 3,
+        "text": "Sul"
+      },
+      {
+        "level": 3,
+        "text": "Selkis"
+      },
+      {
+        "level": 3,
+        "text": "Alex"
+      }
+    ],
+    "main_text": "Welcome to\nFTF Values\nYour trusted source for Flee the Facility item values and trading information\nJoin the Official FTF Community!\nFTF Values\nJoin our community\nOfficial FTF Server\nJoin our community\nQuick Access\nBundles\nZarys Calculator\nLegendaries\nEpics\nRares\nCommons\nStaff Team\nRox\nValue List Holder / Manager\nKory\nWebsite Manager / Value List Staff\nShoya\nValue List Staff\nLzyh\nValue List Staff\ndsdfdsdsdeg\nValue List Staff\nZarys\nValue List Staff\nSul\nValue List Staff\nSelkis\nValue List Staff\nAlex\nValue List Staff",
+    "links": [
+      {
+        "text": "FTF Values",
+        "url": "/Home"
+      },
+      {
+        "text": "Home",
+        "url": "/Home"
+      },
+      {
+        "text": "Use Guide",
+        "url": "/UseGuide"
+      },
+      {
+        "text": "Changelog",
+        "url": "/Changelog"
+      },
+      {
+        "text": "FAQ",
+        "url": "/FAQ"
+      },
+      {
+        "text": "Bundles",
+        "url": "/Sets"
+      },
+      {
+        "text": "Legendaries",
+        "url": "/Legendaries"
+      },
+      {
+        "text": "Epics",
+        "url": "/Epics"
+      },
+      {
+        "text": "Rares",
+        "url": "/Rares"
+      },
+      {
+        "text": "Commons",
+        "url": "/Commons"
+      },
+      {
+        "text": "FTF ValuesJoin our community",
+        "url": "https://discord.gg/YYUwQfGcXt"
+      },
+      {
+        "text": "Official FTF ServerJoin our community",
+        "url": "https://discord.com/invite/awapps"
+      },
+      {
+        "text": "Bundles",
+        "url": "/Sets"
+      },
+      {
+        "text": "Zarys Calculator",
+        "url": "https://zarys-exists.github.io/FTF-Trade-Calculator/"
+      },
+      {
+        "text": "Legendaries",
+        "url": "/Legendaries"
+      },
+      {
+        "text": "Epics",
+        "url": "/Epics"
+      },
+      {
+        "text": "Rares",
+        "url": "/Rares"
+      },
+      {
+        "text": "Commons",
+        "url": "/Commons"
+      }
+    ],
+    "images": [
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-4826CF1D03678970BB51F2B53264BA86-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Rox"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-30793698075308AE16382985A67CE78B-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Kory"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-AB15F5F7506C362FFC4AC4999DF394EC-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Shoya"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A5530509DF32FED551BF90DDDA97B085-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Lzyh"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A3458B8090AC4220C09B25DF74F620D7-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "dsdfdsdsdeg"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9E239D75ACA0BF337AD8E85ECB4AA777-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Zarys"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9EC6319FD5F29FFC8E3C1778894DE481-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Sul"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-BA38FCA069EC5AE743F65102807E5B1B-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Selkis "
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-1324477205F91F28B3CA5CA235C4169B-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Alex"
+      }
+    ],
+    "raw_html_sample": "<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png\" rel=\"icon\" type=\"image/svg+xml\">\n  <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\n  <link href=\"/manifest.json\" rel=\"manifest\">\n  <title>\n   FTF Values\n  </title>\n  <script crossorigin=\"\" src=\"/assets/index-AqhH_te0.js\" type=\"module\">\n  </script>\n  <link crossorigin=\"\" href=\"/assets/index-CJ8ftExj.css\" rel=\"stylesheet\">\n  <meta content=\"FTF Values is the most accurate and up-to-date source for trading values in Flee the Facility. \nWe provide detailed value lists for every rarity tier, along with tools to help you make smart trading decisions.\" name=\"description\">\n  <meta content=\"FTF Values\" property=\"og:title\">\n  <meta content=\"FTF Values is the most accurate and up-to-date source for trading values in Flee the Facility. \nWe provide detailed value lists for every rarity tier, along with tools to help you make smart trading decisions.\" property=\"og:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" property=\"og:image\">\n  <meta content=\"https://ftf-values.base44.app\" property=\"og:url\">\n  <meta content=\"website\" property=\"og:type\">\n  <meta content=\"FTF Values\" property=\"og:site_name\">\n  <meta content=\"FTF Values\" name=\"twitter:title\">\n  <meta content=\"FTF Values is the most accurate and up-to-date source for trading values in Flee the Facility. \nWe provide detailed value lists for every rarity tier, along with tools to help you make smart trading decisions.\" name=\"twitter:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" name=\"twitter:image\">\n  <meta content=\"summary_large_image\" name=\"twitter:card\">\n  <meta content=\"https://ftf-values.base44.app\" name=\"twitter:url\">\n  <meta content=\"yes\" name=\"mobile-web-app-capable\">\n  <meta content=\"black\" name=\"apple-mobile-web-app-status-bar-style\">\n  <meta content=\"FTF Values\" name=\"apple-mobile-web-app-title\">\n  <link href=\"https://ftf-values.base44.app\" rel=\"canonical\">\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"@context\": \"https://schema.org\", \"@type\": \"WebSite\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"logo\": \"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/b21895d87_77052316847013.png\", \"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n </head>\n <body>\n  <div id=\"root\"><div class=\"min-h-screen bg-black\"><header class=\"sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-slate-800\"><div class=\"border-b border-slate-800 py-4\"><div class=\"max-w-7xl mx-auto px-4 text-center\"><a class=\"inline-block\" href=\"/Home\"><span class=\"text-5xl md:text-7xl font-bold flex items-center justify-center gap-3\"><span class=\"bg-clip-text text-transparent\" style=\"background-image: linear-gradient(to right, rgb(66, 64, 179), rgb(166, 152, 245));\">FTF Values</span><img src=\"https://media.discordapp.net/attachments/1451770015899586570/1515960343992733816/image.png?ex=6a30e797&amp;is=6a2f9617&amp;hm=dbbf002182a45cc1a1276693018110afbd6ea5f5baa799bee4bacdfdac2a5614&amp;=&amp;format=webp&amp;quality=lossless&amp;width=1020&amp;height=1020\" alt=\"FTF icon\" class=\"w-14 h-14 md:w-20 md:h-20 inline-block\"></span></a></div></div><div class=\"max-w-7xl mx-auto px-4\"><div class=\"hidden md:block py-3\"><nav class=\"flex items-center justify-center gap-1 pb-3\"><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors \" href=\"/Home\" style=\"color: rgb(66, 64, 179);\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-house w-4 h-4\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"></path><path d=\"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path></svg>Home</a><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/UseGuide\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-book-open w-4 h-4\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>Use Guide</a><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/Changelog\"><svg xmlns=\"ht"
+  },
+  {
+    "page_name": "home",
+    "path": "/Home",
+    "url": "https://ftf-values.base44.app/Home",
+    "title": "Welcome to FTF Values",
+    "headers": [
+      {
+        "level": 1,
+        "text": "Welcome toFTF Values"
+      },
+      {
+        "level": 2,
+        "text": "Join the Official FTF Community!"
+      },
+      {
+        "level": 2,
+        "text": "Quick Access"
+      },
+      {
+        "level": 3,
+        "text": "Bundles"
+      },
+      {
+        "level": 3,
+        "text": "Zarys Calculator"
+      },
+      {
+        "level": 3,
+        "text": "Legendaries"
+      },
+      {
+        "level": 3,
+        "text": "Epics"
+      },
+      {
+        "level": 3,
+        "text": "Rares"
+      },
+      {
+        "level": 3,
+        "text": "Commons"
+      },
+      {
+        "level": 2,
+        "text": "Staff Team"
+      },
+      {
+        "level": 3,
+        "text": "Rox"
+      },
+      {
+        "level": 3,
+        "text": "Kory"
+      },
+      {
+        "level": 3,
+        "text": "Shoya"
+      },
+      {
+        "level": 3,
+        "text": "Lzyh"
+      },
+      {
+        "level": 3,
+        "text": "dsdfdsdsdeg"
+      },
+      {
+        "level": 3,
+        "text": "Zarys"
+      },
+      {
+        "level": 3,
+        "text": "Sul"
+      },
+      {
+        "level": 3,
+        "text": "Selkis"
+      },
+      {
+        "level": 3,
+        "text": "Alex"
+      }
+    ],
+    "main_text": "Welcome to\nFTF Values\nYour trusted source for Flee the Facility item values and trading information\nJoin the Official FTF Community!\nFTF Values\nJoin our community\nOfficial FTF Server\nJoin our community\nQuick Access\nBundles\nZarys Calculator\nLegendaries\nEpics\nRares\nCommons\nStaff Team\nRox\nValue List Holder / Manager\nKory\nWebsite Manager / Value List Staff\nShoya\nValue List Staff\nLzyh\nValue List Staff\ndsdfdsdsdeg\nValue List Staff\nZarys\nValue List Staff\nSul\nValue List Staff\nSelkis\nValue List Staff\nAlex\nValue List Staff",
+    "links": [
+      {
+        "text": "FTF Values",
+        "url": "/Home"
+      },
+      {
+        "text": "Home",
+        "url": "/Home"
+      },
+      {
+        "text": "Use Guide",
+        "url": "/UseGuide"
+      },
+      {
+        "text": "Changelog",
+        "url": "/Changelog"
+      },
+      {
+        "text": "FAQ",
+        "url": "/FAQ"
+      },
+      {
+        "text": "Bundles",
+        "url": "/Sets"
+      },
+      {
+        "text": "Legendaries",
+        "url": "/Legendaries"
+      },
+      {
+        "text": "Epics",
+        "url": "/Epics"
+      },
+      {
+        "text": "Rares",
+        "url": "/Rares"
+      },
+      {
+        "text": "Commons",
+        "url": "/Commons"
+      },
+      {
+        "text": "FTF ValuesJoin our community",
+        "url": "https://discord.gg/YYUwQfGcXt"
+      },
+      {
+        "text": "Official FTF ServerJoin our community",
+        "url": "https://discord.com/invite/awapps"
+      },
+      {
+        "text": "Bundles",
+        "url": "/Sets"
+      },
+      {
+        "text": "Zarys Calculator",
+        "url": "https://zarys-exists.github.io/FTF-Trade-Calculator/"
+      },
+      {
+        "text": "Legendaries",
+        "url": "/Legendaries"
+      },
+      {
+        "text": "Epics",
+        "url": "/Epics"
+      },
+      {
+        "text": "Rares",
+        "url": "/Rares"
+      },
+      {
+        "text": "Commons",
+        "url": "/Commons"
+      }
+    ],
+    "images": [
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-4826CF1D03678970BB51F2B53264BA86-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Rox"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-30793698075308AE16382985A67CE78B-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Kory"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-AB15F5F7506C362FFC4AC4999DF394EC-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Shoya"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A5530509DF32FED551BF90DDDA97B085-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Lzyh"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A3458B8090AC4220C09B25DF74F620D7-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "dsdfdsdsdeg"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9E239D75ACA0BF337AD8E85ECB4AA777-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Zarys"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9EC6319FD5F29FFC8E3C1778894DE481-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Sul"
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-BA38FCA069EC5AE743F65102807E5B1B-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Selkis "
+      },
+      {
+        "original": "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-1324477205F91F28B3CA5CA235C4169B-Png/150/150/AvatarHeadshot/Webp/noFilter",
+        "local": "images/pages/home/noFilter",
+        "alt": "Alex"
+      }
+    ],
+    "raw_html_sample": "<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png\" rel=\"icon\" type=\"image/svg+xml\">\n  <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\n  <link href=\"/manifest.json\" rel=\"manifest\">\n  <title>\n   FTF Values\n  </title>\n  <script crossorigin=\"\" src=\"/assets/index-AqhH_te0.js\" type=\"module\">\n  </script>\n  <link crossorigin=\"\" href=\"/assets/index-CJ8ftExj.css\" rel=\"stylesheet\">\n  <meta content=\"FTF Values is the most accurate and up-to-date source for trading values in Flee the Facility. \nWe provide detailed value lists for every rarity tier, along with tools to help you make smart trading decisions.\" name=\"description\">\n  <meta content=\"FTF Values\" property=\"og:title\">\n  <meta content=\"FTF Values is the most accurate and up-to-date source for trading values in Flee the Facility. \nWe provide detailed value lists for every rarity tier, along with tools to help you make smart trading decisions.\" property=\"og:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" property=\"og:image\">\n  <meta content=\"https://ftf-values.base44.app\" property=\"og:url\">\n  <meta content=\"website\" property=\"og:type\">\n  <meta content=\"FTF Values\" property=\"og:site_name\">\n  <meta content=\"FTF Values\" name=\"twitter:title\">\n  <meta content=\"FTF Values is the most accurate and up-to-date source for trading values in Flee the Facility. \nWe provide detailed value lists for every rarity tier, along with tools to help you make smart trading decisions.\" name=\"twitter:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" name=\"twitter:image\">\n  <meta content=\"summary_large_image\" name=\"twitter:card\">\n  <meta content=\"https://ftf-values.base44.app\" name=\"twitter:url\">\n  <meta content=\"yes\" name=\"mobile-web-app-capable\">\n  <meta content=\"black\" name=\"apple-mobile-web-app-status-bar-style\">\n  <meta content=\"FTF Values\" name=\"apple-mobile-web-app-title\">\n  <link href=\"https://ftf-values.base44.app\" rel=\"canonical\">\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"@context\": \"https://schema.org\", \"@type\": \"WebSite\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"logo\": \"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/b21895d87_77052316847013.png\", \"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n </head>\n <body>\n  <div id=\"root\"><div class=\"min-h-screen bg-black\"><header class=\"sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-slate-800\"><div class=\"border-b border-slate-800 py-4\"><div class=\"max-w-7xl mx-auto px-4 text-center\"><a class=\"inline-block\" href=\"/Home\"><span class=\"text-5xl md:text-7xl font-bold flex items-center justify-center gap-3\"><span class=\"bg-clip-text text-transparent\" style=\"background-image: linear-gradient(to right, rgb(66, 64, 179), rgb(166, 152, 245));\">FTF Values</span><img src=\"https://media.discordapp.net/attachments/1451770015899586570/1515960343992733816/image.png?ex=6a30e797&amp;is=6a2f9617&amp;hm=dbbf002182a45cc1a1276693018110afbd6ea5f5baa799bee4bacdfdac2a5614&amp;=&amp;format=webp&amp;quality=lossless&amp;width=1020&amp;height=1020\" alt=\"FTF icon\" class=\"w-14 h-14 md:w-20 md:h-20 inline-block\"></span></a></div></div><div class=\"max-w-7xl mx-auto px-4\"><div class=\"hidden md:block py-3\"><nav class=\"flex items-center justify-center gap-1 pb-3\"><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors \" href=\"/Home\" style=\"color: rgb(66, 64, 179);\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-house w-4 h-4\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"></path><path d=\"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path></svg>Home</a><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/UseGuide\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-book-open w-4 h-4\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>Use Guide</a><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/Changelog\"><svg xmlns=\"ht"
+  },
+  {
+    "page_name": "useguide",
+    "path": "/UseGuide",
+    "url": "https://ftf-values.base44.app/UseGuide",
+    "title": "Use Guide",
+    "headers": [
+      {
+        "level": 1,
+        "text": "Use Guide"
+      },
+      {
+        "level": 2,
+        "text": "Change in Value"
+      },
+      {
+        "level": 2,
+        "text": "Stability Tags"
+      },
+      {
+        "level": 3,
+        "text": "Rising"
+      },
+      {
+        "level": 3,
+        "text": "Doing Well"
+      },
+      {
+        "level": 3,
+        "text": "Improving"
+      },
+      {
+        "level": 3,
+        "text": "Stable"
+      },
+      {
+        "level": 3,
+        "text": "Fluctuating"
+      },
+      {
+        "level": 3,
+        "text": "Struggling"
+      },
+      {
+        "level": 3,
+        "text": "Receding"
+      },
+      {
+        "level": 3,
+        "text": "Dropping"
+      },
+      {
+        "level": 2,
+        "text": "Status Tags"
+      },
+      {
+        "level": 3,
+        "text": "Overpaid For"
+      },
+      {
+        "level": 3,
+        "text": "Underpaid For"
+      },
+      {
+        "level": 3,
+        "text": "Niche"
+      },
+      {
+        "level": 2,
+        "text": "Demand Tags"
+      }
+    ],
+    "main_text": "Use Guide\nLast Updated: January 21st, 2026\nChange in Value\nChanges in Value from the previous list updates will be denoted with either:\nGreen arrow = increase in value\nRed arrow = decrease in value\n*\nCorrected value — neither increased nor decreased, only for new items when values are fluctuating\nStability Tags\nStability Tags are useful for giving the community our insight on what direction we believe an item is heading. This does not mean that everyone follows what the stability states, it is simply to reflect what most people think.\nRising\nItems with this stability are rapidly gaining value.\nDoing Well\nItems with this stability are slowly gaining value.\nImproving\nThis means that an item is thriving as it receives good trades, which may lead to a potential rise in value.\nStable\nThis means that an item has no movement currently.\nFluctuating\nThis means that an item has a confusing value range. Its movement is unpredictable due to variations in overpays, underpays, and base value.\nStruggling\nThis means that an item is struggling to receive trades due to a decrease in demand, which may lead to a potential drop in value.\nReceding\nItems with this stability are slowly losing value.\nDropping\nItems with this stability are rapidly losing value.\nStatus Tags\nStatus Tags are useful for giving the community more insight on sets that go beyond the assigned stability. Status is how well the set is doing overall, considering the current value, the offers it usually gets, and the demand around the set.\nOverpaid For\nThis icon means that the set is stable and could get their listed value, but may get slightly more than the base value of the set.\nUnderpaid For\nThis icon means that the set is stable and could get their listed value, but may get slightly less than the base value of the set.\nNiche\nThis icon is used for items that are hard to get, as there are very few people actively trading these items. These items usually get their face value, but may also get overpays due to these items being hard to come by.\nDemand Tags\nDemand Tags indicate how sought-after an item or set is in the trading community. Higher demand items typically trade faster and may command better offers.\nExtremely popular, trades instantly\nExtremely popular, trades very quickly\nVery popular and frequently traded\nGood interest in trading\nModerate interest in trading\nBelow average interest\nLimited interest, may take time to trade\nVery little interest, difficult to trade\nAlmost no interest, very difficult to trade\nBarely any interest\nNo trading interest",
+    "links": [
+      {
+        "text": "FTF Values",
+        "url": "/Home"
+      },
+      {
+        "text": "Home",
+        "url": "/Home"
+      },
+      {
+        "text": "Use Guide",
+        "url": "/UseGuide"
+      },
+      {
+        "text": "Changelog",
+        "url": "/Changelog"
+      },
+      {
+        "text": "FAQ",
+        "url": "/FAQ"
+      },
+      {
+        "text": "Bundles",
+        "url": "/Sets"
+      },
+      {
+        "text": "Legendaries",
+        "url": "/Legendaries"
+      },
+      {
+        "text": "Epics",
+        "url": "/Epics"
+      },
+      {
+        "text": "Rares",
+        "url": "/Rares"
+      },
+      {
+        "text": "Commons",
+        "url": "/Commons"
+      }
+    ],
+    "images": [],
+    "raw_html_sample": "<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png\" rel=\"icon\" type=\"image/svg+xml\">\n  <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\n  <link href=\"/manifest.json\" rel=\"manifest\">\n  <title>\n   Use Guide | FTF Values\n  </title>\n  <script crossorigin=\"\" src=\"/assets/index-AqhH_te0.js\" type=\"module\">\n  </script>\n  <link crossorigin=\"\" href=\"/assets/index-CJ8ftExj.css\" rel=\"stylesheet\">\n  <meta content=\"Use Guide on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" name=\"description\">\n  <meta content=\"Use Guide | FTF Values\" property=\"og:title\">\n  <meta content=\"Use Guide on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" property=\"og:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" property=\"og:image\">\n  <meta content=\"https://ftf-values.base44.app/UseGuide\" property=\"og:url\">\n  <meta content=\"website\" property=\"og:type\">\n  <meta content=\"FTF Values\" property=\"og:site_name\">\n  <meta content=\"Use Guide | FTF Values\" name=\"twitter:title\">\n  <meta content=\"Use Guide on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" name=\"twitter:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" name=\"twitter:image\">\n  <meta content=\"summary_large_image\" name=\"twitter:card\">\n  <meta content=\"https://ftf-values.base44.app/UseGuide\" name=\"twitter:url\">\n  <meta content=\"yes\" name=\"mobile-web-app-capable\">\n  <meta content=\"black\" name=\"apple-mobile-web-app-status-bar-style\">\n  <meta content=\"FTF Values\" name=\"apple-mobile-web-app-title\">\n  <link href=\"https://ftf-values.base44.app/UseGuide\" rel=\"canonical\">\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"@context\": \"https://schema.org\", \"@type\": \"WebSite\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"logo\": \"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/b21895d87_77052316847013.png\", \"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://ftf-values.base44.app/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Use Guide | FTF Values\", \"item\": \"https://ftf-values.base44.app/UseGuide\"}]}\n  </script>\n </head>\n <body>\n  <div id=\"root\"><div class=\"min-h-screen bg-black\"><header class=\"sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-slate-800\"><div class=\"border-b border-slate-800 py-4\"><div class=\"max-w-7xl mx-auto px-4 text-center\"><a class=\"inline-block\" href=\"/Home\"><span class=\"text-5xl md:text-7xl font-bold flex items-center justify-center gap-3\"><span class=\"bg-clip-text text-transparent\" style=\"background-image: linear-gradient(to right, rgb(66, 64, 179), rgb(166, 152, 245));\">FTF Values</span><img src=\"https://media.discordapp.net/attachments/1451770015899586570/1515960343992733816/image.png?ex=6a30e797&amp;is=6a2f9617&amp;hm=dbbf002182a45cc1a1276693018110afbd6ea5f5baa799bee4bacdfdac2a5614&amp;=&amp;format=webp&amp;quality=lossless&amp;width=1020&amp;height=1020\" alt=\"FTF icon\" class=\"w-14 h-14 md:w-20 md:h-20 inline-block\"></span></a></div></div><div class=\"max-w-7xl mx-auto px-4\"><div class=\"hidden md:block py-3\"><nav class=\"flex items-center justify-center gap-1 pb-3\"><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/Home\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-house w-4 h-4\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"></path><path d=\"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path></svg>Home</a><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors \" href=\"/UseGuide\" style=\"color: rgb(66, 64, 179);\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-book-open w-4 h-4\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>Use Guide</a><a class=\"flex it"
+  },
+  {
+    "page_name": "changelog",
+    "path": "/Changelog",
+    "url": "https://ftf-values.base44.app/Changelog",
+    "title": "Changelog",
+    "headers": [
+      {
+        "level": 1,
+        "text": "Changelog"
+      },
+      {
+        "level": 2,
+        "text": "Version 3.6"
+      },
+      {
+        "level": 2,
+        "text": "Version 3.5"
+      },
+      {
+        "level": 2,
+        "text": "Version 3.4"
+      },
+      {
+        "level": 2,
+        "text": "Version 3.3"
+      },
+      {
+        "level": 2,
+        "text": "Version 3.2"
+      },
+      {
+        "level": 2,
+        "text": "Version 3.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 3.0"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.10"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.9"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.8"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.7"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.6"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.5"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.4.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.4"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.3"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.2"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.0.3"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.0.2"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.0.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 2.0"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.10"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.9"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.8"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.7.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.7"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.6"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.5.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.5"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.4"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.3"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.2.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.2"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.0.2"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.0.1"
+      },
+      {
+        "level": 2,
+        "text": "Version 1.0"
+      },
+      {
+        "level": 3,
+        "text": "Stay Updated"
+      }
+    ],
+    "main_text": "Changelog\nTrack all updates, changes, and improvements to FTF item values\nVersion 3.6\nJune 15th, 2026\nValue Increase\nGothic Bouquet increased to 210\nValue Increase\nPegasus Blade increased to 115, Range [115-125]\nValue Increase\nIce-Cream Mix increased to 120\nValue Increase\nSoulless Theater increased to 50\nValue Increase\nGhost increased to 30\nValue Increase\nAntique Piano increased to 20, Range [20-25]\nValue Increase\nFlesh & Galaxy Clouds increased to 10\nValue Increase\nUnicorn Starlight, Ectoplasm, Ocean Water, Pixel Xmas, Coral Reefs, Midnight Sea, Underwater Ocean, & Clown increased to 5\nValue Decrease\nSakura Parasol decreased to 70\nValue Decrease\nStrawberry Field decreased to 65\nValue Decrease\nMarine decreased to 50\nValue Decrease\nLunar Scepter & Blade of Thorns decreased to 35\nValue Decrease\nStar Wrap Duo decreased to 18\nValue Decrease\nSakura decreased to 9\nValue Decrease\nLil' Devil, Peppermint, & Blizzard decreased to 8\nValue Decrease\nWoodland Staff, Honey Cheesecake, & Lily of the Valley decreased to 3\nDemand Change\nBatwing Basher increased to 3 stars\nDemand Change\nPegasus Blade corrected to 3 stars\nDescription Change\nGothic Bouquet labeled to Overpaid For\nDescription Change\nAll Spring 2026 sets set to Stable\nVersion 3.5\nJune 11th, 2026\nNew Items\nSakura Parasol corrected to 75, Range [70-80], Demand 2 stars\nNew Items\nStrawberry Garden corrected to 70, Range [65-75], Demand 2 stars\nNew Items\nLily Of The Valley corrected to 4, Range [3-5], Demand 1 star\nNew Items\nWoodland Staff corrected to 4, Range [3-5], Demand 1 star\nNew Items\nHoney Cheesecake corrected to 4, Range [3-5], Demand 1 star\nNew Items\nVeridian Greenhouse corrected to 3 , Range [2-4], Demand 1 star\nNew Items\nSakura corrected to 2 stars\nValue Increase\nGothic Bouquet increased to 200\nValue Increase\nIce-Cream Mix increased to 115\nValue Increase\nPegasus Blade increased to 110, Range [110-120]\nValue Increase\nAntique Piano increased to 18, Range [18-20]\nValue Increase\nButterflies Duo & Bear Duo increased to 10\nValue Increase\nForbidden Fortress & Princess Palace increased to 5\nValue Increase\nUnicorn Starlight increased to 4\nValue Increase\nNeapolitan, Popsicle, Watermelon, & Summer Plaid increased to 2\nValue Decrease\nJade Viper, Luxury Projector, & Mothership decreased to 18\nValue Decrease\nScarf decreased to 10\nValue Decrease\nRed Sweater & Candy Corn decreased to 8\nValue Decrease\nMirror Duo decreased to 6\nDemand Change\nNeapolitan, Popsicle, & Watermelon increased to 0.5 stars\nOther\nSakura Bundle labeled as Mid Tier\nOther\nStrawberry Fields labeled as Mid Tier\nVersion 3.4\nJune 7th, 2026\nNew Items\nSakura Parasol corrected to 90, Range [80-100] Demand 2.5 stars\nNew Items\nStrawberry Garden corrected to 85, Range [75-95], Demand 2.5 stars\nNew Items\nLily Of The Valley corrected to 5 Range [4-6]\nNew Items\nWoodland Staff corrected to 5 Range [4-6]\nNew Items\nHoney Cheesecake corrected to 5 Range\n[4-6]\nNew Items\nSakura corrected to 10 Range [8-12]\nNew Items\nGreenhouse corrected to 2, Range [1-3]\nValue Increase\nParty Balloons increased to 300\nValue Increase\nGothic Bouquet increased to 190\nValue Increase\nPegasus Blade increased to 100, Range [100-105]\nValue Increase\nAntique Piano increased to 15, Range [15-18]\nValue Increase\nSnowcone Duo increased to 8\nValue Increase\nPie Trio, Mushroom Trio, Bunny Duo increased to 5\nValue Decrease\nLucky Top Hat & Fish Tank decreased to 10\nValue Decrease\nBlue NC, Lil' Tree, Toy Elf, Snowman, Owl Tree, Chromatic Pheonix, 2020, 3rd Anniversary, Tomato Eater, Sweet Present, & BoF decreased to 8\nValue Decrease\nWinter Breeze & Cozy Cocoa decreased to 6\nDemand Change\nAntique Piano increased to 2 stars\nDescription Change\nSpooky Brew & Pumpkin Slice set to Stable\nDescription Change\nPegasus Blade & Antique Piano set to Doing Well\nVersion 3.3\nJune 1st 2026\nNew Items\nSakura Parasol corrected to 115, Range [105-125], Demand 3 stars\nNew Items\nStrawberry Garden corrected to 105, Range [95-115], Demand 3 stars\nNew Items\nLily Of The Valley corrected to 7, Range [5-9]\nNew Items\nWoodland Staff corrected to 7, Range [5-9]\nNew Items\nHoney Cheesecake corrected to 7, Range [5-9]\nNew Items\nSakura corrected to 20, Range [15-25]\nNew Items\nGreenhouse corrected to 3, Range [2-4]\nValue Increase\nPegasus Blade increased to 90\nValue Increase\nMoon Staff increased to 15\nValue Increase\nAntique Piano increased to 12\nValue Increase\nHoney Hive & Watering Can increased to 8\nValue Increase\nPaint Canvas, Theatrical Spotlight, Coastal Lighthouse, Beach Boat, & Tropical Drink increased to 5\nValue Decrease\nSpooky Brew decreased to 115\nValue Decrease\nMerry Music Box decreased to 60\nValue Decrease\nRoasted Turkey & Autumn Tent decreased to 20\nValue Decrease\nDave Pumpkins & Black Light Madness decreased to 8\nValue Decrease\nJingle Bells, Festive Pinecone, & Stacks of Presents decreased to 6\nDemand Change\nPegasus Blade increased to 2.5 stars\nOther\nPegasus Blade labeled as High Tier\nVersion 3.2\nMay 27th, 2026\nNew Items\nSakura Parasol corrected to 135, Range [125-145], Demand 3.5 stars\nNew Items\nStrawberry Garden corrected to 115, Range [105-125]\nNew Items\nLily Of The Valley corrected to 9, Range [7-11]\nNew Items\nWoodland Staff corrected to 9, Range [7-11]\nNew Items\nHoney Cheesecake corrected to 9, Range [7-11]\nNew Items\nViridian Cactus corrected to 4, Range [2-6]\nNew Items\nSakura corrected to 30, Range [25-35]\nValue Increase\nParty Balloons increased to 290\nValue Increase\nLovesick Bow increased to 270\nValue Increase\nIce-Cream Mix increased to 110\nValue Increase\nPot O’ Gold increased to 35\nValue Decrease\nPumpkin Slice decreased to 125\nValue Decrease\nSpooky Brew decreased to 120\nValue Decrease\nBatwing Basher decreased to 90\nValue Decrease\nDarkBone & Classic decreased to 60\nValue Decrease\nAcidic Potions decreased to 35\nValue Decrease\nRed Panda decreased to 20\nOther\nAdded new spring bundles in the bundles section\nVersion 3.1\nMay 22nd, 2026\nNew Items\nSakura Parasol value 150 (140-160), demand 4.5\nNew Items\nStrawberry Garden value 125 (115-135), demand 3.5\nNew Items\nLily Of The Valley value 10 (8-12), demand 1.5\nNew Items\nWoodland Staff value 10 (8-12), demand 1.5\nNew Items\nHoney Cheesecake value 10 (8-12), demand 1.5\nNew Items\nViridian Cactus value 5 (3-7), demand 1\nNew Items\nSakura value 40, demand 2.5\nNew Items\nGreenhouse value 5 (3-7), demand 1\nValue Increase\nParty Balloons increased to 285\nValue Increase\nDevilish Candle increased to 180\nValue Increase\nCherry Blossom increased to 120\nValue Increase\nPegasus Blade increased to 85\nValue Increase\nHunters corrected to 30\nValue Decrease\nSpooky Brew decreased to 130\nValue Decrease\nPumpkin Slice decreased to 130\nValue Decrease\nDevilborn decreased to 60\nValue Decrease\nBloodthirst decreased to 45\nValue Decrease\nParanormal decreased to 45\nValue Decrease\nSpring World decreased to 45\nValue Decrease\nSand Castle decreased to 40\nValue Decrease\nSweethearts Store decreased to 10\nDescription Change\nSpooky Brew status set to Struggling\nDescription Change\nPumpkin Slice status set to Struggling\nDescription Change\nAll new sets Fluctuating\nOther\n<10 fv sets have been adjusted to balance low tiers\nVersion 3.0\nMay 16th, 2026\nDemand Change\nGothic Bouquet decreased to 3 stars\nDemand Change\nPegasus Blade decreased to 2 stars\nDemand Change\nWitch Hunter corrected to 1.5 stars\nDescription Change\nSandcastle Status set to None\nOther\nAll sets 10-30 fv are now divided by 1.2 and sets above 35 fv are now divided by 1.5\nVersion 2.10\nApril 29th, 2026\nValue Decrease\nSpooky Brew decreased to 215\nValue Decrease\nPumpkin Slice decreased to 210\nValue Decrease\nDarkBone Crusher & Classic decreased to 95\nValue Decrease\nTwisted Passion decreased to 90\nValue Decrease\nYuletide Gift, Roasted Turkey, Autumn Tent, Dark Mansion, & Grandfather Clock decreased to 35\nValue Decrease\nCandelabra decreased to 30\nDemand Change\nStrawberry Jelly Basket corrected to 2 stars\nDemand Change\nSweethearts Store corrected to 1.5 stars\nDemand Change\nGamelan Panggul decreased to 1 star\nVersion 2.9\nApril 23rd, 2026\nValue Increase\nAntique Piano increased to 10\nValue Decrease\nSpooky Brew decreased to 225\nValue Decrease\nPumpkin Slice decreased to 215\nValue Decrease\nMarine Anchor decreased to 80\nValue Decrease\nStrawberry Basket, Spring World, Bloodthirst Axe, & Paranormal Balloon decreased to 75\nValue Decrease\nSoulless Theater decreased to 70\nValue Decrease\nLower Baskets & Sandcastle decreased to 65\nDemand Change\nPumpkin Slice & Spooky Brew corrected to 2.5 stars\nDemand Change\nPsycho’s Chainsaw corrected to 2 stars\nDescription Change\nAcidic Potions status set to None\nDescription Change\nSandcastle set to Underpaid For\nOther\nPsycho's Chainsaw corrected to 110\nVersion 2.8\nApril 12th, 2026\nValue Decrease\nTwisted Passion & Merry Music Box decreased to 95\nValue Decrease\nDragon Puppet decreased to 80\nValue Decrease\nSoulless Theater decreased to 75\nValue Decrease\nSandcastle, Egg Basket, Lovely Heart, & Lion Dance decreased to 70\nValue Decrease\nAcidic Potions decreased to 60\nValue Decrease\nRagebringer & Grim Galleon decreased to 40\nValue Decrease\nJade Viper & Luxury Projector decreased to 25\nDemand Change\nPlaid sets increased to 1.5 stars\nDemand Change\nStrawberry Basket decreased to 2.5 stars\nDemand Change\nLower Baskets decreased to 2 stars\nVersion 2.7\nApril 5th, 2026\nValue Increase\nIce-Cream Mix increased to 160\nValue Decrease\nDarkBone Crusher & Devilborn decreased to 100\nValue Decrease\nDragon Puppet & Marine Anchor decreased to 85\nValue Decrease\nBloodthirst Axe & Paranormal Balloon decreased to 80\nValue Decrease\nLovely Heart & Lion Dance decreased to 75\nValue Decrease\nBleeding Heart & Hollow Scythe decreased to 65\nValue Decrease\nGrandfather Clock & Dark Mansion decreased to 40\nValue Decrease\nAutumn Scarecrow, Caramel Roll, & Ube Roll decreased to 35\nDemand Change\nGothic Bouquet corrected to 3.5 stars\nDemand Change\nPegasus Blade corrected to 2.5 stars\nDemand Change\nDragon Puppet & Red Panda corrected to 2 stars\nDemand Change\nGamelan Panggul corrected to 1.5 stars\nDemand Change\nGumball Machine increased to 2 stars\nDemand C",
+    "links": [
+      {
+        "text": "FTF Values",
+        "url": "/Home"
+      },
+      {
+        "text": "Home",
+        "url": "/Home"
+      },
+      {
+        "text": "Use Guide",
+        "url": "/UseGuide"
+      },
+      {
+        "text": "Changelog",
+        "url": "/Changelog"
+      },
+      {
+        "text": "FAQ",
+        "url": "/FAQ"
+      },
+      {
+        "text": "Bundles",
+        "url": "/Sets"
+      },
+      {
+        "text": "Legendaries",
+        "url": "/Legendaries"
+      },
+      {
+        "text": "Epics",
+        "url": "/Epics"
+      },
+      {
+        "text": "Rares",
+        "url": "/Rares"
+      },
+      {
+        "text": "Commons",
+        "url": "/Commons"
+      }
+    ],
+    "images": [],
+    "raw_html_sample": "<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png\" rel=\"icon\" type=\"image/svg+xml\">\n  <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\n  <link href=\"/manifest.json\" rel=\"manifest\">\n  <title>\n   Changelog | FTF Values\n  </title>\n  <script crossorigin=\"\" src=\"/assets/index-AqhH_te0.js\" type=\"module\">\n  </script>\n  <link crossorigin=\"\" href=\"/assets/index-CJ8ftExj.css\" rel=\"stylesheet\">\n  <meta content=\"Changelog on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" name=\"description\">\n  <meta content=\"Changelog | FTF Values\" property=\"og:title\">\n  <meta content=\"Changelog on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" property=\"og:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" property=\"og:image\">\n  <meta content=\"https://ftf-values.base44.app/Changelog\" property=\"og:url\">\n  <meta content=\"website\" property=\"og:type\">\n  <meta content=\"FTF Values\" property=\"og:site_name\">\n  <meta content=\"Changelog | FTF Values\" name=\"twitter:title\">\n  <meta content=\"Changelog on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" name=\"twitter:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" name=\"twitter:image\">\n  <meta content=\"summary_large_image\" name=\"twitter:card\">\n  <meta content=\"https://ftf-values.base44.app/Changelog\" name=\"twitter:url\">\n  <meta content=\"yes\" name=\"mobile-web-app-capable\">\n  <meta content=\"black\" name=\"apple-mobile-web-app-status-bar-style\">\n  <meta content=\"FTF Values\" name=\"apple-mobile-web-app-title\">\n  <link href=\"https://ftf-values.base44.app/Changelog\" rel=\"canonical\">\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"@context\": \"https://schema.org\", \"@type\": \"WebSite\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"logo\": \"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/b21895d87_77052316847013.png\", \"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://ftf-values.base44.app/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Changelog | FTF Values\", \"item\": \"https://ftf-values.base44.app/Changelog\"}]}\n  </script>\n </head>\n <body>\n  <div id=\"root\"><div class=\"min-h-screen bg-black\"><header class=\"sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-slate-800\"><div class=\"border-b border-slate-800 py-4\"><div class=\"max-w-7xl mx-auto px-4 text-center\"><a class=\"inline-block\" href=\"/Home\"><span class=\"text-5xl md:text-7xl font-bold flex items-center justify-center gap-3\"><span class=\"bg-clip-text text-transparent\" style=\"background-image: linear-gradient(to right, rgb(66, 64, 179), rgb(166, 152, 245));\">FTF Values</span><img src=\"https://media.discordapp.net/attachments/1451770015899586570/1515960343992733816/image.png?ex=6a30e797&amp;is=6a2f9617&amp;hm=dbbf002182a45cc1a1276693018110afbd6ea5f5baa799bee4bacdfdac2a5614&amp;=&amp;format=webp&amp;quality=lossless&amp;width=1020&amp;height=1020\" alt=\"FTF icon\" class=\"w-14 h-14 md:w-20 md:h-20 inline-block\"></span></a></div></div><div class=\"max-w-7xl mx-auto px-4\"><div class=\"hidden md:block py-3\"><nav class=\"flex items-center justify-center gap-1 pb-3\"><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/Home\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-house w-4 h-4\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"></path><path d=\"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path></svg>Home</a><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/UseGuide\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-book-open w-4 h-4\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>Use Guide</a><a class=\"flex "
+  },
+  {
+    "page_name": "faq",
+    "path": "/FAQ",
+    "url": "https://ftf-values.base44.app/FAQ",
+    "title": "Frequently Asked Questions",
+    "headers": [
+      {
+        "level": 1,
+        "text": "Frequently Asked Questions"
+      },
+      {
+        "level": 3,
+        "text": "What is FTF Values?"
+      },
+      {
+        "level": 3,
+        "text": "How often are values updated?"
+      },
+      {
+        "level": 3,
+        "text": "What do the stability tags mean?"
+      },
+      {
+        "level": 3,
+        "text": "How are values determined?"
+      },
+      {
+        "level": 3,
+        "text": "What does 'Niche' status mean?"
+      },
+      {
+        "level": 3,
+        "text": "Should I always trust the values exactly?"
+      },
+      {
+        "level": 3,
+        "text": "How can I join the FTF community?"
+      },
+      {
+        "level": 3,
+        "text": "What's the difference between 'Overpaid For' and 'Underpaid For'?"
+      },
+      {
+        "level": 2,
+        "text": "Still have questions?"
+      }
+    ],
+    "main_text": "Frequently Asked Questions\nCommon questions about FTF Values and trading\nWhat is FTF Values?\nHow often are values updated?\nWhat do the stability tags mean?\nHow are values determined?\nWhat does 'Niche' status mean?\nShould I always trust the values exactly?\nHow can I join the FTF community?\nWhat's the difference between 'Overpaid For' and 'Underpaid For'?\nStill have questions?\nJoin our Discord communities for help from experienced traders and staff members.\nAW Apps Discord",
+    "links": [
+      {
+        "text": "FTF Values",
+        "url": "/Home"
+      },
+      {
+        "text": "Home",
+        "url": "/Home"
+      },
+      {
+        "text": "Use Guide",
+        "url": "/UseGuide"
+      },
+      {
+        "text": "Changelog",
+        "url": "/Changelog"
+      },
+      {
+        "text": "FAQ",
+        "url": "/FAQ"
+      },
+      {
+        "text": "Bundles",
+        "url": "/Sets"
+      },
+      {
+        "text": "Legendaries",
+        "url": "/Legendaries"
+      },
+      {
+        "text": "Epics",
+        "url": "/Epics"
+      },
+      {
+        "text": "Rares",
+        "url": "/Rares"
+      },
+      {
+        "text": "Commons",
+        "url": "/Commons"
+      },
+      {
+        "text": "AW Apps Discord",
+        "url": "https://discord.gg/awapps"
+      }
+    ],
+    "images": [],
+    "raw_html_sample": "<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <link href=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png\" rel=\"icon\" type=\"image/svg+xml\">\n  <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\n  <link href=\"/manifest.json\" rel=\"manifest\">\n  <title>\n   FAQ | FTF Values\n  </title>\n  <script crossorigin=\"\" src=\"/assets/index-AqhH_te0.js\" type=\"module\">\n  </script>\n  <link crossorigin=\"\" href=\"/assets/index-CJ8ftExj.css\" rel=\"stylesheet\">\n  <meta content=\"FAQ on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" name=\"description\">\n  <meta content=\"FAQ | FTF Values\" property=\"og:title\">\n  <meta content=\"FAQ on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" property=\"og:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" property=\"og:image\">\n  <meta content=\"https://ftf-values.base44.app/FAQ\" property=\"og:url\">\n  <meta content=\"website\" property=\"og:type\">\n  <meta content=\"FTF Values\" property=\"og:site_name\">\n  <meta content=\"FAQ | FTF Values\" name=\"twitter:title\">\n  <meta content=\"FAQ on FTF Values. FTF Values is the most accurate and up-to-date source for trading values in Flee.\" name=\"twitter:description\">\n  <meta content=\"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/7abc4069a_ftfp.png/v1/fill/w_1200,h_630/7abc4069a_ftfp.png\" name=\"twitter:image\">\n  <meta content=\"summary_large_image\" name=\"twitter:card\">\n  <meta content=\"https://ftf-values.base44.app/FAQ\" name=\"twitter:url\">\n  <meta content=\"yes\" name=\"mobile-web-app-capable\">\n  <meta content=\"black\" name=\"apple-mobile-web-app-status-bar-style\">\n  <meta content=\"FTF Values\" name=\"apple-mobile-web-app-title\">\n  <link href=\"https://ftf-values.base44.app/FAQ\" rel=\"canonical\">\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"@context\": \"https://schema.org\", \"@type\": \"WebSite\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"name\": \"FTF Values\", \"logo\": \"https://media.base44.com/images/public/69729a04f6715b73ccf4245d/b21895d87_77052316847013.png\", \"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"url\": \"https://ftf-values.base44.app\"}\n  </script>\n  <script data-seo-source=\"builder\" type=\"application/ld+json\">\n   {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://ftf-values.base44.app/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"FAQ | FTF Values\", \"item\": \"https://ftf-values.base44.app/FAQ\"}]}\n  </script>\n </head>\n <body>\n  <div id=\"root\"><div class=\"min-h-screen bg-black\"><header class=\"sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-slate-800\"><div class=\"border-b border-slate-800 py-4\"><div class=\"max-w-7xl mx-auto px-4 text-center\"><a class=\"inline-block\" href=\"/Home\"><span class=\"text-5xl md:text-7xl font-bold flex items-center justify-center gap-3\"><span class=\"bg-clip-text text-transparent\" style=\"background-image: linear-gradient(to right, rgb(66, 64, 179), rgb(166, 152, 245));\">FTF Values</span><img src=\"https://media.discordapp.net/attachments/1451770015899586570/1515960343992733816/image.png?ex=6a30e797&amp;is=6a2f9617&amp;hm=dbbf002182a45cc1a1276693018110afbd6ea5f5baa799bee4bacdfdac2a5614&amp;=&amp;format=webp&amp;quality=lossless&amp;width=1020&amp;height=1020\" alt=\"FTF icon\" class=\"w-14 h-14 md:w-20 md:h-20 inline-block\"></span></a></div></div><div class=\"max-w-7xl mx-auto px-4\"><div class=\"hidden md:block py-3\"><nav class=\"flex items-center justify-center gap-1 pb-3\"><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/Home\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-house w-4 h-4\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"></path><path d=\"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path></svg>Home</a><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-colors text-slate-400 hover:text-white\" href=\"/UseGuide\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-book-open w-4 h-4\"><path d=\"M12 7v14\"></path><path d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"></path></svg>Use Guide</a><a class=\"flex items-center gap-2 px-4 py-2 text-base font-semibold transition-co"
+  }
+]
