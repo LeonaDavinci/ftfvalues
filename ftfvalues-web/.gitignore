@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# copied image assets (regenerated via `npm run sync-assets`)
+/public/images/
+
+# env
+.env*.local

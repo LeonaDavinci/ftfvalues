@@ -1,0 +1,2306 @@
+[
+  {
+    "version": "3.6",
+    "date": "June 15th, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Gothic Bouquet increased to 210"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pegasus Blade increased to 115, Range [115-125]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Ice-Cream Mix increased to 120"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Soulless Theater increased to 50"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Ghost increased to 30"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Antique Piano increased to 20, Range [20-25]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Flesh & Galaxy Clouds increased to 10"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Unicorn Starlight, Ectoplasm, Ocean Water, Pixel Xmas, Coral Reefs, Midnight Sea, Underwater Ocean, & Clown increased to 5"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Sakura Parasol decreased to 70"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Strawberry Field decreased to 65"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Marine decreased to 50"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lunar Scepter & Blade of Thorns decreased to 35"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Star Wrap Duo decreased to 18"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Sakura decreased to 9"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lil' Devil, Peppermint, & Blizzard decreased to 8"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Woodland Staff, Honey Cheesecake, & Lily of the Valley decreased to 3"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Batwing Basher increased to 3 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Pegasus Blade corrected to 3 stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Gothic Bouquet labeled to Overpaid For"
+      },
+      {
+        "type": "Description Change",
+        "text": "All Spring 2026 sets set to Stable"
+      }
+    ]
+  },
+  {
+    "version": "3.5",
+    "date": "June 11th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Sakura Parasol corrected to 75, Range [70-80], Demand 2 stars"
+      },
+      {
+        "type": "New Items",
+        "text": "Strawberry Garden corrected to 70, Range [65-75], Demand 2 stars"
+      },
+      {
+        "type": "New Items",
+        "text": "Lily Of The Valley corrected to 4, Range [3-5], Demand 1 star"
+      },
+      {
+        "type": "New Items",
+        "text": "Woodland Staff corrected to 4, Range [3-5], Demand 1 star"
+      },
+      {
+        "type": "New Items",
+        "text": "Honey Cheesecake corrected to 4, Range [3-5], Demand 1 star"
+      },
+      {
+        "type": "New Items",
+        "text": "Veridian Greenhouse corrected to 3 , Range [2-4], Demand 1 star"
+      },
+      {
+        "type": "New Items",
+        "text": "Sakura corrected to 2 stars"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Gothic Bouquet increased to 200"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Ice-Cream Mix increased to 115"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pegasus Blade increased to 110, Range [110-120]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Antique Piano increased to 18, Range [18-20]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Butterflies Duo & Bear Duo increased to 10"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Forbidden Fortress & Princess Palace increased to 5"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Unicorn Starlight increased to 4"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Neapolitan, Popsicle, Watermelon, & Summer Plaid increased to 2"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Jade Viper, Luxury Projector, & Mothership decreased to 18"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Scarf decreased to 10"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Red Sweater & Candy Corn decreased to 8"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Mirror Duo decreased to 6"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Neapolitan, Popsicle, & Watermelon increased to 0.5 stars"
+      },
+      {
+        "type": "Other",
+        "text": "Sakura Bundle labeled as Mid Tier"
+      },
+      {
+        "type": "Other",
+        "text": "Strawberry Fields labeled as Mid Tier"
+      }
+    ]
+  },
+  {
+    "version": "3.4",
+    "date": "June 7th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Sakura Parasol corrected to 90, Range [80-100] Demand 2.5 stars"
+      },
+      {
+        "type": "New Items",
+        "text": "Strawberry Garden corrected to 85, Range [75-95], Demand 2.5 stars"
+      },
+      {
+        "type": "New Items",
+        "text": "Lily Of The Valley corrected to 5 Range [4-6]"
+      },
+      {
+        "type": "New Items",
+        "text": "Woodland Staff corrected to 5 Range [4-6]"
+      },
+      {
+        "type": "New Items",
+        "text": "Honey Cheesecake corrected to 5 Range"
+      },
+      {
+        "type": "New Items",
+        "text": "[4-6]"
+      },
+      {
+        "type": "New Items",
+        "text": "Sakura corrected to 10 Range [8-12]"
+      },
+      {
+        "type": "New Items",
+        "text": "Greenhouse corrected to 2, Range [1-3]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Party Balloons increased to 300"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Gothic Bouquet increased to 190"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pegasus Blade increased to 100, Range [100-105]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Antique Piano increased to 15, Range [15-18]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Snowcone Duo increased to 8"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pie Trio, Mushroom Trio, Bunny Duo increased to 5"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lucky Top Hat & Fish Tank decreased to 10"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Blue NC, Lil' Tree, Toy Elf, Snowman, Owl Tree, Chromatic Pheonix, 2020, 3rd Anniversary, Tomato Eater, Sweet Present, & BoF decreased to 8"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Winter Breeze & Cozy Cocoa decreased to 6"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Antique Piano increased to 2 stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Spooky Brew & Pumpkin Slice set to Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Pegasus Blade & Antique Piano set to Doing Well"
+      }
+    ]
+  },
+  {
+    "version": "3.3",
+    "date": "June 1st 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Sakura Parasol corrected to 115, Range [105-125], Demand 3 stars"
+      },
+      {
+        "type": "New Items",
+        "text": "Strawberry Garden corrected to 105, Range [95-115], Demand 3 stars"
+      },
+      {
+        "type": "New Items",
+        "text": "Lily Of The Valley corrected to 7, Range [5-9]"
+      },
+      {
+        "type": "New Items",
+        "text": "Woodland Staff corrected to 7, Range [5-9]"
+      },
+      {
+        "type": "New Items",
+        "text": "Honey Cheesecake corrected to 7, Range [5-9]"
+      },
+      {
+        "type": "New Items",
+        "text": "Sakura corrected to 20, Range [15-25]"
+      },
+      {
+        "type": "New Items",
+        "text": "Greenhouse corrected to 3, Range [2-4]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pegasus Blade increased to 90"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Moon Staff increased to 15"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Antique Piano increased to 12"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Honey Hive & Watering Can increased to 8"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Paint Canvas, Theatrical Spotlight, Coastal Lighthouse, Beach Boat, & Tropical Drink increased to 5"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 115"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Merry Music Box decreased to 60"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Roasted Turkey & Autumn Tent decreased to 20"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Dave Pumpkins & Black Light Madness decreased to 8"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Jingle Bells, Festive Pinecone, & Stacks of Presents decreased to 6"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Pegasus Blade increased to 2.5 stars"
+      },
+      {
+        "type": "Other",
+        "text": "Pegasus Blade labeled as High Tier"
+      }
+    ]
+  },
+  {
+    "version": "3.2",
+    "date": "May 27th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Sakura Parasol corrected to 135, Range [125-145], Demand 3.5 stars"
+      },
+      {
+        "type": "New Items",
+        "text": "Strawberry Garden corrected to 115, Range [105-125]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lily Of The Valley corrected to 9, Range [7-11]"
+      },
+      {
+        "type": "New Items",
+        "text": "Woodland Staff corrected to 9, Range [7-11]"
+      },
+      {
+        "type": "New Items",
+        "text": "Honey Cheesecake corrected to 9, Range [7-11]"
+      },
+      {
+        "type": "New Items",
+        "text": "Viridian Cactus corrected to 4, Range [2-6]"
+      },
+      {
+        "type": "New Items",
+        "text": "Sakura corrected to 30, Range [25-35]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Party Balloons increased to 290"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Lovesick Bow increased to 270"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Ice-Cream Mix increased to 110"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pot O’ Gold increased to 35"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice decreased to 125"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 120"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Batwing Basher decreased to 90"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "DarkBone & Classic decreased to 60"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic Potions decreased to 35"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Red Panda decreased to 20"
+      },
+      {
+        "type": "Other",
+        "text": "Added new spring bundles in the bundles section"
+      }
+    ]
+  },
+  {
+    "version": "3.1",
+    "date": "May 22nd, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Sakura Parasol value 150 (140-160), demand 4.5"
+      },
+      {
+        "type": "New Items",
+        "text": "Strawberry Garden value 125 (115-135), demand 3.5"
+      },
+      {
+        "type": "New Items",
+        "text": "Lily Of The Valley value 10 (8-12), demand 1.5"
+      },
+      {
+        "type": "New Items",
+        "text": "Woodland Staff value 10 (8-12), demand 1.5"
+      },
+      {
+        "type": "New Items",
+        "text": "Honey Cheesecake value 10 (8-12), demand 1.5"
+      },
+      {
+        "type": "New Items",
+        "text": "Viridian Cactus value 5 (3-7), demand 1"
+      },
+      {
+        "type": "New Items",
+        "text": "Sakura value 40, demand 2.5"
+      },
+      {
+        "type": "New Items",
+        "text": "Greenhouse value 5 (3-7), demand 1"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Party Balloons increased to 285"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Devilish Candle increased to 180"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Cherry Blossom increased to 120"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pegasus Blade increased to 85"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Hunters corrected to 30"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 130"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice decreased to 130"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Devilborn decreased to 60"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bloodthirst decreased to 45"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Paranormal decreased to 45"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spring World decreased to 45"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Sand Castle decreased to 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Sweethearts Store decreased to 10"
+      },
+      {
+        "type": "Description Change",
+        "text": "Spooky Brew status set to Struggling"
+      },
+      {
+        "type": "Description Change",
+        "text": "Pumpkin Slice status set to Struggling"
+      },
+      {
+        "type": "Description Change",
+        "text": "All new sets Fluctuating"
+      },
+      {
+        "type": "Other",
+        "text": "<10 fv sets have been adjusted to balance low tiers"
+      }
+    ]
+  },
+  {
+    "version": "3.0",
+    "date": "May 16th, 2026",
+    "changes": [
+      {
+        "type": "Demand Change",
+        "text": "Gothic Bouquet decreased to 3 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Pegasus Blade decreased to 2 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Witch Hunter corrected to 1.5 stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Sandcastle Status set to None"
+      },
+      {
+        "type": "Other",
+        "text": "All sets 10-30 fv are now divided by 1.2 and sets above 35 fv are now divided by 1.5"
+      }
+    ]
+  },
+  {
+    "version": "2.10",
+    "date": "April 29th, 2026",
+    "changes": [
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 215"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice decreased to 210"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "DarkBone Crusher & Classic decreased to 95"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Twisted Passion decreased to 90"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide Gift, Roasted Turkey, Autumn Tent, Dark Mansion, & Grandfather Clock decreased to 35"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Candelabra decreased to 30"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Strawberry Jelly Basket corrected to 2 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Sweethearts Store corrected to 1.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Gamelan Panggul decreased to 1 star"
+      }
+    ]
+  },
+  {
+    "version": "2.9",
+    "date": "April 23rd, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Antique Piano increased to 10"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 225"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice decreased to 215"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Marine Anchor decreased to 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Strawberry Basket, Spring World, Bloodthirst Axe, & Paranormal Balloon decreased to 75"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Soulless Theater decreased to 70"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lower Baskets & Sandcastle decreased to 65"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Pumpkin Slice & Spooky Brew corrected to 2.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Psycho’s Chainsaw corrected to 2 stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Acidic Potions status set to None"
+      },
+      {
+        "type": "Description Change",
+        "text": "Sandcastle set to Underpaid For"
+      },
+      {
+        "type": "Other",
+        "text": "Psycho's Chainsaw corrected to 110"
+      }
+    ]
+  },
+  {
+    "version": "2.8",
+    "date": "April 12th, 2026",
+    "changes": [
+      {
+        "type": "Value Decrease",
+        "text": "Twisted Passion & Merry Music Box decreased to 95"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Dragon Puppet decreased to 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Soulless Theater decreased to 75"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Sandcastle, Egg Basket, Lovely Heart, & Lion Dance decreased to 70"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic Potions decreased to 60"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Ragebringer & Grim Galleon decreased to 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Jade Viper & Luxury Projector decreased to 25"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Plaid sets increased to 1.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Strawberry Basket decreased to 2.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Lower Baskets decreased to 2 stars"
+      }
+    ]
+  },
+  {
+    "version": "2.7",
+    "date": "April 5th, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Ice-Cream Mix increased to 160"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "DarkBone Crusher & Devilborn decreased to 100"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Dragon Puppet & Marine Anchor decreased to 85"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bloodthirst Axe & Paranormal Balloon decreased to 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lovely Heart & Lion Dance decreased to 75"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bleeding Heart & Hollow Scythe decreased to 65"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Grandfather Clock & Dark Mansion decreased to 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Autumn Scarecrow, Caramel Roll, & Ube Roll decreased to 35"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Gothic Bouquet corrected to 3.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Pegasus Blade corrected to 2.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Dragon Puppet & Red Panda corrected to 2 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Gamelan Panggul corrected to 1.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Gumball Machine increased to 2 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Scarf, Graveyard, & Scarlet Night decreased to 1 star"
+      },
+      {
+        "type": "Description Change",
+        "text": "Cherry Blossom corrected to Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Dragon Puppet, Lovely Heart, Lion Dance, Gamelan Panggul, & Red Panda set to Stable"
+      }
+    ]
+  },
+  {
+    "version": "2.6",
+    "date": "April 1st, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Yin-yang set to 2"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Ice-cream Mix increased to 155"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Antique Piano increased to 8"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 230"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Slice decreased to 220"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Cherry Blossom decreased to 175, Range [170-180]"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Batwing decreased to 140"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Dragon Puppet decreased to 90"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lovely Date and Lion Dance decreased to 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Gamelan Panggul decreased to 25"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Soulless Theater & Spring World decreased to 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic Potions decreased to 65"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Choco Dip and Watergun decreased to 50"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Turkey and Autumn Tent decreased to 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Bats and Friendly Ghosts decreased to 25"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Honey Hive and Watering Can increased to 1 Star"
+      },
+      {
+        "type": "Description Change",
+        "text": "Cherry Blossom set to Fluctuating"
+      }
+    ]
+  },
+  {
+    "version": "2.5",
+    "date": "March 30th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Dragon Puppet decreased to 95, set to Underpaid For"
+      },
+      {
+        "type": "New Items",
+        "text": "Lovely Date decreased to 85, set to Underpaid For"
+      },
+      {
+        "type": "New Items",
+        "text": "Lion Dance decreased to 85, set to Underpaid For"
+      },
+      {
+        "type": "New Items",
+        "text": "Gamelan Panggul decreased to 30, set to Underpaid For"
+      },
+      {
+        "type": "New Items",
+        "text": "Red Panda corrected to 30, Range [25-35]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Psycho’s Chainsaw increased to 120"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 235"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Slice decreased to 225"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Soulless Theater & Spring World decreased to 85"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Sand Castle & Egg Basket decreased to 75"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic Potions decreased to 70"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lunar Scepter decreased to 60"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Glowy Bush decreased to 30"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Lemonade Jar, Choco Dip, & Watergun corrected to 2 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Darkbone Crusher & Devilborn corrected to 2 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Fiery Phoenix corrected to 1.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Santa Boot & CCJ corrected to 1 star"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Strawberry Basket increased to 3 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Lower Baskets increased to 2.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Antique Piano increased to 1 star"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Ube & Caramel Roll decreased to 1.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Spooky Bats & Friendly Ghosts decreased to 1 star"
+      },
+      {
+        "type": "Description Change",
+        "text": "Lovesick Bow set to Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Bear Present Duo, Cookies N' Milk, Gingercookies, & Santa's letter set to Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Acidic Potions set to Underpaid For"
+      }
+    ]
+  },
+  {
+    "version": "2.4.1",
+    "date": "March 28th, 2026",
+    "changes": [
+      {
+        "type": "Bug Fix",
+        "text": "Fixed Bug where images does not show in the value list"
+      },
+      {
+        "type": "Other",
+        "text": "Adjusted UI for better experience"
+      }
+    ]
+  },
+  {
+    "version": "2.4",
+    "date": "March 28th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Dragon Puppet Range corrected 100 to [95-105]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lovely Date corrected to 95, Range [90-100]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lion Dance corrected to 95, Range [90-100]"
+      },
+      {
+        "type": "New Items",
+        "text": "Gamelan Panggul decreased to 35, Range [30-40]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Gothic Bouquet increased to 270"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pegasus Blade increased to 120"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Chainsaw increased to 115"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Energetic Poison and Storm Surge increased to 20"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Classic decreased to 100"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Merry Music Box decreased to 100"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Devilborn decreased to 105"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "DarkBone decreased to 105"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bloodthirst and Paranormal decreased to 85"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic Potions decreased to 75"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Mothership, Coffin and Tombstone decreased to 25"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Graveyard, Scarlet Night and Scarf decreased to 15"
+      },
+      {
+        "type": "Description Change",
+        "text": "Lovesick Range [390-420]"
+      }
+    ]
+  },
+  {
+    "version": "2.3",
+    "date": "March 25th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Dragon Puppet decreased to 105, demand 2.5 stars, Range [95-115]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lovely Date decreased to 100, demand 2 stars, Range [90-110]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lion Dance decreased to 100, demand 2 stars, Range [90-110]"
+      },
+      {
+        "type": "New Items",
+        "text": "Gamelan Panggul decreased to 40, Range [35-45]"
+      },
+      {
+        "type": "New Items",
+        "text": "Red Panda corrected to 35, 2.5 stars, Range [30-40]"
+      },
+      {
+        "type": "New Items",
+        "text": "Year of the Horse, Jade Statue, & Lonely Date corrected to 0.5 stars"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pegasus Blade increased to 115"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Moon Staff increased to 15"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Autumn Tent & Roasted Turkey decreased to 45"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Phantom Light & Fiery Phoenix decreased to 35"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Midnight Light decreased to 30"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Broom Trio decreased to 10"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Gothic Bouquet increased to 4 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Classic corrected to 2 stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Sweethearts Store set to Stable"
+      },
+      {
+        "type": "Other",
+        "text": "Cash corrected to 1"
+      }
+    ]
+  },
+  {
+    "version": "2.2",
+    "date": "March 22nd, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Dragon Puppet corrected to 115, Range [110-120]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lovely Date corrected to 110, Range [105-115]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lion Dance corrected to 110, Range [105-115]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lonely Date, Jade Statue and Year of the Horse corrected to 3, Fluctuating -> Stable"
+      },
+      {
+        "type": "New Items",
+        "text": "Gamelan Panggul decreased to 45, Range [35-50]"
+      },
+      {
+        "type": "New Items",
+        "text": "Bamboo corrected to 2, Fluctuating -> Stable"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Chainsaw Increased to 110"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Vanillaberry and Lemonade Jar Increased to 45"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Flourshed Fountain Increased to 8"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bloodthirst and Paranormal decreased to 90"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Batwing decreased to 145"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Jello, Cranberry and Reindeer decreased to 35"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Pegasus increased to 3 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Lovely and Lion Dance decreased to 2.5 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Hollow decreased to 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Gamelan decreased to 2 Stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Lovesick corrected to 400, Stable -> Fluctuating Range [390-410]"
+      }
+    ]
+  },
+  {
+    "version": "2.1",
+    "date": "March 20th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Dragon Puppet corrected to 120, Range [110-130]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lovely Date corrected to 120, Range [110-130]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lion Dance corrected to 120, Range [110-130]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lonely Date, Jade Statue, and Year of the Horse corrected to 4, Range [3-5]"
+      },
+      {
+        "type": "New Items",
+        "text": "Gamelan Panggul corrected to 50, Range [40-60]"
+      },
+      {
+        "type": "New Items",
+        "text": "Red Panda corrected to 40, Range [35-45]"
+      },
+      {
+        "type": "New Items",
+        "text": "Bamboo corrected to 3 Range [2-4]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Sweethearts Store increased to 20"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Gothic increased to 260"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Lemon Basket and Blueberry Basket Increased to 70"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Pegasus Increased to 110"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Devilish Candle decreased to 260"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky decreased to 240"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "CCJ and Santa Boot decreased to 15"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Easter Basket decreased to 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Glowy Bush decreased to 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Classic decreased to 105"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Darkbone decreased to 110"
+      },
+      {
+        "type": "Demand Change",
+        "text": "All New Robux Legendary Sets decreased to 3 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "All new credits legendary sets decreased to 1.5 stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Sweethearts set to Overpaid for"
+      },
+      {
+        "type": "Description Change",
+        "text": "Sweetheart Store Demand Increased to 2 Stars"
+      }
+    ]
+  },
+  {
+    "version": "2.0.3",
+    "date": "March 18th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Dragon Puppet Corrected to 140 Range [120-160]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lovely Date Corrected to 140 Range [120-160]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lion Dance Corrected to 140 Range [120-160]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lonely Date, Jade Statue and Year of the Horse corrected to 6 Range [5-8]"
+      },
+      {
+        "type": "New Items",
+        "text": "Gamelan Panggul Corrected to 55 Range [45-60]"
+      },
+      {
+        "type": "New Items",
+        "text": "Bamboo Correct to 5 Range [4-8]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Sweethearts Increased to 15 Range [15-20]"
+      }
+    ]
+  },
+  {
+    "version": "2.0.2",
+    "date": "March 16th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Dragon Puppet Corrected to 170 Range [150-200]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lovely Date Corrected to 170 Range [150-200]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lion Dance Corrected to 170 Range [150-200]"
+      },
+      {
+        "type": "New Items",
+        "text": "Lonely Date, Jade Statue and Year of the Horse corrected to 8 Range [5-10]"
+      },
+      {
+        "type": "New Items",
+        "text": "Gamelan Panggul Corrected to 60 Range [50-70]"
+      },
+      {
+        "type": "New Items",
+        "text": "Bamboo Correct to 5 Range [4-8]"
+      },
+      {
+        "type": "New Items",
+        "text": "Red Panda Corrected to 45 Range [40-50]"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Sweethearts Increased to 12"
+      },
+      {
+        "type": "Description Change",
+        "text": "Sweethearts Store: Stable -> Improving Range [12-15]"
+      }
+    ]
+  },
+  {
+    "version": "2.0.1",
+    "date": "March 16th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Dragon, Lion, and Lovely set at 200"
+      },
+      {
+        "type": "New Items",
+        "text": "Lonely, Jade Statue, and Year of the Horse set at 10"
+      },
+      {
+        "type": "New Items",
+        "text": "Gamelan Panggul set at 70"
+      },
+      {
+        "type": "New Items",
+        "text": "Bamboo set at 6"
+      },
+      {
+        "type": "New Items",
+        "text": "Red Panda set at 50"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Sweethearts increased to 10"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Dragon, Lion, and Lovely demand set at 3.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Lonely, Jade Statue, and Year of the Horse demand set at 2.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Gamelan Panggul demand set at 3 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Bamboo demand set at 1.5 stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Red Panda demand set at 3 stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Dragon, Lion, and Lovely set to Fluctuating, Range [250-150]"
+      },
+      {
+        "type": "Description Change",
+        "text": "Lonely, Jade Statue, and Year of the Horse set to Fluctuating, Range [15-5]"
+      },
+      {
+        "type": "Description Change",
+        "text": "Sweethearts set to Overpaid For"
+      },
+      {
+        "type": "Description Change",
+        "text": "Gamelan Panggul set to Fluctuating, Range [80-60]"
+      },
+      {
+        "type": "Description Change",
+        "text": "Bamboo set to Fluctuating, Range [8-4]"
+      },
+      {
+        "type": "Description Change",
+        "text": "Red Panda set to Fluctuating, Range [60-40]"
+      }
+    ]
+  },
+  {
+    "version": "2.0",
+    "date": "March 16th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "New Lunar Items Added, no value yet"
+      },
+      {
+        "type": "Description Change",
+        "text": "Doing Well Over Improving"
+      },
+      {
+        "type": "Other",
+        "text": "Added, Corrected Value (*), added N/A option"
+      },
+      {
+        "type": "Other",
+        "text": "Changed Icon for Spring Season"
+      }
+    ]
+  },
+  {
+    "version": "1.10",
+    "date": "March 12th, 2026",
+    "changes": [
+      {
+        "type": "Value Decrease",
+        "text": "Classic decreased to 110"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bloodthirst Axe + Paranormal Balloon decreased to 95"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Autumn Tent and Turkey decreased to 50"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Glowy Bush decreased to 45"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Cherry Blossom corrected to 3 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Bloodthirst Axe decreased to 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Paranormal Balloon decreased to 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Ube Roll decreased to 2 Stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Caramel Roll decreased to 2 Stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Psycho Axe decreased to 2 Stars"
+      }
+    ]
+  },
+  {
+    "version": "1.9",
+    "date": "March 2nd, 2026",
+    "changes": [
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 250"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice decreased to 230"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Egg Basket decreased to 85"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Sand Castle decreased to 85"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Autumn Tent & Roasted Turkey decreased to 55"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bleak Ink decreased to 100"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Sweethearts Store & Flourished Fountain increased to 1 Star"
+      },
+      {
+        "type": "Description Change",
+        "text": "Spooky Brew Dropping -> Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Pumpkin Slice Receding  -> Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Bleak Ink Underpaid For -> Stable"
+      }
+    ]
+  },
+  {
+    "version": "1.8",
+    "date": "Febuary 24th, 2026",
+    "changes": [
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 280 (240-280)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice decreased to 240 (210-240)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Merry Music Box decreased to 105"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bleak Ink decreased to 110"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Lovesick Bow corrected to 3.5 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Devilish Candle corrected to 3 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Batwing Basher decreased to 2.5 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Paranormal Balloon & Bloodthirst decreased to 2.5 Stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Spooky Brew stability corrected to Dropping"
+      }
+    ]
+  },
+  {
+    "version": "1.7.1",
+    "date": "February 22nd, 2026",
+    "changes": [
+      {
+        "type": "Other",
+        "text": "Added 3 new bundles in the bundles section that include the anniversaries, new year's, and plaid sets."
+      }
+    ]
+  },
+  {
+    "version": "1.7",
+    "date": "Febuary 22nd, 2026",
+    "changes": [
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew decreased to 325 (range 300-325)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice decreased to 270 (range 240-270)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Santa's Reindeer, Cranberry & Jello decreased to 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bleak Ink decreased to 120"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Ghost decreased to 30"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Sand Castle 2.5 Stars -> 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Mystical Trident 1.5 Stars -> 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Ireland Flag corrected to 1 Star"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Bleak Ink 3 Stars -> 2.5 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Glowy Bush 2.5 Stars -> 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Ghost 2.5 Stars -> 2 Stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Halloween 2025 Legendary credit sets corrected to 3"
+      },
+      {
+        "type": "Description Change",
+        "text": "Autumn 2025 Legendary credit sets corrected to 3"
+      },
+      {
+        "type": "Description Change",
+        "text": "Christmas 2025 Legendary credit sets corrected to 3"
+      },
+      {
+        "type": "Description Change",
+        "text": "Spooky Brew Stable -> Receding"
+      },
+      {
+        "type": "Description Change",
+        "text": "Bleak Ink Stable -> Underpaid For"
+      }
+    ]
+  },
+  {
+    "version": "1.6",
+    "date": "Febuary 19th, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Cherry Blossom 175 -> 180"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spooky Brew 360 -> 350"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice 320 -> 300 (range 270-300)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Devilborn 115 -> 110"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide 45 -> 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Red Man's Vengeance & Backrooms 5 -> 3"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Job Application 3 -> 2"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Bleak 140 -> 130"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Ghost 40 -> 35"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide Underpaid For ->Stable"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Party Balloons 3.5 Stars -> 4 Stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Red Man's Vengeance, Backrooms & Job Application Fluctuating -> Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Slice Struggling -> Receding"
+      }
+    ]
+  },
+  {
+    "version": "1.5.1",
+    "date": "Febuary 15th, 2026",
+    "changes": [
+      {
+        "type": "Bug Fix",
+        "text": "Fixed event icons for filters"
+      },
+      {
+        "type": "Other",
+        "text": "New Lunar New Year Icon"
+      }
+    ]
+  },
+  {
+    "version": "1.5",
+    "date": "February 14th, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Lovesick Bow 390 -> 400"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Party Balloons 445 -> 420"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice 325 -> 320 (310-320)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Devilborn 120 -> 115"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Strawberry Basket 85 -> 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic Potions 80 -> 75"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lemon & Blueberry Baskets 70 -> 65"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide 50 -> 45"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Red Man's Vengeance & Backrooms 10 -> 5 (range 3-8)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "J*b Application 5 -> 3 (range 2-5)"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Lovesick Bow 4.5 Stars -> 4 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Spooky Brew 3.5 Stars -> 3 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Basket Trio 3 Stars -> 2.5 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Bone Crusher Duo 3 Stars -> 2.5 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Red Man's Vengeance, Backrooms & Job Application 1 Star -> 0.5 Star"
+      }
+    ]
+  },
+  {
+    "version": "1.4",
+    "date": "February 9th, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Lovesick 375 -> 390"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Cherry Blossom 170 -> 175"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Hollow 65 -> 70"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Party 475 -> 445 (Range 420-445)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Slice 330 -> 325"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Devilborn 125 -> 120"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Strawberry 90 -> 85"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic 85 -> 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lemon and Blueberry 75 -> 70"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Piñata 55 -> 50"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide 55 -> 50"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Drums 15 -> 12"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Psycho Chainsaw and Pegasus Blade 3 -> 2.5 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Watergun and Choco Dip 3 -> 2.5 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Red Man, Backrooms 1.5 -> 1 Star"
+      },
+      {
+        "type": "Description Change",
+        "text": "Lovesick Doing well -> Overpaid for, No range"
+      },
+      {
+        "type": "Description Change",
+        "text": "Slice Stable -> Underpaid For"
+      },
+      {
+        "type": "Description Change",
+        "text": "Drums Struggling -> Stable"
+      },
+      {
+        "type": "Bug Fix",
+        "text": "FTF event icons not showing is now fixed"
+      }
+    ]
+  },
+  {
+    "version": "1.3",
+    "date": "February 5th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Backrooms & Red man's vengeance 20 (range 10-30), fluctuating"
+      },
+      {
+        "type": "New Items",
+        "text": "J*b Application 10 (range 5-15), fluctuating"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Lovesick 360 -> 375 (range 375-390)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Party 500 -> 475 (range 450-475)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pumpkin Slice 340 -> 330"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Devilborn 130 -> 125"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Merry 115 -> 110"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic 90 -> 85"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Strawberry 100 -> 90"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lemon & Blueberry Baskets 80 -> 75"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide 65 -> 55"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pot O Gold, Ragebringer & Grim Galleon 50 -> 45"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Scarecrow 45 -> 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Candelabra & Jollyday 40 -> 35"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Eggnog Maker, Gingerhouse, Stack of Presents & Ice Sleigh 10 -> 8"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Trains 10 -> 8"
+      }
+    ]
+  },
+  {
+    "version": "1.2.1",
+    "date": "February 2nd, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "Added Total Values for all rarities!"
+      },
+      {
+        "type": "New Items",
+        "text": "Added a Valentine Icon for the website, changes on February 16th"
+      }
+    ]
+  },
+  {
+    "version": "1.2",
+    "date": "February 1st, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Lovesick 350 -> 360 (range 360-370)"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Hollow 60 -> 65"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Party Balloons 520 -> 500 (range 480-500)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Devilborn 140 -> 130"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Merry 120 > 115"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Acidic 95 -> 90"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lemon & Blueberry Baskets 85 > 80"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide 65 -> 60, Underpaid For"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Pot O Gold 55 -> 50"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Phantom 45 -> 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Midnight 40 -> 35"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Drums 20 -> 15 (range 10-15)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Holiday Hotline, Golden Firework & Aurora Abolisher 15 -> 12"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Unchained Beast 10 -> 8"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "2026 5 -> 3"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lemonade Jar 50 -> 40"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Pumpkin Slice 3.5 Stars -> 3 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Merry 2.5 Stars -> 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Twisted 2.5 Stars -> 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Autumn Tent & Turkey 2.5 Stars -> 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Drums 1.5 Stars -> 1 Star"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Holiday Hotline, Golden Firework, Aurora Abolisher & Magical Portal 1.5 Stars -> 1 Star"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Toy Box & Santa's Sleigh 1.5 Star-> 1 Star"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Doomthrust & Frost Engine 1.5 Stars -> 1 Star"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Cherry Blossom 3 Stars -> 3.5 Stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Lovesick Overpaid For -> Doing Well"
+      },
+      {
+        "type": "Description Change",
+        "text": "Yuletide Underpaid For"
+      },
+      {
+        "type": "Description Change",
+        "text": "Magical Portal Struggling -> Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Holiday Hotline, Golden Firework & Aurora Abolisher Struggling -> Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Lemonade Jar Struggling -> Stable"
+      }
+    ]
+  },
+  {
+    "version": "1.1",
+    "date": "January 29th, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Lovesick 340 -> 350, Stable -> Overpaid For"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Gothic 240 -> 250"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Paranormal and Bloodthirst 95 -> 100"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Hollow 55 -> 60"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Gumball 25 > 30"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Party 530 -> 520, Stable -> Struggling, Demand 4 -> 3.5"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Soulless and Spring World 95 -> 90"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lemon and Blueberry 90 -> 85"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Rage and Grim 55 -> 50"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Fiery 45 -> 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide 70 -> 65"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Drums 25 > 20 (Range 15-20)"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Hotline, G. Firework, Abolisher, Magical Portal 20 > 15 [10-15]"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Toy Box & Santa's Sleigh 15 > 12, stable"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Doomthrust & Frost Engine 15 > 10, stable"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lemonade 60 > 50 range 50-40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Tomato Eater 15 > 10 stable"
+      }
+    ]
+  },
+  {
+    "version": "1.0.2",
+    "date": "January 27th, 2026",
+    "changes": [
+      {
+        "type": "Description Change",
+        "text": "Fixed Frost Engine and Doomthrust Value Range"
+      },
+      {
+        "type": "Description Change",
+        "text": "Changed Many sets to the correct seasonal filter"
+      },
+      {
+        "type": "Description Change",
+        "text": "Changed Demand for Mutiple Sets to reflect actual values"
+      }
+    ]
+  },
+  {
+    "version": "1.0.1",
+    "date": "January 26th, 2026",
+    "changes": [
+      {
+        "type": "New Items",
+        "text": "2026 Moved to the New Items Section"
+      },
+      {
+        "type": "Bug Fix",
+        "text": "Multiple Bug Fixes to enhance the web page"
+      }
+    ]
+  },
+  {
+    "version": "1.0",
+    "date": "January 25th, 2026",
+    "changes": [
+      {
+        "type": "Value Increase",
+        "text": "Turkey and Autumn Tent Value 55 -> 60"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Santa Boot and CCJ 12 -> 20"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Lovesick 320 -> 340"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Chainsaw 100 -> 105"
+      },
+      {
+        "type": "Value Increase",
+        "text": "Hollow Scythe 50 -> 55"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Party 550 -> 530"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Drums 28 -> 25, Stable -> Struggling"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Hotline, G. Firework, Abolisher and Magical Portal 24 -> 20"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Doom, Frost, Toy Box and Santa Sleigh Value 22 -> 15"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Lemonade Jar 80 -> 60"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Tomato Eater 20 -> 15"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Yuletide 75 -> 70"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Candelabra and Jollyday 45 -> 40"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Spring World, Acidic and Soulless 100 -> 95"
+      },
+      {
+        "type": "Value Decrease",
+        "text": "Phantom Light 50 -> 45"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Demand for Lemon and Blueberry 2.5 Stars -> 2 Stars"
+      },
+      {
+        "type": "Demand Change",
+        "text": "Gothic 3 Star -> 3.5 Stars"
+      },
+      {
+        "type": "Description Change",
+        "text": "Witch Hunter Value corrected to 30, Demand at 2"
+      },
+      {
+        "type": "Description Change",
+        "text": "Second Anniversary corrected to 12"
+      },
+      {
+        "type": "Description Change",
+        "text": "Vanillaberry Corrected to 40"
+      },
+      {
+        "type": "Description Change",
+        "text": "Spooky Bats and Friendly Ghosts corrected to 30"
+      },
+      {
+        "type": "Description Change",
+        "text": "Gumball Machine corrected to 25"
+      },
+      {
+        "type": "Description Change",
+        "text": "Blue Star Wrap and Pink Star Wrap corrected to 25"
+      },
+      {
+        "type": "Description Change",
+        "text": "Bleak Ink Overpaid For -> Stable"
+      },
+      {
+        "type": "Description Change",
+        "text": "Luxury and Viper corrected to 30"
+      }
+    ]
+  }
+]
