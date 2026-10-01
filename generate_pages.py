@@ -124,7 +124,9 @@ def gen(key):
     html = html.replace('{{CARDS}}', make_cards(items))
     for k in CONF:
         html = html.replace('{{ACT_' + k.upper() + '}}', nav[k])
-    html = html.replace('{{CANONICAL}}', 'https://www.ftfvalues.app/' + key.lower() + '/')
+    # canonical 必须指向实际可访问的地址：托管端只提供 *.html，无 cleanUrls，
+    # 所以不能用 /commons/ 这种带尾斜杠的形式（会 404）。
+    html = html.replace('{{CANONICAL}}', 'https://www.ftfvalues.app/' + key.lower() + '.html')
     html = html.replace('{{DESC_META}}', 'Browse all {} FTF items. {} items with values, stability and demand info.'.format(key.lower(), len(items)))
 
     return html
