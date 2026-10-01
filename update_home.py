@@ -172,6 +172,7 @@ footer a{color:#e94560;text-decoration:none}
   <div class="logo">FTF Values</div>
   <nav>
     <a href="home.html" class="act">Home</a>
+    <a href="calculator.html">&#129518; Calculator</a>
     <a href="use-guide.html">Use Guide</a>
     <a href="changelog.html">Changelog</a>
     <a href="faq.html">FAQ</a>

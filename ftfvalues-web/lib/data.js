@@ -48,7 +48,9 @@ export function getAllItems() {
   for (const key of Object.keys(d)) {
     for (const it of d[key].items || []) {
       out.push({
-        slug: it.slug,
+        // 453 unique names across 625 rows - namespacing by rarity keeps
+        // every item addressable instead of the last duplicate winning.
+        slug: (it.rarity || '') + '__' + it.slug,
         name: it.name,
         value: Number(it.value) || 0,
         rarity: it.rarity || "",

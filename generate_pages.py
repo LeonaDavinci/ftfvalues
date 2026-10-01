@@ -206,6 +206,7 @@ footer a{color:{{COLOR}}}
 <div class="logo">FTF Values</div>
 <nav>
   <a href="home.html">Home</a>
+  <a href="calculator.html">&#129518; Calculator</a>
   <a href="use-guide.html">Use Guide</a>
   <a href="changelog.html">Changelog</a>
   <a href="faq.html">FAQ</a>

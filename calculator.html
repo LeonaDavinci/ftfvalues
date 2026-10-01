@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FTF Calculator - Build Both Sides of Your Trade | FTF Values</title>
+<meta name="description" content="FTF trade calculator — build both sides of a trade, compare totals in fv, and see instantly if you Win, Lose, or make a Fair trade." />
+<meta name="keywords" content="FTF calculator, FTF trade calculator, Flee the Facility, FTF item values, FTF trading" />
+<link rel="canonical" href="https://www.ftfvalues.app/calculator.html" />
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;background:#0f0f1a;color:#e0e0e0}
+a{text-decoration:none;color:inherit}
+
+/* === TOP NAVIGATION === */
+header{background:#1a1a2e;padding:0 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #e94560;position:sticky;top:0;z-index:100;height:56px}
+.logo{font-size:1.3rem;font-weight:700;color:#e94560;white-space:nowrap}
+
+/* Main nav - item categories */
+.main-nav{display:flex;gap:2px;flex-wrap:wrap;justify-content:center;flex:1;margin:0 16px}
+.main-nav a{padding:6px 14px;border-radius:6px;font-size:0.85rem;font-weight:600;transition:all 0.2s;white-space:nowrap;color:#e0e0e0}
+.main-nav a:hover,.main-nav a.act{background:rgba(233,69,96,0.13);color:#e94560}
+
+/* More dropdown */
+.nav-more{position:relative}
+.nav-more-btn{background:none;border:1px solid #333;border-radius:6px;color:#a0a0b0;padding:6px 12px;cursor:pointer;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.nav-more-btn:hover{background:#2a2a3e;color:#e0e0e0;border-color:#555}
+.nav-more-menu{display:none;position:absolute;right:0;top:100%;margin-top:6px;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:8px;padding:6px 0;min-width:160px;box-shadow:0 8px 30px rgba(0,0,0,0.4);z-index:200}
+.nav-more-menu.show{display:block}
+.nav-more-menu a{display:block;padding:8px 16px;color:#a0a0b0;font-size:0.85rem;transition:all 0.15s}
+.nav-more-menu a:hover{background:#2a2a3e;color:#e94560}
+
+/* Mobile menu */
+.mobile-menu-btn{display:none;background:none;border:none;color:#e0e0e0;font-size:1.4rem;cursor:pointer;padding:4px 8px}
+@media(max-width:900px){
+  header{padding:0 12px;height:50px}
+  .main-nav{gap:1px}
+  .main-nav a{font-size:0.78rem;padding:5px 8px}
+  .logo{font-size:1.1rem}
+}
+@media(max-width:768px){
+  .mobile-menu-btn{display:block}
+  .main-nav{display:none;position:absolute;top:50px;left:0;right:0;background:#1a1a2e;border-bottom:2px solid #e94560;padding:8px 12px;flex-wrap:wrap;gap:4px;justify-content:flex-start}
+  .main-nav.show{display:flex}
+  .main-nav a{padding:8px 12px;font-size:0.85rem}
+}
+
+/* === HERO === */
+.hero{text-align:center;padding:64px 24px;background:radial-gradient(ellipse at center,#1a1a3e 0%,#0f0f1a 70%)}
+.hero h1{font-size:3rem;background:linear-gradient(90deg,#e94560,#0f3460);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px}
+.hero p{font-size:1.2rem;color:#a0a0b0;max-width:600px;margin:0 auto 24px}
+.cb{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:12px 28px;border-radius:8px;font-weight:600;transition:transform 0.2s,box-shadow 0.2s;cursor:pointer}
+.bp{background:linear-gradient(135deg,#e94560,#c23152);color:#fff;border:none}
+.bs{background:#16213e;color:#e94560;border:2px solid #e94560}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(233,69,96,0.3)}
+
+/* === FEATURES === */
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;padding:40px 24px;max-width:1100px;margin:0 auto}
+.fc{background:#1a1a2e;border-radius:12px;padding:24px;border:1px solid #2a2a4e;transition:transform 0.2s,border-color 0.2s}
+.fc:hover{transform:translateY(-4px);border-color:#e94560}
+.fc h3{color:#e94560;margin-bottom:10px}
+.fc p{color:#a0a0b0;line-height:1.6;font-size:0.9rem}
+
+/* === PREVIEW SECTIONS === */
+.ps{padding:40px 24px;max-width:1400px;margin:0 auto}
+.psh{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.psh h2{font-size:1.5rem}
+.psl{font-size:0.85rem;padding:6px 16px;border:1px solid #555;border-radius:20px;transition:all 0.2s;color:#a0a0b0}
+.psl:hover{background:rgba(255,255,255,0.05);color:#e0e0e0}
+.psg{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+
+/* Mini Card */
+.mc{display:block;background:#1a1a2e;border-radius:10px;overflow:hidden;border:1px solid #2a2a4e;transition:transform 0.2s,border-color 0.2s;padding-bottom:8px}
+.mc:hover{transform:translateY(-3px);border-color:#e94560}
+.mi{width:100%;aspect-ratio:1;background:#13132a;display:flex;align-items:center;justify-content:center;padding:6px}
+.mi img{width:100%;height:100%;object-fit:contain}
+.mn{font-size:0.8rem;font-weight:600;color:#f0f0f0;padding:6px 8px 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mv{font-size:0.9rem;font-weight:700;padding:0 8px 2px}
+.mt{padding:0 8px 2px}
+.ms{font-size:0.65rem;font-weight:600;padding:1px 6px;border-radius:8px}
+.md{font-size:0.75rem;padding:0 8px}
+.mds{letter-spacing:1px}
+
+/* === COMMUNITY === */
+.community{text-align:center;padding:40px 24px;background:#1a1a2e}
+.community h2{color:#e94560;margin-bottom:12px}
+.community p{color:#a0a0b0;max-width:600px;margin:0 auto 20px}
+.db{display:inline-flex;align-items:center;gap:8px;background:#5865F2;color:#fff;padding:10px 24px;border-radius:8px;font-weight:600;transition:transform 0.2s}
+.db:hover{transform:translateY(-2px)}
+
+/* === STAFF === */
+.staff{max-width:1100px;margin:0 auto;padding:40px 24px}
+.staff h2{color:#e94560;text-align:center;margin-bottom:20px}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+.sc{background:#1a1a2e;border-radius:10px;padding:16px;text-align:center;border:1px solid #2a2a4e}
+.sc .av{width:56px;height:56px;border-radius:50%;background:#e94560;margin:0 auto 10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff}
+.sc h4{color:#e0e0e0;font-size:0.9rem;margin-bottom:4px}
+.sc .ro{color:#e94560;font-size:0.75rem}
+
+/* === FOOTER === */
+footer{background:#0a0a15;padding:20px;text-align:center;color:#606070;font-size:0.85rem;border-top:1px solid #1a1a2e;margin-top:40px}
+footer a{color:#e94560}
+.footer-links{margin-top:8px}
+.footer-links a{margin:0 8px;color:#606070;font-size:0.8rem}
+.footer-links a:hover{color:#e94560}
+
+@media(max-width:768px){
+  .hero h1{font-size:2rem}
+  .hero p{font-size:1rem}
+  .psg{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+}
+
+/* === TRADE CALCULATOR === */
+.calc-hero{text-align:center;padding:40px 24px 20px}
+.calc-hero h1{font-size:2.2rem;color:#e94560;margin-bottom:8px}
+.calc-hero p{color:#a0a0b0;max-width:620px;margin:0 auto}
+.calc-wrap{max-width:1040px;margin:0 auto;padding:16px 24px 40px}
+.calc-panel{background:#13132a;border:1px solid #2a2a4e;border-radius:14px;padding:20px}
+.calc-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2a2a4e;padding-bottom:12px;margin-bottom:16px;gap:12px;flex-wrap:wrap}
+.ctotal{font-size:1.5rem;font-weight:700;color:#f0f0f0}
+.ctotal.right{text-align:right}
+.ctotal small{font-size:.85rem;color:#808090;font-weight:600}
+.clegend{display:flex;gap:14px;font-size:.85rem;font-weight:700}
+.lw{color:#2ecc71}.lf{color:#f1c40f}.ll{color:#e74c3c}
+.calc-add{display:flex;gap:12px;align-items:center;margin-bottom:18px;flex-wrap:wrap}
+.side-pick{display:flex;gap:6px}
+.side-pick button{background:#1a1a2e;border:1px solid #2a2a4e;color:#a0a0b0;padding:7px 14px;border-radius:20px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:inherit}
+.side-pick button.on{background:rgba(233,69,96,.13);border-color:#e94560;color:#e94560}
+.srch{position:relative;flex:1;min-width:220px}
+.srch input{width:100%;background:#1a1a2e;border:1px solid #2a2a4e;color:#e0e0e0;padding:9px 16px;border-radius:20px;font-size:.9rem;font-family:inherit}
+.srch input:focus{outline:none;border-color:#e94560}
+.sr-drop{position:absolute;left:0;right:0;top:100%;margin-top:6px;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:10px;max-height:300px;overflow-y:auto;z-index:50;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.sr-item{display:flex;align-items:center;gap:10px;width:100%;padding:8px 12px;background:none;border:none;cursor:pointer;text-align:left;color:#e0e0e0;transition:background .15s;font-family:inherit}
+.sr-item:hover{background:#2a2a3e}
+.sr-item img{width:34px;height:34px;object-fit:contain;background:#13132a;border-radius:6px;flex:none}
+.sr-name{flex:1;font-size:.88rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sr-val{font-size:.8rem;color:#e94560;font-weight:700}
+.sr-none{padding:14px;color:#808090;font-size:.85rem;text-align:center}
+.calc-grid3{display:grid;grid-template-columns:1fr 190px 1fr;gap:16px;align-items:start}
+.calc-side h3{text-align:center;font-size:1.05rem;color:#e0e0e0;margin-bottom:10px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.slot{position:relative;aspect-ratio:1;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.slot.filled{border-color:#e94560}
+.slot img{width:100%;height:100%;object-fit:contain;padding:6px}
+.slot-ph{color:#3a3a5e;font-size:1.4rem}
+.slot.empty{border-style:dashed;color:#3a3a5e;font-size:1.6rem;cursor:pointer;background:transparent;transition:all .15s;font-family:inherit}
+.slot.empty:hover,.slot.empty.target{border-color:#e94560;color:#e94560;background:rgba(233,69,96,.05)}
+.slot-rm{position:absolute;top:3px;right:4px;background:rgba(0,0,0,.55);color:#e0e0e0;border:none;border-radius:50%;width:20px;height:20px;font-size:.8rem;line-height:1;cursor:pointer;z-index:2}
+.slot-rm:hover{background:#e94560;color:#fff}
+.qty{position:absolute;bottom:4px;left:4px;right:4px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,21,.78);border-radius:8px;padding:1px 4px;z-index:2}
+.qty button{background:none;border:none;color:#e0e0e0;font-size:.95rem;font-weight:700;cursor:pointer;padding:0 6px}
+.qty button:hover{color:#e94560}
+.qty span{font-size:.8rem;font-weight:700;color:#fff}
+.calc-mid{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:12px 0}
+.vnum{font-size:2.4rem;font-weight:800;line-height:1}
+.vnum.win{color:#2ecc71}.vnum.lose{color:#e74c3c}.vnum.fair{color:#f1c40f}.vnum.idle{color:#3a3a5e}
+.vlab{font-size:.95rem;font-weight:800;letter-spacing:1px}
+.vlab.win{color:#2ecc71}.vlab.lose{color:#e74c3c}.vlab.fair{color:#f1c40f}
+.cbtn{background:#1a1a2e;border:1px solid #2a2a4e;color:#e0e0e0;padding:8px 20px;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;min-width:110px;font-family:inherit}
+.cbtn:hover{border-color:#e94560;color:#e94560}
+.cbtn:disabled{opacity:.45;cursor:default}
+.calc-note{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:16px;color:#808090;font-size:.8rem}
+.calc-note .cn2{color:#606070}
+@media(max-width:860px){
+  .calc-grid3{grid-template-columns:1fr}
+  .calc-side.their-side{order:2}
+  .calc-mid{order:3;flex-direction:row;justify-content:center;flex-wrap:wrap;padding:8px 0}
+  .vnum{font-size:1.8rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header>
+  <a href="https://www.ftfvalues.app" class="logo">FTF Values</a>
+
+  <!-- Main Nav - 5 item categories (prominent position) -->
+  <nav class="main-nav" id="mainNav">
+    <a href="calculator.html" class="act">&#129518; Calculator</a>
+    <a href="sets.html">Bundles</a>
+    <a href="legendaries.html">Legendaries</a>
+    <a href="epics.html">Epics</a>
+    <a href="rares.html">Rares</a>
+    <a href="commons.html">Commons</a>
+  </nav>
+
+  <!-- More menu (secondary pages) -->
+  <div class="nav-more">
+    <button class="nav-more-btn" onclick="toggleMoreMenu()" aria-label="More pages">&#9881; More</button>
+    <div class="nav-more-menu" id="moreMenu">
+      <a href="index.html">&#127968; Home</a>
+      <a href="use-guide.html">&#128214; Use Guide</a>
+      <a href="changelog.html">&#128221; Changelog</a>
+      <a href="faq.html">&#10067; FAQ</a>
+    </div>
+  </div>
+
+  <!-- Mobile menu button -->
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">&#9776;</button>
+</header>
+
+
+<!-- ========== CALCULATOR HERO ========== -->
+<section class="calc-hero">
+  <h1>&#129522; FTF Calculator</h1>
+  <p>Pick items for both sides of your trade &mdash; totals and a Win / Fair / Lose verdict update instantly as you build the offer.</p>
+</section>
+
+<!-- ========== TRADE CALCULATOR ========== -->
+<div class="calc-wrap" id="calculator">
+  <div class="calc-panel">
+    <div class="calc-top">
+      <div class="ctotal" id="ftfYourTotal">0 <small>fv</small></div>
+      <div class="clegend"><span class="lw">Win</span><span class="lf">Fair</span><span class="ll">Lose</span></div>
+      <div class="ctotal right" id="ftfTheirTotal">0 <small>fv</small></div>
+    </div>
+
+    <div class="calc-add">
+      <div class="side-pick">
+        <button type="button" id="ftfSideYour" class="on">Your Offer</button>
+        <button type="button" id="ftfSideTheir">Their Offer</button>
+      </div>
+      <div class="srch">
+        <input id="ftfSearch" type="text" placeholder="Search items to add&hellip;" aria-label="Search items" autocomplete="off">
+        <div class="sr-drop" id="ftfDrop" style="display:none"></div>
+      </div>
+    </div>
+
+    <div class="calc-grid3">
+      <div class="calc-side" id="ftfYourSide">
+        <h3>Your Offer</h3>
+        <div class="slots" id="ftfYourSlots"></div>
+      </div>
+      <div class="calc-mid">
+        <div class="vnum idle" id="ftfVerdictNum">&mdash;</div>
+        <div class="vlab" id="ftfVerdictLab" style="color:#3a3a5e">FV &mdash;</div>
+        <button class="cbtn" type="button" id="ftfReset">Reset</button>
+        <button class="cbtn" type="button" id="ftfSave">Save Image</button>
+      </div>
+      <div class="calc-side their-side" id="ftfTheirSide">
+        <h3>Their Offer</h3>
+        <div class="slots" id="ftfTheirSlots"></div>
+      </div>
+    </div>
+
+    <div class="calc-note">
+      <span id="ftfUpdated">Last updated: &mdash;</span>
+      <span class="cn2">Values in fv (valuables)</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <p>&copy; 2024 FTF Values. This is a fan-made value guide for Flee the Facility.</p>
+  <p class="footer-links"><a href="#calculator">Calculator</a> |
+    
+    <a href="index.html">Home</a> |
+    <a href="use-guide.html">Use Guide</a> |
+    <a href="changelog.html">Changelog</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="sets.html">Bundles</a> |
+    <a href="legendaries.html">Legendaries</a> |
+    <a href="epics.html">Epics</a> |
+    <a href="rares.html">Rares</a> |
+    <a href="commons.html">Commons</a>
+  </p>
+</footer>
+
+<!-- Dropdown & Mobile Menu JS -->
+<script>
+function toggleMoreMenu(){
+  document.getElementById('moreMenu').classList.toggle('show');
+}
+function toggleMobileMenu(){
+  document.getElementById('mainNav').classList.toggle('show');
+}
+/* Close more menu when clicking outside */
+document.addEventListener('click',function(e){
+  var mm=document.getElementById('moreMenu');
+  if(mm && !e.target.closest('.nav-more')) mm.classList.remove('show');
+});
+</script>
+<!-- Trade Calculator -->
+<script>
+
+(function () {
+  if (window.__ftfCalcReady) return;
+  var wrap = document.getElementById('calculator');
+  if (!wrap) return;
+
+  var DATA_URL = 'ftf_values_full_data.json';
+  var S = { your: [], their: [], side: 'your', items: [], byKey: {}, updated: '' };
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+  function fmt(n) { return (Number(n) || 0).toLocaleString('en-US'); }
+  function imgSrc(p) { return 'images/' + String(p || '').replace(/ /g, '%20'); }
+
+  var el = function (id) { return document.getElementById(id); };
+  var drop = el('ftfDrop'), search = el('ftfSearch');
+  var q = '', open = false;
+
+  function total(list) {
+    var sum = 0;
+    for (var i = 0; i < list.length; i++) {
+      var it = S.byKey[list[i].key];
+      if (it) sum += (Number(it.value) || 0) * list[i].qty;
+    }
+    return sum;
+  }
+
+  function verdict() {
+    if (!S.your.length || !S.their.length) return null;
+    var diff = total(S.their) - total(S.your);
+    var tol = Math.max(50, 0.05 * Math.max(total(S.your), total(S.their)));
+    if (Math.abs(diff) <= tol) return { k: 'fair', d: Math.abs(diff) };
+    return { k: diff > 0 ? 'win' : 'lose', d: Math.abs(diff) };
+  }
+
+  function renderSide(which) {
+    var label = which === 'your' ? 'ftfYourSlots' : 'ftfTheirSlots';
+    var box = el(label);
+    if (!box) return;
+    var list = S[which];
+    var n = Math.max(9, Math.ceil((list.length + 1) / 3) * 3);
+    var html = '';
+    for (var i = 0; i < n; i++) {
+      var e = list[i];
+      if (e) {
+        var it = S.byKey[e.key];
+        if (!it) continue;
+        html += '<div class="slot filled">' +
+          '<button type="button" class="slot-rm" data-rm="' + which + '" data-key="' + esc(e.key) + '" aria-label="Remove">&times;</button>' +
+          '<img src="' + esc(imgSrc(it.img)) + '" alt="' + esc(it.name) + '" loading="lazy" onerror="this.style.display=\'none\'">' +
+          '<div class="qty">' +
+            '<button type="button" data-q="' + which + '" data-key="' + esc(e.key) + '" data-d="-1">&minus;</button>' +
+            '<span>' + e.qty + '</span>' +
+            '<button type="button" data-q="' + which + '" data-key="' + esc(e.key) + '" data-d="1">+</button>' +
+          '</div></div>';
+      } else {
+        html += '<button type="button" class="slot empty' + (S.side === which ? ' target' : '') + '" data-pick="' + which + '">+</button>';
+      }
+    }
+    box.innerHTML = html;
+  }
+
+  function renderTotals() {
+    var y = total(S.your), t = total(S.their);
+    el('ftfYourTotal').innerHTML = fmt(y) + ' <small>fv</small>';
+    el('ftfTheirTotal').innerHTML = fmt(t) + ' <small>fv</small>';
+    var v = verdict();
+    var num = el('ftfVerdictNum'), lab = el('ftfVerdictLab');
+    if (v) {
+      num.className = 'vnum ' + v.k;
+      lab.className = 'vlab ' + v.k;
+      num.textContent = fmt(v.d);
+      lab.textContent = 'FV ' + (v.k === 'win' ? 'WIN' : v.k === 'lose' ? 'LOSE' : 'FAIR');
+    } else {
+      num.className = 'vnum idle';
+      lab.className = 'vlab';
+      num.innerHTML = '&mdash;';
+      lab.innerHTML = 'FV &mdash;';
+    }
+    renderSide('your');
+    renderSide('their');
+  }
+
+  function renderDrop() {
+    var s = q.trim().toLowerCase();
+    if (!open || !s) { drop.style.display = 'none'; drop.innerHTML = ''; return; }
+    var res = S.items.filter(function (i) { return i.name.toLowerCase().indexOf(s) !== -1; }).slice(0, 40);
+    if (!res.length) {
+      drop.innerHTML = '<div class="sr-none">No items match &ldquo;' + esc(q) + '&rdquo;</div>';
+      drop.style.display = 'block';
+      return;
+    }
+    var html = '';
+    for (var i = 0; i < res.length; i++) {
+      var it = res[i];
+      html += '<button type="button" class="sr-item" data-add="' + esc(it.key) + '">' +
+        '<img src="' + esc(imgSrc(it.img)) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">' +
+        '<span class="sr-name">' + esc(it.name) + '</span>' +
+        '<span class="sr-val">' + fmt(it.value) + ' fv</span></button>';
+    }
+    drop.innerHTML = html;
+    drop.style.display = 'block';
+  }
+
+  function addItem(key) {
+    var list = S[S.side];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].key === key) { list[i].qty += 1; renderTotals(); return; }
+    }
+    list.push({ key: key, qty: 1 });
+    q = ''; open = false;
+    search.value = '';
+    renderTotals();
+    renderDrop();
+    search.focus();
+  }
+
+  function setSide(which) {
+    S.side = which;
+    el('ftfSideYour').className = which === 'your' ? 'on' : '';
+    el('ftfSideTheir').className = which === 'their' ? 'on' : '';
+    renderTotals();
+  }
+
+  wrap.addEventListener('click', function (ev) {
+    var t = ev.target;
+    while (t && t !== wrap && !t.getAttribute('data-rm') && !t.getAttribute('data-q') &&
+           !t.getAttribute('data-pick') && !t.getAttribute('data-add')) t = t.parentNode;
+    if (!t || t === wrap) return;
+
+    if (t.getAttribute('data-rm')) {
+      var rk = t.getAttribute('data-key');
+      S[t.getAttribute('data-rm')] = S[t.getAttribute('data-rm')].filter(function (e) { return e.key !== rk; });
+      renderTotals();
+      return;
+    }
+    if (t.getAttribute('data-q')) {
+      var wk = t.getAttribute('data-q'), kk = t.getAttribute('data-key'), d = parseInt(t.getAttribute('data-d'), 10);
+      var list = S[wk];
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].key === kk) { list[i].qty += d; if (list[i].qty < 1) list.splice(i, 1); break; }
+      }
+      renderTotals();
+      return;
+    }
+    if (t.getAttribute('data-pick')) { setSide(t.getAttribute('data-pick')); search.focus(); return; }
+    if (t.getAttribute('data-add')) { addItem(t.getAttribute('data-add')); return; }
+  });
+
+  document.addEventListener('click', function (ev) {
+    if (open && !ev.target.closest('.srch')) { open = false; renderDrop(); }
+  });
+
+  search.addEventListener('input', function () { q = search.value; open = true; renderDrop(); });
+  search.addEventListener('focus', function () { if (q.trim()) { open = true; renderDrop(); } });
+  el('ftfSideYour').addEventListener('click', function () { setSide('your'); });
+  el('ftfSideTheir').addEventListener('click', function () { setSide('their'); });
+  el('ftfReset').addEventListener('click', function () { S.your = []; S.their = []; renderTotals(); });
+
+  el('ftfSave').addEventListener('click', function () {
+    var loadImg = function (src) {
+      return new Promise(function (res) {
+        var im = new Image();
+        im.onload = function () { res(im); };
+        im.onerror = function () { res(null); };
+        im.src = src;
+      });
+    };
+    var W = 900, rowH = 52, maxRows = 7;
+    var rows = Math.min(maxRows, Math.max(S.your.length, S.their.length, 1));
+    var H = 400 + rows * rowH + 40;
+    var cv = document.createElement('canvas');
+    cv.width = W; cv.height = H;
+    var ctx = cv.getContext('2d');
+
+    ctx.fillStyle = '#0f0f1a'; ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = '#13132a'; ctx.fillRect(30, 30, W - 60, H - 60);
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#e94560'; ctx.font = "bold 32px 'Segoe UI', sans-serif";
+    ctx.fillText('FTF Values — Trade Calculator', W / 2, 85);
+    ctx.fillStyle = '#808090'; ctx.font = "15px 'Segoe UI', sans-serif";
+    ctx.fillText(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }), W / 2, 112);
+
+    var drawSide = function (list, x0, title) {
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#f0f0f0'; ctx.font = "bold 22px 'Segoe UI', sans-serif";
+      ctx.fillText(title, x0 + 190, 165);
+      ctx.fillStyle = '#e94560'; ctx.font = "bold 26px 'Segoe UI', sans-serif";
+      ctx.fillText(fmt(total(list)) + ' fv', x0 + 190, 196);
+      var shown = list.slice(0, maxRows), y = 230;
+      var i = 0;
+      var next = function () {
+        if (i >= shown.length) {
+          if (list.length > maxRows) {
+            ctx.textAlign = 'left'; ctx.fillStyle = '#808090'; ctx.font = "14px 'Segoe UI', sans-serif";
+            ctx.fillText('+' + (list.length - maxRows) + ' more…', x0 + 96, y + 10);
+          }
+          ctx.textAlign = 'center';
+          return Promise.resolve();
+        }
+        var e = shown[i++], it = S.byKey[e.key];
+        if (it) {
+          return loadImg(imgSrc(it.img)).then(function (im) {
+            ctx.fillStyle = '#1a1a2e'; ctx.fillRect(x0 + 40, y, 44, 44);
+            if (im) ctx.drawImage(im, x0 + 40, y, 44, 44);
+            ctx.textAlign = 'left'; ctx.fillStyle = '#e0e0e0'; ctx.font = "16px 'Segoe UI', sans-serif";
+            ctx.fillText(it.name + (e.qty > 1 ? ' ×' + e.qty : ''), x0 + 96, y + 28);
+            ctx.textAlign = 'right'; ctx.fillStyle = '#a0a0b0'; ctx.font = "15px 'Segoe UI', sans-serif";
+            ctx.fillText(fmt((Number(it.value) || 0) * e.qty) + ' fv', x0 + 340, y + 28);
+            y += rowH;
+            return next();
+          });
+        }
+        y += rowH;
+        return next();
+      };
+      return next();
+    };
+
+    var v = verdict();
+    Promise.all([drawSide(S.your, 50, 'Your Offer'), drawSide(S.their, W - 430, 'Their Offer')]).then(function () {
+      ctx.strokeStyle = '#2a2a4e'; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(W / 2, 150); ctx.lineTo(W / 2, 230 + rows * rowH); ctx.stroke();
+      if (v) {
+        ctx.fillStyle = v.k === 'win' ? '#2ecc71' : v.k === 'lose' ? '#e74c3c' : '#f1c40f';
+        ctx.font = "bold 44px 'Segoe UI', sans-serif";
+        ctx.fillText(fmt(v.d), W / 2, 260);
+        ctx.font = "bold 20px 'Segoe UI', sans-serif";
+        ctx.fillText('FV ' + (v.k === 'win' ? 'Win' : v.k === 'lose' ? 'Lose' : 'Fair'), W / 2, 292);
+      } else {
+        ctx.fillStyle = '#808090'; ctx.font = "18px 'Segoe UI', sans-serif";
+        ctx.fillText('Add items to both sides', W / 2, 260);
+      }
+      ctx.fillStyle = '#606070'; ctx.font = "14px 'Segoe UI', sans-serif";
+      ctx.fillText('www.ftfvalues.app', W / 2, H - 50);
+
+      cv.toBlob(function (blob) {
+        if (!blob) return;
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'ftf-trade-calculator.png';
+        document.body.appendChild(a); a.click();
+        setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 5000);
+      }, 'image/png');
+    });
+  });
+
+  var taken = false;
+  for (var key in S.items) { taken = true; break; }
+
+  fetch(DATA_URL)
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var items = [];
+      for (var cat in data) {
+        var meta = (data[cat] && data[cat].metadata) || {};
+        if (meta.last_updated && !S.updated) S.updated = meta.last_updated;
+        var arr = (data[cat] && data[cat].items) || [];
+        for (var i = 0; i < arr.length; i++) {
+          var it = arr[i];
+          var k = (it.rarity || '') + '__' + (it.slug || '');
+          items.push({ key: k, name: it.name, value: Number(it.value) || 0, img: it.local_image_path || '' });
+        }
+      }
+      items.sort(function (a, b) { return a.name.localeCompare(b.name); });
+      S.items = items;
+      S.byKey = {};
+      for (var j = 0; j < items.length; j++) S.byKey[items[j].key] = items[j];
+      var note = el('ftfUpdated');
+      if (note) note.innerHTML = 'Last updated: ' + esc(S.updated || '—');
+      renderTotals();
+      renderDrop();
+    })
+    .catch(function () {
+      var note = el('ftfUpdated');
+      if (note) note.textContent = 'Could not load item data.';
+    });
+
+  renderTotals();
+  window.__ftfCalcReady = true;
+})();
+
+</script>
+</body>
+</html>
