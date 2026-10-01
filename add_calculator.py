@@ -126,6 +126,7 @@ WIDGET_HTML = """
       <span class="cn2">Values in fv (valuables)</span>
     </div>
   </div>
+  <!--CALC_EXTRA-->
 </div>
 """
 
@@ -424,6 +425,10 @@ CALC_HERO = """
 """
 
 
+# Home page only: a way out of the inline widget onto the standalone calculator page.
+HOME_CALC_EXTRA = '<p class="calc-extra"><a href="calculator.html">Open the full-screen calculator page<span class="arw">&rarr;</span></a></p>'
+
+
 def read(path):
     with open(path, encoding='utf-8') as f:
         return f.read()
@@ -531,9 +536,12 @@ def main():
                   '', home, count=1, flags=re.S)
     JS_BLOCK = '<!-- Trade Calculator -->\n<script>\n' + CALC_JS + '\n</script>\n'
     home = re.sub(r'<!-- Trade Calculator -->\s*<script>.*?</script>\s*', '', home, flags=re.S)
+    home = re.sub(r'[ \t]*<p class="calc-extra">.*?</p>\r?\n', '', home)
     if 'id="calculator"' not in home:
         home, css_ok = inject_css(home)
-        section = ('<!-- ========== CALCULATOR ========== -->\n' + WIDGET_HTML + '\n')
+        # fill the home-only "standalone page" link; the placeholder is absent on calculator.html
+        widget = WIDGET_HTML.replace('  <!--CALC_EXTRA-->\n', '  ' + HOME_CALC_EXTRA + '\n', 1)
+        section = ('<!-- ========== CALCULATOR ========== -->\n' + widget + '\n')
         if FEATURES in home:
             home = home.replace(FEATURES, section + '\n' + FEATURES, 1)
         else:
