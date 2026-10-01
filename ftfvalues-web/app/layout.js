@@ -10,7 +10,7 @@ export const metadata = {
     template: "%s - FTF Values",
   },
   description:
-    "The ultimate Flee the Facility value guide. Check item values, stability tags, and demand ratings for Legendary, Epic, Rare and Common items. Updated daily.",
+    "FTF Values - Flee the Facility trading value guide and item value calculator. Check FTF item values, stability tags and demand ratings for Legendary, Epic, Rare and Common items.",
   keywords: [
     "Flee the Facility",
     "FTF",

@@ -16,8 +16,9 @@ export default function Home() {
         </h1>
         <p>
           Your trusted source for FTF item values, trading insights, and market
-          trends. Make smarter trades with accurate, community-driven value data
-          updated daily.
+          trends. Look up the value of any item, then use our FTF Calculator to
+          compare both sides of a trade and see instantly if you win, lose, or
+          make a fair deal. Community-driven data, updated daily.
         </p>
         <div className="cb">
           <a href="/legendaries" className="btn bp">

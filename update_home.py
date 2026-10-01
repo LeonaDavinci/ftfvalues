@@ -97,7 +97,7 @@ home_html = '''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FTF Values - Calculator - item value -  Flee the Facility Trading Value Guide & </title>
-<meta name="description" content="The ultimate Flee the Facility value guide. Check item values, stability tags, demand ratings for Legendary, Epic, Rare and Common items. Updated daily.">
+<meta name="description" content="FTF Values - Flee the Facility trading value guide and item value calculator. Check FTF item values, stability tags and demand ratings for Legendary, Epic, Rare and Common items.">
 <meta name="keywords" content="Flee the Facility, FTF, Roblox FTF, FTF values, FTF trading, FTF item values">
 <link rel="canonical" href="https://www.ftfvalues.app/">
 <style>
@@ -185,7 +185,7 @@ footer a{color:#e94560;text-decoration:none}
 
 <section class="hero">
   <h1>Flee the Facility Value Guide</h1>
-  <p>Your trusted source for FTF item values, trading insights, and market trends. Make smarter trades with accurate, community-driven value data updated daily.</p>
+  <p>Your trusted source for FTF item values, trading insights, and market trends. Look up the value of any item, then use our FTF Calculator to compare both sides of a trade and see instantly if you win, lose, or make a fair deal. Community-driven data, updated daily.</p>
   <div class="cb">
     <a href="legendaries.html" class="btn bp">View Legendary Values</a>
     <a href="use-guide.html" class="btn bs">How to Use</a>
