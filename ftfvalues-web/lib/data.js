@@ -41,6 +41,34 @@ export function getTopItems(key, n = 10) {
     .slice(0, n);
 }
 
+// All items across every category, flattened for the trade calculator.
+export function getAllItems() {
+  const d = getRawData();
+  const out = [];
+  for (const key of Object.keys(d)) {
+    for (const it of d[key].items || []) {
+      out.push({
+        slug: it.slug,
+        name: it.name,
+        value: Number(it.value) || 0,
+        rarity: it.rarity || "",
+        local_image_path: it.local_image_path || "",
+      });
+    }
+  }
+  return out.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Most recent "last_updated" across category metadata (e.g. "June 15th, 2026").
+export function getLastUpdated() {
+  const d = getRawData();
+  for (const key of Object.keys(d)) {
+    const lu = (d[key].metadata || {}).last_updated;
+    if (lu) return lu;
+  }
+  return null;
+}
+
 // Image path for an item -> served from /images.
 export function imageSrc(item) {
   const p = item.local_image_path || "";

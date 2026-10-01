@@ -29,6 +29,20 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="calc-card-wrap">
+        <a href="/calculator" className="calc-card">
+          <div className="calc-ic" aria-hidden="true">🧮</div>
+          <div className="calc-body">
+            <h3>FTF Calculator</h3>
+            <p>
+              Build both sides of a trade and compare totals in fv — know
+              instantly if you are winning, losing, or making a fair deal.
+            </p>
+          </div>
+          <span className="calc-go">Open Calculator &rarr;</span>
+        </a>
+      </section>
+
       <section className="features">
         {HOME_FEATURES.map((f) => (
           <div className="fc" key={f.title}>

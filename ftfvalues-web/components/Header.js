@@ -4,6 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const MAIN_NAV = [
+  { href: "/calculator", label: "🧮 Calculator" },
   { href: "/sets", label: "Bundles" },
   { href: "/legendaries", label: "Legendaries" },
   { href: "/epics", label: "Epics" },

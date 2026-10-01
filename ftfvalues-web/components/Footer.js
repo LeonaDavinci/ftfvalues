@@ -1,4 +1,5 @@
 const FOOTER_LINKS = [
+  { href: "/calculator", label: "Calculator" },
   { href: "/", label: "Home" },
   { href: "/use-guide", label: "Use Guide" },
   { href: "/changelog", label: "Changelog" },
