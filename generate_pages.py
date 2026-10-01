@@ -140,6 +140,10 @@ TEMPLATE = '''<!DOCTYPE html>
 <meta name="description" content="{{DESC_META}}">
 <meta name="keywords" content="FTF {{NAME}}, Flee the Facility, Roblox FTF, {{NAME}} values">
 <link rel="canonical" href="{{CANONICAL}}">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;background:#0f0f1a;color:#e0e0e0}
