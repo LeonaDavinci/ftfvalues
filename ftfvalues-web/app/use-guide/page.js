@@ -1,7 +1,10 @@
 import { USE_GUIDE } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Use Guide" };
+export const metadata = {
+  title: "Use Guide",
+  alternates: { canonical: "/use-guide" },
+};
 
 export default function UseGuide() {
   const g = USE_GUIDE;

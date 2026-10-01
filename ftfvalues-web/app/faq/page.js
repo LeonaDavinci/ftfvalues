@@ -1,7 +1,10 @@
 import { FAQ, SITE } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "FAQ" };
+export const metadata = {
+  title: "FAQ",
+  alternates: { canonical: "/faq" },
+};
 
 export default function Faq() {
   return (

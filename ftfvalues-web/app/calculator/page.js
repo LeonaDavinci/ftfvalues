@@ -5,6 +5,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "FTF Calculator",
+  alternates: { canonical: "/calculator" },
   description:
     "FTF trade calculator — build both sides of a trade, compare totals in fv, and see instantly if you Win, Lose, or make a Fair trade.",
 };

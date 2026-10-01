@@ -19,3 +19,13 @@ _dirlist.txt
 _git.txt
 _run.log
 _serve.log
+_explore.txt
+_net.txt
+_schema.py
+_schema.txt
+_*.txt
+_*.py
+_*.log
+
+# Agent-generated homepage export (redundant with index.html)
+home.html

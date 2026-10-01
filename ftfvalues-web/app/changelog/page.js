@@ -2,7 +2,10 @@ import fs from "fs";
 import path from "path";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Changelog" };
+export const metadata = {
+  title: "Changelog",
+  alternates: { canonical: "/changelog" },
+};
 
 export default function Changelog() {
   const data = JSON.parse(

@@ -3,8 +3,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
+  metadataBase: new URL("https://www.ftfvalues.app"),
   title: {
-    default: "FTF Values - Flee the Facility Trading Value Guide",
+    default:
+      "FTF Values - Calculator - item value -  Flee the Facility Trading Value Guide & ",
     template: "%s - FTF Values",
   },
   description:
@@ -17,6 +19,9 @@ export const metadata = {
     "FTF trading",
     "FTF item values",
   ],
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({ children }) {

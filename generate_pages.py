@@ -124,7 +124,7 @@ def gen(key):
     html = html.replace('{{CARDS}}', make_cards(items))
     for k in CONF:
         html = html.replace('{{ACT_' + k.upper() + '}}', nav[k])
-    html = html.replace('{{CANONICAL}}', 'https://yourdomain.com/' + key.lower() + '/')
+    html = html.replace('{{CANONICAL}}', 'https://www.ftfvalues.app/' + key.lower() + '/')
     html = html.replace('{{DESC_META}}', 'Browse all {} FTF items. {} items with values, stability and demand info.'.format(key.lower(), len(items)))
 
     return html
