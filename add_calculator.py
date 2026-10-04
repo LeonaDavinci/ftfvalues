@@ -40,16 +40,31 @@ CALC_CSS = """
 .side-pick{display:flex;gap:6px}
 .side-pick button{background:#1a1a2e;border:1px solid #2a2a4e;color:#a0a0b0;padding:7px 14px;border-radius:20px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s;font-family:inherit}
 .side-pick button.on{background:rgba(233,69,96,.13);border-color:#e94560;color:#e94560}
-.srch{position:relative;flex:1;min-width:220px}
-.srch input{width:100%;background:#1a1a2e;border:1px solid #2a2a4e;color:#e0e0e0;padding:9px 16px;border-radius:20px;font-size:.9rem;font-family:inherit}
-.srch input:focus{outline:none;border-color:#e94560}
-.sr-drop{position:absolute;left:0;right:0;top:100%;margin-top:6px;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:10px;max-height:300px;overflow-y:auto;z-index:50;box-shadow:0 12px 30px rgba(0,0,0,.5)}
-.sr-item{display:flex;align-items:center;gap:10px;width:100%;padding:8px 12px;background:none;border:none;cursor:pointer;text-align:left;color:#e0e0e0;transition:background .15s;font-family:inherit}
-.sr-item:hover{background:#2a2a3e}
-.sr-item img{width:34px;height:34px;object-fit:contain;background:#13132a;border-radius:6px;flex:none}
-.sr-name{flex:1;font-size:.88rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sr-val{font-size:.8rem;color:#e94560;font-weight:700}
-.sr-none{padding:14px;color:#808090;font-size:.85rem;text-align:center}
+.cp-cta{margin-left:auto}
+/* === item picker panel === */
+.calc-picker{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px}
+.calc-picker[hidden]{display:none}
+.cp-backdrop{position:absolute;inset:0;background:rgba(6,6,16,.72);backdrop-filter:blur(3px)}
+.cp-panel{position:relative;width:min(940px,100%);max-height:86vh;background:#13132a;border:1px solid #2a2a4e;border-radius:14px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.cp-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid #2a2a4e}
+.cp-title{font-size:1rem;font-weight:700;color:#e0e0e0}
+.cp-title span{color:#e94560}
+.cp-x{background:#1a1a2e;border:1px solid #2a2a4e;color:#e0e0e0;width:30px;height:30px;border-radius:8px;font-size:1.1rem;line-height:1;cursor:pointer;font-family:inherit}
+.cp-x:hover{border-color:#e94560;color:#e94560}
+.cp-tabs{display:flex;gap:6px;flex-wrap:wrap;padding:12px 18px 0}
+.cp-tab{background:#1a1a2e;border:1px solid #2a2a4e;color:#a0a0b0;padding:6px 14px;border-radius:20px;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s}
+.cp-tab:hover{color:#e0e0e0}
+.cp-tab.on{background:rgba(233,69,96,.13);border-color:#e94560;color:#e94560}
+.cp-filters{padding:12px 18px}
+.cp-filters input{width:100%;background:#1a1a2e;border:1px solid #2a2a4e;color:#e0e0e0;padding:9px 16px;border-radius:20px;font-size:.9rem;font-family:inherit}
+.cp-filters input:focus{outline:none;border-color:#e94560}
+.cp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;padding:0 18px 18px;overflow-y:auto}
+.cp-item{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:10px;cursor:pointer;transition:all .15s;font-family:inherit;color:#e0e0e0}
+.cp-item:hover{border-color:#e94560;background:#22223a;transform:translateY(-2px)}
+.cp-item img{width:56px;height:56px;object-fit:contain}
+.cp-item .cp-n{font-size:.75rem;font-weight:600;text-align:center;line-height:1.2;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.cp-item .cp-v{font-size:.72rem;color:#e94560;font-weight:700}
+.cp-empty{padding:28px;color:#808090;text-align:center;font-size:.9rem;grid-column:1/-1}
 .calc-grid3{display:grid;grid-template-columns:1fr 190px 1fr;gap:16px;align-items:start}
 .calc-side h3{text-align:center;font-size:1.05rem;color:#e0e0e0;margin-bottom:10px}
 .slots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -98,10 +113,7 @@ WIDGET_HTML = """
         <button type="button" id="ftfSideYour" class="on">Your Offer</button>
         <button type="button" id="ftfSideTheir">Their Offer</button>
       </div>
-      <div class="srch">
-        <input id="ftfSearch" type="text" placeholder="Search items to add&hellip;" aria-label="Search items" autocomplete="off">
-        <div class="sr-drop" id="ftfDrop" style="display:none"></div>
-      </div>
+      <button type="button" class="cbtn cp-cta" id="ftfAddBtn">&#10133; Add item</button>
     </div>
 
     <div class="calc-grid3">
@@ -128,6 +140,22 @@ WIDGET_HTML = """
   </div>
   <!--CALC_EXTRA-->
 </div>
+
+<!-- ========== ITEM PICKER PANEL ========== -->
+<div class="calc-picker" id="ftfPicker" hidden>
+  <div class="cp-backdrop" data-cp-close></div>
+  <div class="cp-panel" role="dialog" aria-modal="true" aria-label="Choose an item">
+    <div class="cp-head">
+      <div class="cp-title">Add to <span id="ftfPickerFor">Your Offer</span></div>
+      <button type="button" class="cp-x" data-cp-close aria-label="Close">&times;</button>
+    </div>
+    <div class="cp-tabs" id="ftfTabs"></div>
+    <div class="cp-filters">
+      <input id="ftfSearch" type="text" placeholder="Search items&hellip;" aria-label="Search items" autocomplete="off">
+    </div>
+    <div class="cp-grid" id="ftfGrid"></div>
+  </div>
+</div>
 """
 
 CALC_JS = r"""
@@ -137,7 +165,11 @@ CALC_JS = r"""
   if (!wrap) return;
 
   var DATA_URL = 'ftf_values_full_data.json';
-  var S = { your: [], their: [], side: 'your', items: [], byKey: {}, updated: '' };
+  var S = { your: [], their: [], side: 'your', items: [], byKey: {}, updated: '', tab: 'all', q: '' };
+  // rarity order mirrors the site nav so the picker tabs read top-down
+  var CATS = [['all', 'All'], ['legendary', 'Legendary'], ['epic', 'Epic'],
+              ['rare', 'Rare'], ['common', 'Common'], ['set', 'Set']];
+  var MAX_GRID = 625;   // whole catalogue; the panel scrolls instead of truncating
 
   function esc(s) {
     return String(s == null ? '' : s)
@@ -145,11 +177,12 @@ CALC_JS = r"""
       .replace(/"/g, '&quot;');
   }
   function fmt(n) { return (Number(n) || 0).toLocaleString('en-US'); }
-  function imgSrc(p) { return 'images/' + String(p || '').replace(/ /g, '%20'); }
+  // thumbnails are the half-size set; data-src keeps the full-size path as a fallback
+  function imgSrc(p) { return 'images/thumb/' + String(p || '').replace(/ /g, '%20'); }
+  function imgAlt(p) { return 'images/' + String(p || '').replace(/ /g, '%20'); }
 
   var el = function (id) { return document.getElementById(id); };
-  var drop = el('ftfDrop'), search = el('ftfSearch');
-  var q = '', open = false;
+  var picker = el('ftfPicker');
 
   function total(list) {
     var sum = 0;
@@ -182,7 +215,7 @@ CALC_JS = r"""
         if (!it) continue;
         html += '<div class="slot filled">' +
           '<button type="button" class="slot-rm" data-rm="' + which + '" data-key="' + esc(e.key) + '" aria-label="Remove">&times;</button>' +
-          '<img src="' + esc(imgSrc(it.img)) + '" alt="' + esc(it.name) + '" loading="lazy" onerror="this.style.display=\'none\'">' +
+          '<img src="' + esc(imgSrc(it.img)) + '" data-src="' + esc(imgAlt(it.img)) + '" alt="' + esc(it.name) + '" loading="lazy">' +
           '<div class="qty">' +
             '<button type="button" data-q="' + which + '" data-key="' + esc(e.key) + '" data-d="-1">&minus;</button>' +
             '<span>' + e.qty + '</span>' +
@@ -216,38 +249,67 @@ CALC_JS = r"""
     renderSide('their');
   }
 
-  function renderDrop() {
-    var s = q.trim().toLowerCase();
-    if (!open || !s) { drop.style.display = 'none'; drop.innerHTML = ''; return; }
-    var res = S.items.filter(function (i) { return i.name.toLowerCase().indexOf(s) !== -1; }).slice(0, 40);
+  /* ---------- item picker panel ---------- */
+
+  function matches(it) {
+    if (S.tab !== 'all' && it.rarity !== S.tab) return false;
+    var s = S.q.trim().toLowerCase();
+    if (s && it.name.toLowerCase().indexOf(s) === -1) return false;
+    return true;
+  }
+
+  function renderTabs() {
+    var box = el('ftfTabs');
+    if (!box) return;
+    var html = '';
+    for (var i = 0; i < CATS.length; i++) {
+      html += '<button type="button" class="cp-tab' + (S.tab === CATS[i][0] ? ' on' : '') +
+        '" data-cat="' + CATS[i][0] + '">' + esc(CATS[i][1]) + '</button>';
+    }
+    box.innerHTML = html;
+  }
+
+  function renderGrid() {
+    var box = el('ftfGrid');
+    if (!box) return;
+    var res = S.items.filter(matches).slice(0, MAX_GRID);
     if (!res.length) {
-      drop.innerHTML = '<div class="sr-none">No items match &ldquo;' + esc(q) + '&rdquo;</div>';
-      drop.style.display = 'block';
+      box.innerHTML = '<div class="cp-empty">No items match these filters.</div>';
       return;
     }
     var html = '';
     for (var i = 0; i < res.length; i++) {
       var it = res[i];
-      html += '<button type="button" class="sr-item" data-add="' + esc(it.key) + '">' +
-        '<img src="' + esc(imgSrc(it.img)) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">' +
-        '<span class="sr-name">' + esc(it.name) + '</span>' +
-        '<span class="sr-val">' + fmt(it.value) + ' fv</span></button>';
+      html += '<button type="button" class="cp-item" data-key="' + esc(it.key) + '" title="' + esc(it.name) + '">' +
+        '<img src="' + esc(imgSrc(it.img)) + '" data-src="' + esc(imgAlt(it.img)) + '" alt="" loading="lazy">' +
+        '<span class="cp-n">' + esc(it.name) + '</span>' +
+        '<span class="cp-v">' + fmt(it.value) + ' fv</span></button>';
     }
-    drop.innerHTML = html;
-    drop.style.display = 'block';
+    box.innerHTML = html;
   }
 
-  function addItem(key) {
+  function openPicker(side) {
+    setSide(side);
+    S.tab = 'all'; S.q = '';
+    var f = el('ftfSearch'); if (f) f.value = '';
+    var forEl = el('ftfPickerFor');
+    if (forEl) forEl.textContent = side === 'your' ? 'Your Offer' : 'Their Offer';
+    renderTabs();
+    renderGrid();
+    if (picker) picker.hidden = false;
+    if (f) setTimeout(function () { f.focus(); }, 30);
+  }
+
+  function closePicker() { if (picker) picker.hidden = true; }
+
+  function pickItem(key) {
     var list = S[S.side];
     for (var i = 0; i < list.length; i++) {
-      if (list[i].key === key) { list[i].qty += 1; renderTotals(); return; }
+      if (list[i].key === key) { list[i].qty += 1; closePicker(); renderTotals(); return; }
     }
     list.push({ key: key, qty: 1 });
-    q = ''; open = false;
-    search.value = '';
+    closePicker();
     renderTotals();
-    renderDrop();
-    search.focus();
   }
 
   function setSide(which) {
@@ -257,10 +319,26 @@ CALC_JS = r"""
     renderTotals();
   }
 
+  // thumbnails first; if one is missing or corrupt fall back to the full-size file
+  function bindImgFallback(root) {
+    root.addEventListener('error', function (ev) {
+      var t = ev.target;
+      if (!t || t.tagName !== 'IMG') return;
+      if (!t.getAttribute('data-fell')) {
+        t.setAttribute('data-fell', '1');
+        t.src = t.getAttribute('data-src') || '';
+      } else {
+        t.style.display = 'none';
+      }
+    }, true);
+  }
+  bindImgFallback(wrap);
+  if (picker) bindImgFallback(picker);
+
   wrap.addEventListener('click', function (ev) {
     var t = ev.target;
     while (t && t !== wrap && !t.getAttribute('data-rm') && !t.getAttribute('data-q') &&
-           !t.getAttribute('data-pick') && !t.getAttribute('data-add')) t = t.parentNode;
+           !t.getAttribute('data-pick')) t = t.parentNode;
     if (!t || t === wrap) return;
 
     if (t.getAttribute('data-rm')) {
@@ -278,16 +356,27 @@ CALC_JS = r"""
       renderTotals();
       return;
     }
-    if (t.getAttribute('data-pick')) { setSide(t.getAttribute('data-pick')); search.focus(); return; }
-    if (t.getAttribute('data-add')) { addItem(t.getAttribute('data-add')); return; }
+    if (t.getAttribute('data-pick')) { openPicker(t.getAttribute('data-pick')); return; }
   });
 
-  document.addEventListener('click', function (ev) {
-    if (open && !ev.target.closest('.srch')) { open = false; renderDrop(); }
-  });
+  if (picker) {
+    picker.addEventListener('click', function (ev) {
+      var t = ev.target;
+      while (t && t !== picker && !t.hasAttribute('data-cp-close') &&
+             !t.hasAttribute('data-cat') && !t.hasAttribute('data-key')) t = t.parentNode;
+      if (!t || t === picker) return;
+      if (t.hasAttribute('data-cp-close')) { closePicker(); return; }
+      if (t.hasAttribute('data-cat')) { S.tab = t.getAttribute('data-cat'); renderTabs(); renderGrid(); return; }
+      if (t.hasAttribute('data-key')) { pickItem(t.getAttribute('data-key')); return; }
+    });
+  }
 
-  search.addEventListener('input', function () { q = search.value; open = true; renderDrop(); });
-  search.addEventListener('focus', function () { if (q.trim()) { open = true; renderDrop(); } });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closePicker(); });
+
+  var search = el('ftfSearch');
+  if (search) search.addEventListener('input', function () { S.q = search.value; renderGrid(); });
+  var addBtn = el('ftfAddBtn');
+  if (addBtn) addBtn.addEventListener('click', function () { openPicker(S.side); });
   el('ftfSideYour').addEventListener('click', function () { setSide('your'); });
   el('ftfSideTheir').addEventListener('click', function () { setSide('their'); });
   el('ftfReset').addEventListener('click', function () { S.your = []; S.their = []; renderTotals(); });
@@ -394,7 +483,8 @@ CALC_JS = r"""
         for (var i = 0; i < arr.length; i++) {
           var it = arr[i];
           var k = (it.rarity || '') + '__' + (it.slug || '');
-          items.push({ key: k, name: it.name, value: Number(it.value) || 0, img: it.local_image_path || '' });
+          items.push({ key: k, name: it.name, value: Number(it.value) || 0,
+                       img: it.local_image_path || '', rarity: it.rarity || '' });
         }
       }
       items.sort(function (a, b) { return a.name.localeCompare(b.name); });
@@ -404,7 +494,8 @@ CALC_JS = r"""
       var note = el('ftfUpdated');
       if (note) note.innerHTML = 'Last updated: ' + esc(S.updated || '—');
       renderTotals();
-      renderDrop();
+      renderTabs();
+      renderGrid();
     })
     .catch(function () {
       var note = el('ftfUpdated');
@@ -487,9 +578,13 @@ def add_footer_link(html, href):
 
 
 def inject_css(html):
-    if '.calc-wrap{' in html:
+    """Replace the whole calculator CSS block so re-runs pick up edits."""
+    m = re.search(r'/\* === TRADE CALCULATOR === \*/.*?(?=\n\s*</style>)', html, flags=re.S)
+    if m:
+        html = html[:m.start()] + html[m.end():]
+    if '.cp-panel{' in html:
         return html, False
-    return html.replace('</style>', CALC_CSS + '</style>'), True
+    return html.replace('</style>', CALC_CSS + '\n</style>'), True
 
 
 def main():
