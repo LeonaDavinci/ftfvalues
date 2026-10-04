@@ -59,16 +59,16 @@ CALC_CSS = """
 .cp-filters input{width:100%;background:#1a1a2e;border:1px solid #2a2a4e;color:#e0e0e0;padding:9px 16px;border-radius:20px;font-size:.9rem;font-family:inherit}
 .cp-filters input:focus{outline:none;border-color:#e94560}
 .cp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;padding:0 18px 18px;overflow-y:auto}
-.cp-item{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:10px;cursor:pointer;transition:all .15s;font-family:inherit;color:#e0e0e0}
+.cp-item{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:10px;cursor:pointer;transition:all .15s;font-family:inherit;color:#e0e0e0}
 .cp-item:hover{border-color:#e94560;background:#22223a;transform:translateY(-2px)}
 .cp-item img{width:56px;height:56px;object-fit:contain}
-.cp-item .cp-n{font-size:.68rem;font-weight:600;text-align:center;line-height:1.2;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.cp-item .cp-c{font-size:.58rem;font-weight:700;line-height:1.4;letter-spacing:.4px;text-transform:uppercase;padding:0 5px;border-radius:5px;border:1px solid currentColor;white-space:nowrap}
-.cp-item .cp-c.legendary{color:#f5b942;background:rgba(245,185,66,.10)}
-.cp-item .cp-c.epic{color:#b06cf0;background:rgba(176,108,240,.10)}
-.cp-item .cp-c.rare{color:#4aa3f0;background:rgba(74,163,240,.10)}
-.cp-item .cp-c.common{color:#8f97b0;background:rgba(143,151,176,.10)}
-.cp-item .cp-c.set{color:#3ecfb2;background:rgba(62,207,178,.10)}
+.cp-item .cp-n{font-size:.68rem;font-weight:600;text-align:center;line-height:1.2;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;padding-bottom:4px}
+.cp-item .cp-c{position:absolute;top:4px;right:4px;z-index:2;pointer-events:none;font-size:.55rem;font-weight:700;line-height:1.3;letter-spacing:.3px;text-transform:uppercase;padding:0 4px;border-radius:4px;border:1px solid currentColor;white-space:nowrap}
+.cp-item .cp-c.legendary{color:#f5b942;background:#13132a;border-color:#f5b94270}
+.cp-item .cp-c.epic{color:#b06cf0;background:#13132a;border-color:#b06cf070}
+.cp-item .cp-c.rare{color:#4aa3f0;background:#13132a;border-color:#4aa3f070}
+.cp-item .cp-c.common{color:#8f97b0;background:#13132a;border-color:#8f97b070}
+.cp-item .cp-c.set{color:#3ecfb2;background:#13132a;border-color:#3ecfb270}
 .cp-item .cp-v{font-size:.68rem;color:#e94560;font-weight:700}
 .cp-empty{padding:28px;color:#808090;text-align:center;font-size:.9rem;grid-column:1/-1}
 .calc-grid3{display:grid;grid-template-columns:1fr 190px 1fr;gap:16px;align-items:start}
@@ -176,6 +176,8 @@ CALC_JS = r"""
   // rarity order mirrors the site nav so the picker tabs read top-down
   var CATS = [['all', 'All'], ['legendary', 'Legendary'], ['epic', 'Epic'],
               ['rare', 'Rare'], ['common', 'Common'], ['set', 'Set']];
+  // short forms for the corner badge - "Legendary" was too wide for a grid tile
+  var CAT_SHORT = { legendary: 'Leg', epic: 'Epi', rare: 'Rar', common: 'Com', set: 'Set' };
   var MAX_GRID = 625;   // whole catalogue; the panel scrolls instead of truncating
 
   function esc(s) {
@@ -289,9 +291,9 @@ CALC_JS = r"""
       var it = res[i];
       // 172 of the 625 rows share a name across rarities - the badge is what tells them apart
       var cat = (it.rarity || '').toLowerCase();
-      var label = cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : '';
+      var label = cat ? (CAT_SHORT[cat] || cat.slice(0, 3).toUpperCase()) : '';
       html += '<button type="button" class="cp-item" data-key="' + esc(it.key) +
-        '" title="' + esc(it.name) + ' — ' + esc(label || 'Uncategorised') + ' · ' + fmt(it.value) + ' fv">' +
+        '" title="' + esc(it.name) + ' — ' + esc(cat || 'uncategorised') + ' · ' + fmt(it.value) + ' fv">' +
         '<img src="' + esc(imgSrc(it.img)) + '" data-src="' + esc(imgAlt(it.img)) + '" alt="" loading="lazy">' +
         '<span class="cp-n">' + esc(it.name) + '</span>' +
         (label ? '<span class="cp-c ' + esc(cat) + '">' + esc(label) + '</span>' : '') +
