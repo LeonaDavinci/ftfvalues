@@ -199,6 +199,14 @@ footer a{color:{{COLOR}}}
   .filters{padding:10px}
 }
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H7X4B4YV1B"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-H7X4B4YV1B');
+</script>
 </head>
 <body>
 

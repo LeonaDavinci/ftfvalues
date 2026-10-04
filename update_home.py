@@ -165,6 +165,14 @@ footer a{color:#e94560;text-decoration:none}
   .psg{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
 }
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H7X4B4YV1B"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-H7X4B4YV1B');
+</script>
 </head>
 <body>
 
