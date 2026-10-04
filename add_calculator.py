@@ -62,8 +62,14 @@ CALC_CSS = """
 .cp-item{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;background:#1a1a2e;border:1px solid #2a2a4e;border-radius:10px;cursor:pointer;transition:all .15s;font-family:inherit;color:#e0e0e0}
 .cp-item:hover{border-color:#e94560;background:#22223a;transform:translateY(-2px)}
 .cp-item img{width:56px;height:56px;object-fit:contain}
-.cp-item .cp-n{font-size:.75rem;font-weight:600;text-align:center;line-height:1.2;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.cp-item .cp-v{font-size:.72rem;color:#e94560;font-weight:700}
+.cp-item .cp-n{font-size:.68rem;font-weight:600;text-align:center;line-height:1.2;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.cp-item .cp-c{font-size:.58rem;font-weight:700;line-height:1.4;letter-spacing:.4px;text-transform:uppercase;padding:0 5px;border-radius:5px;border:1px solid currentColor;white-space:nowrap}
+.cp-item .cp-c.legendary{color:#f5b942;background:rgba(245,185,66,.10)}
+.cp-item .cp-c.epic{color:#b06cf0;background:rgba(176,108,240,.10)}
+.cp-item .cp-c.rare{color:#4aa3f0;background:rgba(74,163,240,.10)}
+.cp-item .cp-c.common{color:#8f97b0;background:rgba(143,151,176,.10)}
+.cp-item .cp-c.set{color:#3ecfb2;background:rgba(62,207,178,.10)}
+.cp-item .cp-v{font-size:.68rem;color:#e94560;font-weight:700}
 .cp-empty{padding:28px;color:#808090;text-align:center;font-size:.9rem;grid-column:1/-1}
 .calc-grid3{display:grid;grid-template-columns:1fr 190px 1fr;gap:16px;align-items:start}
 .calc-side h3{text-align:center;font-size:1.05rem;color:#e0e0e0;margin-bottom:10px}
@@ -95,6 +101,7 @@ CALC_CSS = """
   .calc-side.their-side{order:2}
   .calc-mid{order:3;flex-direction:row;justify-content:center;flex-wrap:wrap;padding:8px 0}
   .vnum{font-size:1.8rem}
+  .cp-item .cp-c{letter-spacing:0;padding:0 4px}
 }
 """
 
@@ -280,9 +287,14 @@ CALC_JS = r"""
     var html = '';
     for (var i = 0; i < res.length; i++) {
       var it = res[i];
-      html += '<button type="button" class="cp-item" data-key="' + esc(it.key) + '" title="' + esc(it.name) + '">' +
+      // 172 of the 625 rows share a name across rarities - the badge is what tells them apart
+      var cat = (it.rarity || '').toLowerCase();
+      var label = cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : '';
+      html += '<button type="button" class="cp-item" data-key="' + esc(it.key) +
+        '" title="' + esc(it.name) + ' — ' + esc(label || 'Uncategorised') + ' · ' + fmt(it.value) + ' fv">' +
         '<img src="' + esc(imgSrc(it.img)) + '" data-src="' + esc(imgAlt(it.img)) + '" alt="" loading="lazy">' +
         '<span class="cp-n">' + esc(it.name) + '</span>' +
+        (label ? '<span class="cp-c ' + esc(cat) + '">' + esc(label) + '</span>' : '') +
         '<span class="cp-v">' + fmt(it.value) + ' fv</span></button>';
     }
     box.innerHTML = html;
