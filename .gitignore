@@ -29,3 +29,6 @@ _*.log
 
 # Agent-generated homepage export (redundant with index.html)
 home.html
+
+# data pipeline cache
+_cache/
