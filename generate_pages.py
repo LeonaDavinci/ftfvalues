@@ -22,18 +22,21 @@ STABILITY_COLORS = {
 }
 
 CONF = {
-    'Sets':        {'name':'Bundles & Sets', 'emoji':'🎁', 'color':'#e94560', 'gradient':'linear-gradient(135deg,#1a1a2e 0%,#2d1a2e 100%)',  'desc':'Exclusive item bundles and themed collections with unique trading value.'},
     'Legendaries': {'name':'Legendaries',       'emoji':'👑', 'color':'#f1c40f', 'gradient':'linear-gradient(135deg,#1a1a2e 0%,#2e2a1a 100%)',  'desc':'Highest-tier items with the most valuable trading worth in Flee the Facility.'},
     'Epics':       {'name':'Epics',            'emoji':'💎', 'color':'#9b59b6', 'gradient':'linear-gradient(135deg,#1a1a2e 0%,#1a1a2e 100%)',  'desc':'Mid-to-high tier items highly sought after by experienced traders.'},
     'Rares':       {'name':'Rares',            'emoji':'🔥', 'color':'#e74c3c', 'gradient':'linear-gradient(135deg,#1a1a2e 0%,#2e1a1a 100%)',  'desc':'Moderately valued items with steady trading activity in the community.'},
     'Commons':     {'name':'Commons',          'emoji':'✨', 'color':'#3498db', 'gradient':'linear-gradient(135deg,#1a1a2e 0%,#1a2a2e 100%)',  'desc':'Entry-level items perfect for new traders and fair starter trades.'},
+    'Uniques':     {'name':'Uniques',          'emoji':'🌟', 'color':'#ffaa00', 'gradient':'linear-gradient(135deg,#1a1a2e 0%,#1e2e1a 100%)',  'desc':'One-of-a-kind merch and event-exclusive items that cannot be traded normally.'},
 }
 
 def demand_stars(n):
+    """demand 为 0-5 的浮点数"""
     if n is None:
         return '☆☆☆☆☆'
-    n = int(n)
-    full = min(5, n // 2 + (1 if n % 2 else 0))
+    try:
+        full = max(0, min(5, int(round(float(n)))))
+    except (TypeError, ValueError):
+        return '☆☆☆☆☆'
     return '★' * full + '☆' * (5 - full)
 
 def make_cards(items):
@@ -50,8 +53,11 @@ def make_cards(items):
         name = it['name'].replace('"', '&quot;')
         namelc = name.lower()
 
-        # 价值
-        if it.get('value_min') and it.get('value_max'):
+        # 价值（Uniques 周边 N/A）
+        if it.get('value') is None:
+            val = 'N/A'
+            hint = ''
+        elif it.get('value_min') and it.get('value_max'):
             val = '{}–{}'.format(it['value_min'], it['value_max'])
             hint = '<div class="vh">Range: {}–{} valuables</div>'.format(it['value_min'], it['value_max'])
         else:
@@ -85,7 +91,7 @@ def make_cards(items):
                 <div class="dm"><span class="dl">Demand:</span><span class="ds">{ds}</span></div>
               </div>
             </div>
-        ''').strip().format(v=it['value'], n=namelc, img=img, name=name, val=val, hint=hint, stab=stab_html, status=status_html, ds=ds))
+        ''').strip().format(v=it['value'] if it.get('value') is not None else 0, n=namelc, img=img, name=name, val=val, hint=hint, stab=stab_html, status=status_html, ds=ds))
     return '\n'.join(out)
 
 def stability_filters(items):
@@ -218,7 +224,7 @@ gtag('config', 'G-H7X4B4YV1B');
   <a href="use-guide.html">Use Guide</a>
   <a href="changelog.html">Changelog</a>
   <a href="faq.html">FAQ</a>
-  <a href="sets.html"{{ACT_SETS}}>Bundles</a>
+  <a href="uniques.html"{{ACT_UNIQUES}}>Uniques</a>
   <a href="legendaries.html"{{ACT_LEGENDARIES}}>Legendaries</a>
   <a href="epics.html"{{ACT_EPICS}}>Epics</a>
   <a href="rares.html"{{ACT_RARES}}>Rares</a>
@@ -291,7 +297,7 @@ gtag('config', 'G-H7X4B4YV1B');
 
 def main():
     os.makedirs('seo_pages', exist_ok=True)
-    for key in ['Sets','Legendaries','Epics','Rares','Commons']:
+    for key in ['Legendaries','Epics','Rares','Commons','Uniques']:
         print('Generating {}...'.format(key))
         html = gen(key)
         path = 'seo_pages/{}.html'.format(key.lower())

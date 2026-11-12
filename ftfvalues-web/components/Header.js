@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const MAIN_NAV = [
   { href: "/calculator", label: "🧮 Calculator" },
-  { href: "/sets", label: "Bundles" },
+  { href: "/uniques", label: "Uniques" },
   { href: "/legendaries", label: "Legendaries" },
   { href: "/epics", label: "Epics" },
   { href: "/rares", label: "Rares" },

@@ -132,6 +132,9 @@ footer a{color:#e94560}
 
 
 
+
+
+
 /* === TRADE CALCULATOR === */
 .calc-hero{text-align:center;padding:40px 24px 20px}
 .calc-hero h1{font-size:2.2rem;color:#e94560;margin-bottom:8px}
@@ -177,6 +180,7 @@ footer a{color:#e94560}
 .cp-item .cp-c.rare{color:#4aa3f0;background:#13132a;border-color:#4aa3f070}
 .cp-item .cp-c.common{color:#8f97b0;background:#13132a;border-color:#8f97b070}
 .cp-item .cp-c.set{color:#3ecfb2;background:#13132a;border-color:#3ecfb270}
+.cp-item .cp-c.unique{color:#ffaa00;background:#13132a;border-color:#ffaa0070}
 .cp-item .cp-v{font-size:.68rem;color:#e94560;font-weight:700}
 .cp-empty{padding:28px;color:#808090;text-align:center;font-size:.9rem;grid-column:1/-1}
 .calc-grid3{display:grid;grid-template-columns:1fr 190px 1fr;gap:16px;align-items:start}
@@ -231,7 +235,7 @@ gtag('config', 'G-H7X4B4YV1B');
   <!-- Main Nav - 5 item categories (prominent position) -->
   <nav class="main-nav" id="mainNav">
     <a href="calculator.html" class="act">&#129518; Calculator</a>
-    <a href="sets.html">Bundles</a>
+    <a href="uniques.html">Uniques</a>
     <a href="legendaries.html">Legendaries</a>
     <a href="epics.html">Epics</a>
     <a href="rares.html">Rares</a>
@@ -328,7 +332,7 @@ gtag('config', 'G-H7X4B4YV1B');
     <a href="use-guide.html">Use Guide</a> |
     <a href="changelog.html">Changelog</a> |
     <a href="faq.html">FAQ</a> |
-    <a href="sets.html">Bundles</a> |
+    <a href="uniques.html">Uniques</a> |
     <a href="legendaries.html">Legendaries</a> |
     <a href="epics.html">Epics</a> |
     <a href="rares.html">Rares</a> |
@@ -363,6 +367,8 @@ document.addEventListener('click',function(e){
   // rarity order mirrors the site nav so the picker tabs read top-down
   var CATS = [['all', 'All'], ['legendary', 'Legendary'], ['epic', 'Epic'],
               ['rare', 'Rare'], ['common', 'Common'], ['set', 'Set']];
+  // short forms for the corner badge - "Legendary" was too wide for a grid tile
+  var CAT_SHORT = { legendary: 'Leg', epic: 'Epi', rare: 'Rar', common: 'Com', set: 'Set' };
   var MAX_GRID = 625;   // whole catalogue; the panel scrolls instead of truncating
 
   function esc(s) {
@@ -476,9 +482,9 @@ document.addEventListener('click',function(e){
       var it = res[i];
       // 172 of the 625 rows share a name across rarities - the badge is what tells them apart
       var cat = (it.rarity || '').toLowerCase();
-      var label = cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : '';
+      var label = cat ? (CAT_SHORT[cat] || cat.slice(0, 3).toUpperCase()) : '';
       html += '<button type="button" class="cp-item" data-key="' + esc(it.key) +
-        '" title="' + esc(it.name) + ' — ' + esc(label || 'Uncategorised') + ' · ' + fmt(it.value) + ' fv">' +
+        '" title="' + esc(it.name) + ' — ' + esc(cat || 'uncategorised') + ' · ' + fmt(it.value) + ' fv">' +
         '<img src="' + esc(imgSrc(it.img)) + '" data-src="' + esc(imgAlt(it.img)) + '" alt="" loading="lazy">' +
         '<span class="cp-n">' + esc(it.name) + '</span>' +
         (label ? '<span class="cp-c ' + esc(cat) + '">' + esc(label) + '</span>' : '') +

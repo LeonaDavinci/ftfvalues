@@ -3,7 +3,7 @@
 """
 更新 home.html：
 1. 导航链接改为相对路径
-2. 增加5个栏目（Bundles/Legendaries/Epics/Rares/Commons）的物品预览区
+2. 增加5个栏目（Uniques/Legendaries/Epics/Rares/Commons）的物品预览区
 """
 
 import json, os, textwrap
@@ -17,26 +17,29 @@ STABILITY_COLORS = {
     'Stable-Ish': '#1abc9c', 'Undetermined': '#95a5a6',
 }
 RARITY_MAP = {
-    'set': 'Sets',
     'legendary': 'Legendaries',
     'epic': 'Epics',
     'rare': 'Rares',
     'common': 'Commons',
+    'unique': 'Uniques',
 }
 
 CONFIG = {
-    'Sets':      {'name': 'Bundles & Sets', 'emoji': '🎁', 'color': '#e94560', 'file': 'sets.html'},
     'Legendaries': {'name': 'Legendaries',     'emoji': '👑', 'color': '#f1c40f', 'file': 'legendaries.html'},
     'Epics':     {'name': 'Epics',           'emoji': '💎', 'color': '#9b59b6', 'file': 'epics.html'},
     'Rares':     {'name': 'Rares',           'emoji': '🔥', 'color': '#e74c3c', 'file': 'rares.html'},
     'Commons':   {'name': 'Commons',         'emoji': '✨', 'color': '#3498db', 'file': 'commons.html'},
+    'Uniques':   {'name': 'Uniques',         'emoji': '🌟', 'color': '#ffaa00', 'file': 'uniques.html'},
 }
 
 def demand_stars(n):
+    """demand 为 0-5 的浮点数"""
     if n is None:
         return '☆☆☆☆☆'
-    n = int(n)
-    full = min(5, n // 2 + (1 if n % 2 else 0))
+    try:
+        full = max(0, min(5, int(round(float(n)))))
+    except (TypeError, ValueError):
+        return '☆☆☆☆☆'
     return '★' * full + '☆' * (5 - full)
 
 def mini_card(it, color):
@@ -47,13 +50,13 @@ def mini_card(it, color):
     else:
         img = it.get('image_url', '')
     name = it['name'].replace('"', '&quot;')
-    val = str(it['value'])
+    val = str(it['value']) if it.get('value') is not None else 'N/A'
     stab = it.get('stability', '')
     sc = STABILITY_COLORS.get(stab, '#95a5a6')
     ds = demand_stars(it.get('demand'))
     # 映射 rarity 到 CONFIG 键
-    rar = it.get('rarity', 'set')
-    cfg_key = RARITY_MAP.get(rar, 'Sets')
+    rar = it.get('rarity', 'legendary')
+    cfg_key = RARITY_MAP.get(rar, 'Legendaries')
     cfg_file = CONFIG[cfg_key]['file']
 
     return (
@@ -65,7 +68,7 @@ def mini_card(it, color):
         '<div class="md"><span class="mds" style="color:#f1c40f">{}</span></div>'
         '</a>'.format(
             cfg_file + '#' + it.get('slug', ''),
-            it['value'], img, name, name, val,
+            it['value'] if it.get('value') is not None else 0, img, name, name, val,
             color, sc, sc, sc, stab, ds
         )
     )
@@ -73,8 +76,8 @@ def mini_card(it, color):
 def preview_section(key):
     cfg = CONFIG[key]
     items = ALL_DATA.get(key, {}).get('items', [])
-    # 按价值降序取前12个
-    top = sorted(items, key=lambda x: x.get('value', 0), reverse=True)[:12]
+    # 按价值降序取前12个（N/A 价值的排最后）
+    top = sorted(items, key=lambda x: (x.get('value') is None, -(x.get('value') or 0)))[:12]
     cards = '\n'.join(mini_card(it, cfg['color']) for it in top)
     count = len(items)
     return '''
@@ -184,7 +187,7 @@ gtag('config', 'G-H7X4B4YV1B');
     <a href="use-guide.html">Use Guide</a>
     <a href="changelog.html">Changelog</a>
     <a href="faq.html">FAQ</a>
-    <a href="sets.html">Bundles</a>
+    <a href="uniques.html">Uniques</a>
     <a href="legendaries.html">Legendaries</a>
     <a href="epics.html">Epics</a>
     <a href="rares.html">Rares</a>
@@ -244,7 +247,7 @@ gtag('config', 'G-H7X4B4YV1B');
 def main():
     # 生成5个栏目预览区
     sections = ''
-    for key in ['Sets', 'Legendaries', 'Epics', 'Rares', 'Commons']:
+    for key in ['Legendaries', 'Epics', 'Rares', 'Commons', 'Uniques']:
         print('Generating preview for {}...'.format(key))
         sections += preview_section(key)
 

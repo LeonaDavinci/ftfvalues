@@ -16,9 +16,9 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-PAGES = ['index.html', 'home.html', 'sets.html', 'legendaries.html', 'epics.html',
+PAGES = ['index.html', 'home.html', 'uniques.html', 'legendaries.html', 'epics.html',
          'rares.html', 'commons.html', 'use-guide.html', 'faq.html', 'changelog.html']
-SEO_PAGES = ['index.html', 'sets.html', 'legendaries.html', 'epics.html', 'rares.html',
+SEO_PAGES = ['index.html', 'uniques.html', 'legendaries.html', 'epics.html', 'rares.html',
              'commons.html', 'use-guide.html', 'faq.html', 'changelog.html']
 
 EMOJI = '&#129518;'  # 🧮 (U+1F9EE)
@@ -69,6 +69,7 @@ CALC_CSS = """
 .cp-item .cp-c.rare{color:#4aa3f0;background:#13132a;border-color:#4aa3f070}
 .cp-item .cp-c.common{color:#8f97b0;background:#13132a;border-color:#8f97b070}
 .cp-item .cp-c.set{color:#3ecfb2;background:#13132a;border-color:#3ecfb270}
+.cp-item .cp-c.unique{color:#ffaa00;background:#13132a;border-color:#ffaa0070}
 .cp-item .cp-v{font-size:.68rem;color:#e94560;font-weight:700}
 .cp-empty{padding:28px;color:#808090;text-align:center;font-size:.9rem;grid-column:1/-1}
 .calc-grid3{display:grid;grid-template-columns:1fr 190px 1fr;gap:16px;align-items:start}
@@ -175,9 +176,9 @@ CALC_JS = r"""
   var S = { your: [], their: [], side: 'your', items: [], byKey: {}, updated: '', tab: 'all', q: '' };
   // rarity order mirrors the site nav so the picker tabs read top-down
   var CATS = [['all', 'All'], ['legendary', 'Legendary'], ['epic', 'Epic'],
-              ['rare', 'Rare'], ['common', 'Common'], ['set', 'Set']];
+              ['rare', 'Rare'], ['common', 'Common'], ['unique', 'Unique']];
   // short forms for the corner badge - "Legendary" was too wide for a grid tile
-  var CAT_SHORT = { legendary: 'Leg', epic: 'Epi', rare: 'Rar', common: 'Com', set: 'Set' };
+  var CAT_SHORT = { legendary: 'Leg', epic: 'Epi', rare: 'Rar', common: 'Com', unique: 'UNI' };
   var MAX_GRID = 625;   // whole catalogue; the panel scrolls instead of truncating
 
   function esc(s) {
@@ -186,6 +187,8 @@ CALC_JS = r"""
       .replace(/"/g, '&quot;');
   }
   function fmt(n) { return (Number(n) || 0).toLocaleString('en-US'); }
+  // N/A-valued uniques (merch) still selectable but contribute 0 fv
+  function valLabel(v) { return v == null ? 'N/A' : fmt(v) + ' fv'; }
   // thumbnails are the half-size set; data-src keeps the full-size path as a fallback
   function imgSrc(p) { return 'images/thumb/' + String(p || '').replace(/ /g, '%20'); }
   function imgAlt(p) { return 'images/' + String(p || '').replace(/ /g, '%20'); }
@@ -293,11 +296,11 @@ CALC_JS = r"""
       var cat = (it.rarity || '').toLowerCase();
       var label = cat ? (CAT_SHORT[cat] || cat.slice(0, 3).toUpperCase()) : '';
       html += '<button type="button" class="cp-item" data-key="' + esc(it.key) +
-        '" title="' + esc(it.name) + ' — ' + esc(cat || 'uncategorised') + ' · ' + fmt(it.value) + ' fv">' +
+        '" title="' + esc(it.name) + ' — ' + esc(cat || 'uncategorised') + ' · ' + esc(valLabel(it.value)) + '">' +
         '<img src="' + esc(imgSrc(it.img)) + '" data-src="' + esc(imgAlt(it.img)) + '" alt="" loading="lazy">' +
         '<span class="cp-n">' + esc(it.name) + '</span>' +
         (label ? '<span class="cp-c ' + esc(cat) + '">' + esc(label) + '</span>' : '') +
-        '<span class="cp-v">' + fmt(it.value) + ' fv</span></button>';
+        '<span class="cp-v">' + esc(valLabel(it.value)) + '</span></button>';
     }
     box.innerHTML = html;
   }
@@ -497,7 +500,10 @@ CALC_JS = r"""
         for (var i = 0; i < arr.length; i++) {
           var it = arr[i];
           var k = (it.rarity || '') + '__' + (it.slug || '');
-          items.push({ key: k, name: it.name, value: Number(it.value) || 0,
+          // null value (N/A merch uniques) is preserved so the picker can show N/A;
+          // totals treat it as 0 via Number()||0
+          var v = (it.value == null) ? null : (Number(it.value) || 0);
+          items.push({ key: k, name: it.name, value: v,
                        img: it.local_image_path || '', rarity: it.rarity || '' });
         }
       }

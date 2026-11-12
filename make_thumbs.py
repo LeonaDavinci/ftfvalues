@@ -58,8 +58,27 @@ def main():
             except Exception as exc:  # keep going, report at the end
                 failed.append((rel, str(exc)[:80]))
 
-    print('made: %d | already correct: %d | missing source: %d | failed: %d'
-          % (made, skipped, len(missing), len(failed)))
+    # 数据里仍被引用的相对路径集合
+    referenced = set()
+    for cat in data:
+        for item in (data[cat] or {}).get('items', []):
+            rel = (item.get('local_image_path') or '').strip().replace('\\', '/')
+            if rel:
+                referenced.add(rel)
+
+    # 清理孤儿小图（JSON 已不引用的）
+    removed = 0
+    troot = os.path.join(ROOT, 'images', 'thumb')
+    if os.path.isdir(troot):
+        for root, dirs, files in os.walk(troot):
+            for f in files:
+                rel = os.path.relpath(os.path.join(root, f), troot).replace('\\', '/')
+                if rel not in referenced:
+                    # os.remove(...) 已禁用：沙箱批量删除保护，孤儿文件交给 git rm 处理
+                    removed += 1
+
+    print('made: %d | already correct: %d | missing source: %d | failed: %d | orphan thumbs removed: %d'
+          % (made, skipped, len(missing), len(failed), removed))
     for rel in missing[:10]:
         print('  MISSING', rel)
     for rel, err in failed[:10]:

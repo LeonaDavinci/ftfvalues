@@ -4,7 +4,7 @@ const FOOTER_LINKS = [
   { href: "/use-guide", label: "Use Guide" },
   { href: "/changelog", label: "Changelog" },
   { href: "/faq", label: "FAQ" },
-  { href: "/sets", label: "Bundles" },
+  { href: "/uniques", label: "Uniques" },
   { href: "/legendaries", label: "Legendaries" },
   { href: "/epics", label: "Epics" },
   { href: "/rares", label: "Rares" },

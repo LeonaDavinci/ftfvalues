@@ -3,15 +3,6 @@
 // Next.js version keeps the same look & feel.
 
 export const CATEGORIES = {
-  Sets: {
-    key: "Sets",
-    slug: "sets",
-    name: "Bundles & Sets",
-    emoji: "🎁",
-    color: "#e94560",
-    gradient: "linear-gradient(135deg,#1a1a2e 0%,#2d1a2e 100%)",
-    desc: "Exclusive item bundles and themed collections with unique trading value.",
-  },
   Legendaries: {
     key: "Legendaries",
     slug: "legendaries",
@@ -48,9 +39,18 @@ export const CATEGORIES = {
     gradient: "linear-gradient(135deg,#1a1a2e 0%,#1a2a2e 100%)",
     desc: "Entry-level items perfect for new traders and fair starter trades.",
   },
+  Uniques: {
+    key: "Uniques",
+    slug: "uniques",
+    name: "Uniques",
+    emoji: "🌟",
+    color: "#ffaa00",
+    gradient: "linear-gradient(135deg,#1a1a2e 0%,#1e2e1a 100%)",
+    desc: "One-of-a-kind merch and event-exclusive items that cannot be traded normally.",
+  },
 };
 
-export const CATEGORY_ORDER = ["Sets", "Legendaries", "Epics", "Rares", "Commons"];
+export const CATEGORY_ORDER = ["Legendaries", "Epics", "Rares", "Commons", "Uniques"];
 
 // Stability tag -> color (kept from the original site).
 export const STABILITY_COLORS = {
@@ -86,12 +86,12 @@ export function statusColor(s) {
   return STATUS_COLORS[s] || "#95a5a6";
 }
 
-// Render demand as a 0-5 star string (ported from original generator).
+// Render demand as a 0-5 star string (demand is a 0-5 float in the source data).
 export function demandStars(n) {
   if (n === null || n === undefined || n === "") return "☆☆☆☆☆";
-  const v = Math.trunc(Number(n));
+  const v = Math.round(Number(n));
   if (isNaN(v)) return "☆☆☆☆☆";
-  const full = Math.min(5, Math.floor(v / 2) + (v % 2 ? 1 : 0));
+  const full = Math.max(0, Math.min(5, v));
   return "★".repeat(full) + "☆".repeat(5 - full);
 }
 

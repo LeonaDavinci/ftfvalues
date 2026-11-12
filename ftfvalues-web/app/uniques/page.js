@@ -1,0 +1,11 @@
+import CategoryView from "@/components/CategoryView";
+
+export const dynamic = "force-dynamic";
+export const metadata = {
+  title: "Uniques",
+  alternates: { canonical: "/uniques" },
+};
+
+export default function Page() {
+  return <CategoryView categoryKey="Uniques" />;
+}
